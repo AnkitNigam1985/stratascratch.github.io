@@ -1,3 +1,4 @@
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-cayman
 title: Strata Scratch Educational Guides & Exercises
 description: Whether you're a student looking to supercharge your data analysis skills or a teacher looking to power your classroom, we've included a few guides and exercises to help you along your journey!
+google_analytics: UA-115949776-1
