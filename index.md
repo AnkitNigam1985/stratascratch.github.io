@@ -1,4 +1,4 @@
-![strata scratch](visualizations/sslogo.jpg) 
+![strata scratch](images/sslogo.jpg) 
 
 # Welcome to the Strata Scratch Guides and Exercises Git Page
 
