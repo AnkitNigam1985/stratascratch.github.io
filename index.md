@@ -1,5 +1,4 @@
-![strata scratch](assets/sslogo.jpg) 
-
+[![strata scratch](assets/sslogo.jpg)](https://stratascratch.com)
 # Welcome to the Guides and Exercises Git Page
 
 Our guides and analytical exercises are listed on this page but can also be accessed and downloaded on our [GitHub](https://github.com/stratascratch). 
