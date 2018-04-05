@@ -1,6 +1,6 @@
 ![strata scratch](images/sslogo.jpg) 
 
-# Welcome to the Strata Scratch Guides and Exercises Git Page
+# Welcome to the Guides and Exercises Git Page
 
 Our guides and exercises are listed on this page but can also be accessed on our [GitHub](https://github.com/stratascratch). 
 
