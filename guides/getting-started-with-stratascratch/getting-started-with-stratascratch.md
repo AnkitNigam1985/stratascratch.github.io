@@ -14,3 +14,17 @@ Log in to your account to see your homepage as shown on the image below. The hom
 
 
 The SQL editor is a powerful tool that allows you to type SQL commands, build and run queries, create and edit your data, visualize results, and many others.
+
+## Accessing Public and Private Datasets
+If you are a new user, you will see an untitled query tab on the left side of the page. Below the tab are configuration options which allow you to choose a database and dataset. A public schema dataset is uploaded by default for your convenience. It is composed of public datasets which you can use as a reference. However, the schema is read-only so you cannot make any changes to it.
+
+![strata scratch](assets/lefthandconfig.png)
+
+You also have access to your own dataset repository under your private schema username where you will have full privileges, such as reading or editing your datasets. Under your private schema, you are given the freedom to move data from other schemas or upload your own CSV file.
+
+## Running the SQL Query
+
+Next to the configuration sidebar is a workspace where you can type SQL queries. You can start with basic commands such as SELECT, FROM, WHERE, GROUP BY and ORDER BY. We will learn more about this in the next tutorial. For now, it is enough for you to familiarize the functionality of the SQL editor. 
+
+![strata scratch](assets/righthand_editor.png)
+
