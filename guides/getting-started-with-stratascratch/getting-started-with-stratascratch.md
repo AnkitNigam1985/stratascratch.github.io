@@ -5,4 +5,4 @@ Data analytical skills are important whether you are aspiring to become a data s
 
 ## The SQL Editor
 Log in to your account to see your homepage as shown on the image below. The homepage consists of your account information, settings, tabs, and a number of dropdown menus located on the top toolbar. We will begin by exploring the functionalities of the SQL Lab menu which consists of all the basic tools you need to start your database. 
-![strata scratch](guides/assets/sql_editor_dashboard.png)
+![strata scratch](guides/getting-started-with-stratascratch/assets/sql_editor_dashboard.png)
