@@ -76,3 +76,39 @@ Select this box if you want to write the dataframe index as a column.
 
 ### Column Labels
 Provide a column label in this field if you are using index columns. 
+
+## Save Your CSV File
+After you have supplied all the information needed for creating the table, you can now click the Save button located at the bottom of the page.
+
+![strata scratch](assets/save.png)
+
+Now you have successfully uploaded your CSV file to the table you created. 
+
+## How to Query A Table
+- To query a table, go to the SQL editor. 
+- On the left side of the page, select the name of the database and schema name. In our example, stratascratch_read_only is the name of the database and strata_user is the name of the schema.
+
+![strata scratch](assets/lefthandconfig.png)
+
+In the editor, type the following commands:
+
+```sql
+SELECT *
+FROM schema_name.table_name
+```
+
+The SELECT command returns data from a single or multiple tables. Using an asterisk will allow you to retrieve all the rows of data from the table.
+The FROM statement includes the name of the table where you want to fetch your data.
+For example, we can type the following statements in the editor to fetch all the rows of data from the sample_db table.
+
+![strata scratch](assets/query.png)
+
+Click the Run Query button below the editor to query the table.
+
+![strata scratch](assets/run_query.png)
+
+If the query is successful, you should be able to see the output under the Results tab.
+
+![strata scratch](assets/results.png)
+
+
