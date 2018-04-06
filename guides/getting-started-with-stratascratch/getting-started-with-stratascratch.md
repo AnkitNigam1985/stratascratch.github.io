@@ -32,4 +32,40 @@ Next to the configuration sidebar is a workspace where you can type SQL queries.
 
 ![strata scratch](assets/bottom_table.png)
 
+## Visualizing Your Dataset
+You can also have the option to visualize data and turn them into meaningful graphs.
+
+- To start, click on the Visualize box located below the Results and Query History tabs
+
+![strata scratch](assets/viz_button.png)
+
+- A pop-up window will appear just like the image below. Here, you are given various options as to how you want to visualize your dataset. Under the Chart Type menu, choose what type of display you want for your plot. 
+
+![strata scratch](assets/popup.png)
+
+- Next to the Chart Type menu is the Datasource Name field. Simple type a name you desire for your plot. 
+- Below the Chart Type menu are check boxes that provide options in visualizing your dataset. Check the desired attributes you wanted to include in your graph. For our example above, under column, we have the option to view the attributes (is_dimension and is_date) for artist and best_artist. The agg_func gives an option as to how you want to manipulate your data.
+- Click the Visualize button to see the results which will open a new tab.
+
+![strata scratch](assets/viz.png)
+
+- As shown on the results above, you have further options to rename your chart located above the plot, as well as manipulate and filter your data through the sidebar configurations at the left side of the page.
+
+## Saving a CSV File
+
+- If you want to export your dataset to a CSV file, simply click on the .CSV button as shown below. 
+
+![strata scratch](assets/csv_button.png)
+
+- A pop-up window will appear to download the CSV file. Type the filename you want, choose a folder where you want to save the CSV and click the Save button. 
+
+![strata scratch](assets/csv_popup.png)
+
+- Another option to save a CSV is to click the CSV button found above the chart (after you have built a visualization of your dataset):
+
+![strata scratch](assets/viz_csv.png)
+
+Now you have the CSV file saved in your folder, you should be able to open it using a compatible program installed on your computer (such as MS Excel) to view your dataset.
+
+
 
