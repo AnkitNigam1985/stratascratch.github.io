@@ -28,3 +28,8 @@ Next to the configuration sidebar is a workspace where you can type SQL queries.
 
 ![strata scratch](assets/righthand_editor.png)
 
+- To run a query, simply click on the Run Query box located below the workspace. For example, if you run the query typed on the editor above, you should be able to see the following query result:
+
+![strata scratch](assets/bottom_table.png)
+
+
