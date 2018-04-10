@@ -14,25 +14,25 @@ The SELECT statement is used to retrieve data from an existing table. You can fo
 
 ## Copying Data from an Existing Table
 
-To start, go to SQL Lab menu and click SQL editor.
+- To start, go to SQL Lab menu and click SQL editor.
 
 ![strata scratch](assets/1.png)
 
-For a demonstration, we will create a new table named as backup_db and copy all the data from the existing table sample_db. So go ahead and type the following:
+- For a demonstration, we will create a new table named as backup_db and copy all the data from the existing table sample_db. So go ahead and type the following:
 
 ![strata scratch](assets/3.png)
 
-Click Run Query and you should verify on the results tab that the query is a success.
+- Click Run Query and you should verify on the results tab that the query is a success.
 
 ![strata scratch](assets/4.png)
 
 ## Viewing the New Table
 
-To view the new table you just created (in our example, backup_db is the name of our new table), type the following statement in the editor:
+- To view the new table you just created (in our example, backup_db is the name of our new table), type the following statement in the editor:
 
 ![strata scratch](assets/5.png)
 
-Click Run Query. Under the results tab, you should be able to view the data of the new table. In our example, we copied all the fields from the existing table sample_db to our new table backup_db. 
+- Click Run Query. Under the results tab, you should be able to view the data of the new table. In our example, we copied all the fields from the existing table sample_db to our new table backup_db. 
 
 ![strata scratch](assets/6.png)
 
@@ -52,17 +52,17 @@ For a demonstration, consider the table below named airbnb with the following re
 
 We are interested to create a new table and copy only the fields with more than 9 searches. Let us name our new table as airbnb_searches.
 
-To start, type the following statement in the editor:
+- To start, type the following statement in the editor:
 
 ![strata scratch](assets/9.png)
 
-Click the Run Query box. You should be able to run the query successfully.
+- Click the Run Query box. You should be able to run the query successfully.
 
-To view the new table, simple type the following statement:
+- To view the new table, simple type the following statement:
 
 ![strata scratch](assets/10.png)
 
-Click Run Query. You should be able to view the data under the results tab. Here, you will see that only the fields having more than 9 searches are shown in the table.
+- Click Run Query. You should be able to view the data under the results tab. Here, you will see that only the fields having more than 9 searches are shown in the table.
 
 ![strata scratch](assets/11.png)
 
