@@ -12,6 +12,7 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [Getting Started With Strata Scratch](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/getting-started-with-stratascratch/getting-started-with-stratascratch.md)
 - [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
 - [How to Copy Data From One Table to Another](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-copy-data-from-one-table-to-another/how-to-copy-data-from-one-table-to-another.md)
+- [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
 - [How to contribute to our data analytics community](https://github.com/stratascratch/stratascratch-community-contributions)
 
 ### SQL Guide
