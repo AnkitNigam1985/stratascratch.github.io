@@ -565,7 +565,9 @@ It’s often the case that one or both tables being joined contain rows that don
 
 We’ll start with inner joins, which can be written as either `JOIN datasets.college_football_teams teams` or `INNER JOIN datasets.college_football_teams` . Inner joins eliminate rows from both tables that do not satisfy the join condition set forth in the `ON` statement. In mathematical terms, an inner join is the intersection of the two tables.
 
-![strata scratch](assets/image_43.gif)
+<p align="center">
+  <img width="200" height="150" src="https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/assets/image_43.gif">
+</p>
 
 Therefore, if a player goes to a school that isn’t in the `teams` table, that player won’t be included in the result from an inner join. Similarly, if there are schools in the `teams` table that don’t match to any schools in the `players` table, those rows won’t be included in the results either.
 
@@ -577,7 +579,9 @@ When performing an inner join, rows from either table that are unmatched in the 
 
 ### LEFT JOIN
 
-![strata scratch](assets/image_45.png)
+<p align="center">
+  <img width="200" height="150" src="https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/assets/image_45.png">
+</p>
 
 Let’s start by running an INNER JOIN on the `Crunchbase` dataset and taking a look at the results. We’ll just look at `company-permalink` in each table, as well as a couple other fields, to get a sense of what’s actually being joined.
 
@@ -613,7 +617,9 @@ This is because the LEFT JOIN command tells the database to return all rows in t
 
 Right joins are similar to left joins except they return all rows from the table in the RIGHT JOIN clause and only matching rows from the table in the FROM clause.
 
-![strata scratch](assets/image_48.gif)
+<p align="center">
+  <img width="200" height="150" src="https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/assets/image_48.gif">
+</p>
 
 RIGHT JOIN is rarely used because you can achieve the results of a RIGHT JOIN by simply switching the two joined table names in a LEFT JOIN. For example, in this query of the Crunchbase dataset, the LEFT JOIN section:
 
