@@ -63,7 +63,7 @@ Now that you understand the basics of query data from a table, the next step is 
 
 ```sql
 SELECT 
-	* 
+    * 
 FROM datasets.us_housing_units
 ```
 
