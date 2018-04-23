@@ -336,7 +336,7 @@ Things start to get a little bit tricky when you want to count individual column
 
 ```sql
 SELECT 
-	COUNT(high)
+    COUNT(high)
 FROM datasets.aapl_historical_stock_price
 ```
 
