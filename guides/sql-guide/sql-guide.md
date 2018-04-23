@@ -348,7 +348,7 @@ SUM is a SQL aggregate function that totals the values in a given column. Unlike
 
 ```sql
 SELECT 
-	SUM(volume)
+    SUM(volume)
 FROM datasets.aapl_historical_stock_price
 ```
 
@@ -368,7 +368,7 @@ AVG is a SQL aggregate function that calculates the average of a selected group 
 
 ```sql
 SELECT 
-	AVG(high)
+    AVG(high)
 FROM datasets.aapl_historical_stock_price
 ```
 
@@ -464,7 +464,7 @@ You’ll occasionally want to look at only the unique values in a particular col
 
 ```sql
 SELECT 
-	DISTINCT month
+    DISTINCT month
 FROM datasets.aapl_historical_stock_price
 ```
 
@@ -473,7 +473,7 @@ DISTINCT is handy when you want to count the number of unique values in a column
 
 ```sql
 SELECT 
-	COUNT(DISTINCT month) AS unique_months
+    COUNT(DISTINCT month) AS unique_months
 FROM datasets.aapl_historical_stock_price
 ```
 
@@ -669,7 +669,7 @@ Let’s try it out with the Crunchbase investment data, which has been split int
 
 ```sql
 SELECT *
-  FROM datasets.crunchbase_investments_part1
+   FROM datasets.crunchbase_investments_part1
 
  UNION
 
@@ -681,12 +681,12 @@ Note that UNION only appends distinct values. More specifically, when you use UN
 
 ```sql
 SELECT *
-  FROM tutorial.crunchbase_investments_part1
+   FROM tutorial.crunchbase_investments_part1
 
  UNION ALL
 
 SELECT *
-  FROM tutorial.crunchbase_investments_part2
+   FROM tutorial.crunchbase_investments_part2
 ```
 
 SQL has strict rules for appending data:
