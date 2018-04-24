@@ -324,7 +324,7 @@ COUNT is a SQL aggregate function for counting the number of rows in a particula
 
 ```sql
 SELECT 
-	COUNT(*)
+    COUNT(*)
 FROM datasets.aapl_historical_stock_price
 ```
 
