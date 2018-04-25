@@ -44,6 +44,10 @@ SELECT west AS "West Region"
 FROM datasets.us_housing_units
 ```
 
+This gives us the following output:
+
+![strata scratch](assets/3b.png)
+
 - Without the double quotes, that query would read ‘West’ and ‘Region’ as separate objects and would return an error. 
 
 Note that the results will only be case sensitive if you put column names in double quotes. The following query, for example, will return results with lower-case column names.
@@ -53,6 +57,10 @@ SELECT west AS West_Region,
        south AS South_Region
 FROM datasets.us_housing_units
 ```
+
+Output:
+
+![strata scratch](assets/4b.png)
 
 - West_Region would be returned as west_region since double quotes are missing.
 - In practice, you’d want to stick to one naming convention, either “West Region” or west_region. Having a consistent naming convention helps standardize coding practices and makes everyone more efficient when pulling data.
@@ -69,17 +77,23 @@ FROM datasets.us_housing_units
 
 This will allow you to see all the columns and some data in the table so that you better understand the data types and column names before writing any complicated query.
 
+![strata scratch](assets/5b.png)
+
 ### Slicing Your Data: WHERE 
 
 Now you know how to pull data from tables and even specify what columns you want in your output. But what if you’re interested only in housing units sold in January? The WHERE clause allows you to returns rows of data that meet your criteria. 
 
-The WHERE clause, in this example, will go after the FROM clause. In the WHERE clause you need to write a logical operator. For example, if you’re interested in pulling data from month 1, simple write `month = 1` in the WHERE clause.
+The WHERE clause, in this example, will go after the FROM clause. In the WHERE clause you need to write a logical operator. For example, if you’re interested in pulling data from month 1, simply write `month = 1` in the WHERE clause.
 
 ```sql
 SELECT *
 FROM datasets.us_housing_units
 WHERE month = 1
 ```
+
+Output:
+
+![strata scratch](assets/6b.png)
 
 - Note that `month` is a column in the table and the months are represented by numbers. Remember to do a `SELECT * ` to explore the table before writing your queries.
 
@@ -109,16 +123,18 @@ The most basic way to filter data is to use comparison operators. The easiest wa
 - Greater than or equal to        >=
 - Less than or equal to           <=
 
-These comparison operators make the most sense when applied to numerical columns. For example, let’s use > to return only the rows where the West Region produced more than 30,000 housing units
+These comparison operators make the most sense when applied to numerical columns. For example, let’s use > to return only the rows where the West Region produced more than 30 housing units
 
 ```sql
 SELECT *
 FROM datasets.us_housing_units
-WHERE west > 30000
+WHERE west > 30
 ```
 
-- The SQL query is saying, select all the data located in the schema `datasets` and in the table `us_housing_units` where the `west` column (i.e., the west region) has values greater than 30,000. 
-- The SQL query will then go through the `west` column and look for values greater than 30,000 then output all the rows in the table where west > 30000. 
+- The SQL query is saying, select all the data located in the schema `datasets` and in the table `us_housing_units` where the `west` column (i.e., the west region) has values greater than 30. 
+- The SQL query will then go through the `west` column and look for values greater than 30 then output all the rows in the table where west > 30. 
+
+![strata scratch](assets/49b.png)
 
 ### Comparison Operators on Non-Numerical Data
 
@@ -129,6 +145,10 @@ SELECT *
 FROM datasets.us_housing_units
 WHERE month_name != 'January'
 ```
+
+Output:
+
+![strata scratch](assets/9b.png)
 
 ### More Operators to Super Power the WHERE Clause
 
@@ -167,6 +187,10 @@ FROM datasets.billboard_top_100_year_end
 WHERE "group" ILIKE 'snoop%'
 ```
 
+Output:
+
+![strata scratch](assets/11b.png)
+
 - In this case, using ILIKE allows you to be case insensitive. `Snoop` is the same as `snoop` according to ILIKE.
 
 You can also use _ (a single underscore) to substitute for an individual character:
@@ -176,6 +200,10 @@ SELECT *
 FROM datasets.billboard_top_100_year_end
 WHERE artist ILIKE 'dr_ke'
 ```
+
+Output:
+
+![strata scratch](assets/12b.png)
 
 - In this case any alphanumeric value can take the place of the `_` symbol. We’re obviously looking for Drake but this query will catch any misspellings in the `a` portion of his name (e.g., drbke)
 
@@ -189,6 +217,10 @@ FROM datasets.billboard_top_100_year_end
 WHERE year_rank IN (1, 2, 3)
 ```
 
+Output:
+
+![strata scratch](assets/13b.png)
+
 - Here I’m only interested in data where year_rank is 1 or 2 or 3. 
 
 As with comparison operators, you can use non-numerical values, but they need to go inside single quotes. Regardless of the data type, the values in the list must be separated by commas. Here’s another example:
@@ -200,6 +232,8 @@ WHERE artist IN ('Taylor Swift', 'Usher', 'Ludacris')
 ```
 
 The output here should only yield data corresponding to artists named Taylor Swift or Usher or Ludacris.
+
+![strata scratch](assets/14b.png)
 
 ### BETWEEN
 
@@ -250,6 +284,8 @@ WHERE year = 2012
 
 - This query will return all data in the `billboard_top_100_year_end` table for the year 2012, year_rank is less or equal to 10, and where the group has the word `feat` (i.e., Top 10 song collaborations in 2012).
 
+![strata scratch](assets/18b.png)
+
 ### OR
 
 OR is a logical operator in SQL that allows you to select rows that satisfy either of two conditions. It works the same way as AND, which selects the rows that satisfy both of two conditions.
@@ -273,12 +309,20 @@ WHERE year = 2013
    AND year_rank NOT BETWEEN 2 AND 3
 ```
 
+Output:
+
+![strata scratch](assets/20b.png)
+
 ```sql
 SELECT *
 FROM datasets.billboard_top_100_year_end
 WHERE year = 2013
    AND artist IS NOT NULL
 ```
+
+Output:
+
+![strata scratch](assets/21b.png)
 
 ### Sorting Data: ORDER BY
 
@@ -305,6 +349,8 @@ ORDER BY artist ASC
 
 Will output data alphabetically by artist
 
+![strata scratch](assets/50b.png)
+
 ```sql
 SELECT *
 FROM datasets.billboard_top_100_year_end
@@ -312,6 +358,8 @@ ORDER BY artist DESC
 ```
 
 Will output data reverse alphabetically by artist
+
+![strata scratch](assets/51b.png)
 
 # Intermediate SQL 2
 
@@ -328,6 +376,8 @@ SELECT
 FROM datasets.aapl_historical_stock_price
 ```
 
+Output:``` 3527 ```
+
 Important note: count(*) also counts the null values. If you want to exclude null values, refer below.
 
 ### Counting individual columns
@@ -339,6 +389,8 @@ SELECT
     COUNT(high)
 FROM datasets.aapl_historical_stock_price
 ```
+
+Output:``` 3527 ```
 
 - Note that by specifying the name of the column `high` in `count()`, the query will ignore any nulls in the `high` column and only count the rows containing values. 
 
@@ -352,6 +404,8 @@ SELECT
 FROM datasets.aapl_historical_stock_price
 ```
 
+Output:``` 73442072063 ```
+
 ### MIN and MAX
 
 MIN and MAX are SQL aggregation functions that return the lowest and highest values in a particular column.
@@ -361,6 +415,10 @@ SELECT MIN(volume) AS min_volume,
        MAX(volume) AS max_volume
 FROM datasets.aapl_historical_stock_price
 ```
+
+Output:
+
+![strata scratch](assets/29b.png)
 
 ### AVG
 
@@ -387,6 +445,8 @@ SELECT year,
 
 The output will contain as many rows as are in the table. Only west and south will be added together on a row level. 
 
+![strata scratch](assets/30b.png)
+
 ```sql
 SELECT year,
        month,
@@ -395,6 +455,10 @@ SELECT year,
        west + south - 4 * year AS nonsense_column
   FROM datasets.us_housing_units
 ```
+
+Output:
+
+![strata scratch](assets/31b.png)
 
 # Intermediate SQL 3
 ### GROUP BY
@@ -414,7 +478,9 @@ FROM datasets.aapl_historical_stock_price
 GROUP BY year
 ```
 
-- The query will output a count of all the rows by year
+![strata scratch](assets/33b.png)
+
+- The query outputs a count of all the rows by year
 - You only add `year` in the GROUP BY because you want to split the COUNT by year.
 
 ```sql
@@ -424,6 +490,10 @@ SELECT year,
 FROM datasets.aapl_historical_stock_price
 GROUP BY year, month
 ```
+
+Output:
+
+![strata scratch](assets/34b.png)
 
 - You add both year and month in the GROUP BY because you’re interested in the row count by year and month.
 
@@ -439,6 +509,10 @@ FROM datasets.aapl_historical_stock_price
 GROUP BY year, month
 ORDER BY month, year
 ```
+
+Output:
+
+![strata scratch](assets/35b.png)
 
 ### HAVING
 
@@ -469,6 +543,9 @@ FROM datasets.aapl_historical_stock_price
 ```
 
 - Outputs all the distinct values in the month column of the table.
+
+![strata scratch](assets/37b.png)
+
 DISTINCT is handy when you want to count the number of unique values in a column (e.g., distinct months or distinct users). 
 
 ```sql
@@ -476,6 +553,8 @@ SELECT
     COUNT(DISTINCT month) AS unique_months
 FROM datasets.aapl_historical_stock_price
 ```
+
+Output: ``` 12 ```
 
 ### CASE STATEMENT
 
@@ -491,6 +570,8 @@ FROM datasets.college_football_players
 
 - The case statement in this example will output a `yes` value for any year with a `SR` value. If the row does not have a `SR` value, the output is `no`. 
 
+![strata scratch](assets/39b.png)
+
 #### Adding multiple conditions to a CASE statement
 
 ```sql
@@ -502,6 +583,10 @@ SELECT player_name,
             ELSE '175 or under' END AS weight_group
   FROM datasets.college_football_players
 ```
+
+Output:
+
+![strata scratch](assets/40b.png)
 
 - You can add as many conditions by adding multiple WHENs. 
 - There can only be one ELSE statement which is always last in your CASE WHEN. 
@@ -532,6 +617,8 @@ ORDER BY AVG(players.weight) DESC
 Can you guess what the query is trying to achieve? We’ve covered all aspects of the SQL query except for the JOIN clause.
 
 - In this query, the SELECT clause tells us what information is going to be displayed. We’re interested in the average weight of college football players by conference.
+
+![strata scratch](assets/41b.png)
 
 ### JOIN clause
 
@@ -597,6 +684,8 @@ JOIN datasets.crunchbase_acquisitions acquisitions
 
 You may notice that “280 North” appears twice in this list. That is because it has two entries in the `datasets.crunchbase_acquisitions` table, both of which are being joined onto the `datasets.crunchbase_companies` table.
 
+![strata scratch](assets/43b.png)
+
 Now try running that query as a LEFT JOIN:
 
 ```sql
@@ -605,11 +694,13 @@ SELECT companies.permalink AS companies_permalink,
        acquisitions.company_permalink AS acquisitions_permalink,
        acquisitions.acquired_at AS acquired_date
 FROM tutorial.crunchbase_companies companies
-LEFT JOIN tutorial.crunchbase_acquisitions acquisitions
+LEFT JOIN datasets.crunchbase_acquisitions acquisitions
     ON companies.permalink = acquisitions.company_permalink
 ```
 
 You can see that the first two companies from the previous result set, `waywire` and `1000memories`, are pushed down the page by a number of results that contain null values in the `acquisitions_permalink` and `acquired_date` fields.
+
+![strata scratch](assets/52b.png)
 
 This is because the LEFT JOIN command tells the database to return all rows in the table in the FROM clause, regardless of whether or not they have matches in the table in the LEFT JOIN clause.
 
@@ -666,6 +757,10 @@ FROM datasets.crunchbase_companies companies
 FULL JOIN datasets.crunchbase_acquisitions acquisitions
     ON companies.permalink = acquisitions.company_permalink
 ```
+
+Output:
+
+![strata scratch](assets/46b.png)
 
 ### UNION
 
