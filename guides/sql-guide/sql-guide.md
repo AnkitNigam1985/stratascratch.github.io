@@ -19,7 +19,7 @@ SELECT indicates which columns of the table you’d like to view, and FROM ident
 SELECT 
     year, 
     month, 
-    west SELECT *
+    west
 FROM datasets.us_housing_units
 ```
 
