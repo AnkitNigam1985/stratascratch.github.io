@@ -445,7 +445,7 @@ SELECT year,
 
 The output will contain as many rows as are in the table. Only west and south will be added together on a row level. 
 
-![strata scratch](assets/30b.png)
+![strata scratch](assets/31b.png)
 
 ```sql
 SELECT year,
@@ -458,7 +458,7 @@ SELECT year,
 
 Output:
 
-![strata scratch](assets/31b.png)
+![strata scratch](assets/32b.png)
 
 # Intermediate SQL 3
 ### GROUP BY
