@@ -1,5 +1,59 @@
 # SQL Guide
 
+## Contents
+[Basic SQL](#basic-sql)
+- [Anatomy of a Basic SQL Query](#anatomy-of-a-basic-sql-query)
+- [At the Bare Minimum: SELECT and FROM](#at-the-bare-minimum-select-and-from)
+- [Column Names](#column-names)
+- [An Important Tip: Explore the Dataset](#an-important-tip-explore-the-dataset)
+- [Slicing Your Data: WHERE](#slicing-your-data-where)
+- [Controlling the Output: LIMIT](#controlling-the-output-limit)
+
+[Intermediate SQL 1](#intermediate-sql-1)
+- [Super Powering the WHERE Clause](#super-powering-the-where-clause)
+- [Comparison Operations on Numerical Data](#comparison-operations-on-numerical-data)
+- [Comparison Operators on Non-Numerical Data](#comparison-operators-on-non-numerical-data)
+- [More Operators to Super Power the WHERE Clause](#more-operators-to-super-power-the-where-clause)
+- [LIKE](#like)
+- [Wildcards and ILIKE](#wildcards-and-ilike)
+- [IN](#in)
+- [BETWEEN](#between)
+- [IS NULL](#is-null)
+- [AND](#and)
+- [OR](#or)
+- [NOT](#not)
+- [Sorting Data: ORDER BY](#sorting-data-order-by)
+
+[Intermediate SQL 2](#intermediate-sql-2)
+- [Aggregations in the SELECT Clause](#aggregations-in-the-select-clause)
+- [Counting all rows](#Counting-all-rows)
+- [Counting individual columns](#counting-individual-columns)
+- [SUM](#sum)
+- [MIN and MAX](#min-and-max)
+- [AVG](#avg)
+- [Simple Arithmetic in SQL](#simple-arithmetic-in-sql)
+
+[Intermediate SQL 3](#intermediate-sql-3)
+- [GROUP BY](#group-by)
+- [GROUP BY with ORDER BY](#group-by-with-order-by)
+- [HAVING](#having)
+
+[Intermediate SQL 4](#intermediate-sql-4)
+- [DISTINCT](#distinct)
+- [CASE STATEMENT](#case-statement)
+
+[Advanced SQL](#advanced-sql)
+- [JOINS](#joins)
+- [JOIN clause](#join-clause)
+- [Deconstructing the JOIN clause](#deconstructing-the-join-clause)
+- [INNER JOIN](#inner-join)
+- [OUTER JOINS](#outer-joins)
+- [LEFT JOIN](#left-join)
+- [RIGHT JOIN](#right-join)
+- [FULL OUTER JOIN](#full-outer-join)
+- [UNION](#union)
+
+
 This SQL guide is meant to help you get started with SQL. It's helpful for absolute beginners but better for beginners that need a reference when coding. This guide is adapted from Mode Analytics Intro to SQL which is a great introduction to SQL, however, this guide with the accompanying datasets provide a more hands-on experience that allows you to code live with tools used in industry, All tables found in the Mode Analytics guide are loaded in our databases but we added dozens more to get you better acquainted with SQL and analytics. 
 
 # Basic SQL
