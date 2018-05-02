@@ -14,13 +14,13 @@ The next page will show your profile information, such as the one shown below:
 
 ![strata scratch](assets/3.png)
 
-The first tab contains the user info – your user name, password, schema access which lists the users who have access to your database, profile status, the user role, and the number of log-ins.
+The first tab contains the user info – your username, password, schema access which lists the users who have access to your database, profile status, the user role, and the number of log-ins.
 
 The second tab contains your personal information – your first and last name, and your email address.
 
 Below the Personal Info tab are options whether you want to edit your profile or reset your password.
 
-- To start sharing your dataset, simply click on the Edit User box. This will open the Edit User Information page where you can edit your name, password, and users who have access on your database.
+- To start sharing your dataset, simply click on the Edit User box. This will open the Edit User Information page where you can edit your name, password, and users who have access to your database.
 
 ![strata scratch](assets/3a.png)
 
@@ -36,7 +36,7 @@ Note that the dropdown list contains all the users in Strata Scratch which is au
 
 Take note that all shared datasets can only give a read-only access to the other users.
 
-You have successfully shared your dataset with another user. You should be able to see the lists of users who have access to database under the Schema Access field.
+You have successfully shared your dataset with another user. You should be able to see the lists of users who have access to the database under the Schema Access field.
 
 ![strata scratch](assets/6.png)
 
