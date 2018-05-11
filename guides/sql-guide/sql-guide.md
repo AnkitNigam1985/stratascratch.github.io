@@ -484,6 +484,7 @@ SELECT
 FROM datasets.aapl_historical_stock_price
 ```
 
+Running the code above will give an output of ```506.5```.
 ### Simple Arithmetic in SQL
 
 You can perform arithmetic in SQL using the same operators you would in Excel: +, -, *, /. However, in SQL you can only perform arithmetic across columns on values in a given row. To clarify, you can only add values in multiple columns from the same row together using +.
