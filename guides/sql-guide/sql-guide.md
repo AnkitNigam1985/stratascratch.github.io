@@ -582,6 +582,9 @@ GROUP BY year, month
 HAVING MAX(high) > 400
 ORDER BY year, month
 ```
+Output:
+
+![strata scratch](assets/36c.png)
 
 - The HAVING clause always comes after the GROUP BY but before the ORDER BY clauses.
 - It might be more intuitive to use a WHERE clause rather than HAVING clause in this query but you’re not allowed to process or aggregate data in the WHERE clause. This is due to the order of operations when the CPU performs the SQL query. The SQL query is processed by first processing the SELECT, FROM, and GROUP BY clauses. From that dataset, the HAVING clause will act on the data and remove any stock prices below 400. Lastly, the SQL query will order the data by year and month as indicated by the ORDER BY clause. 
