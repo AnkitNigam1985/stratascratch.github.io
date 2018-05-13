@@ -835,6 +835,9 @@ SELECT *
 SELECT *
    FROM datasets.crunchbase_investments_part2
 ```
+Output:
+
+![strata scratch](assets/53.png)
 
 Note that UNION only appends distinct values. More specifically, when you use UNION, the dataset is appended, and any rows in the appended table that are exactly identical to rows in the first table are dropped. If you’d like to append all the values from the second table, use UNION ALL. You’ll likely use UNION ALL far more often than UNION. In this particular case, there are no duplicate rows, so UNION ALL will produce the same results:
 
