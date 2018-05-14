@@ -850,6 +850,9 @@ SELECT *
 SELECT *
    FROM tutorial.crunchbase_investments_part2
 ```
+Output:
+
+![strata scratch](assets/54.png)
 
 SQL has strict rules for appending data:
 - Both tables must have the same number of columns
