@@ -50,19 +50,21 @@ The `user_name` and `pwd` are the username and password you used for your databa
 
 ![strata scratch](assets/7.png)
 
+![strata scratch](assets/8.png)
+
 The port `5432` is generally the default port, unless it is specified. 
 
 - Go to the next line by pressing shift-enter and type the following codes:
 
-![strata scratch](assets/8.png)
+![strata scratch](assets/9.png)
 
 In the statement above, we are trying to connect to the database using `ps.connect` with the parameters we have previously encoded. Once you are able to open to the database, this block of code will return a connection object. If the connection is successful, the output will display the ‘Connected’ message; otherwise, you will see an error message. This condition is defined within the `try … else` statement.
 
-![strata scratch](assets/9.png)
+![strata scratch](assets/10.png)
 
 - Next, call the database and execute a query with the following statements:
 
-![strata scratch](assets/10.png)
+![strata scratch](assets/11.png)
 
 The first line of code creates a cursor object which will allow you to execute the queries.
 
@@ -76,15 +78,15 @@ And the last statement calls the `DataFrame` method to tabulate the results into
 
 - We can check the output of the query by calling the `df` object after the `DataFrame` statement.
 
-![strata scratch](assets/11.png)
+![strata scratch](assets/12.png)
 
 You should see the following output:
 
-![strata scratch](assets/12.png)
+![strata scratch](assets/13.png)
 
 Lastly, don’t forget to add `cur.close()` on the last statement. This command will tell the server to automatically close the cursor after all the results have been fetched or the cursor has been idle for a certain period.
 
-![strata scratch](assets/13.png)
+![strata scratch](assets/14.png)
  
 
 
