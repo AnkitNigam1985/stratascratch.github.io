@@ -13,11 +13,14 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
 - [How to Copy Data From One Table to Another](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-copy-data-from-one-table-to-another/how-to-copy-data-from-one-table-to-another.md)
 - [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
+- [How to Share Your Datasets With Other Users](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users.md)
+- [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
 - [How to contribute to our data analytics community](https://github.com/stratascratch/stratascratch-community-contributions)
+
 
 ### SQL Guide
 
-- SQL Guide
+- [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
 
 ### Analytical Exercises
 
