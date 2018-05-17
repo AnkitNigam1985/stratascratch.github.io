@@ -18,11 +18,11 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [How to contribute to our data analytics community](https://github.com/stratascratch/stratascratch-community-contributions)
 
 
-### SQL Guide
+### SQL Guides and Exercises
 
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
 
-### Python Guides
+### Python Guides and Exercises
 
 ### Analytical Exercises
 
