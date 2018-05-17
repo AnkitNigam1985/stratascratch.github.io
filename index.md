@@ -23,7 +23,3 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
 
 ### Python Guides and Exercises
-
-### Analytical Exercises
-
-Coming soon!
