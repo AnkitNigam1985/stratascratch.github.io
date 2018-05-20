@@ -21,5 +21,6 @@ We also encourage you to pay it forward and contribute to our data analytics com
 ### SQL Guides and Exercises
 
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
+- [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
 
 ### Python Guides and Exercises
