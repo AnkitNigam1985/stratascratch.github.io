@@ -43,8 +43,8 @@
 
    `Tables: datasets.sat_scores`
    
-10. Count the number of user events by `event_name` from users on a macbook pro
-    Output should be ranked with highest event count first
+10. Count the number of user events by `event_name` from users on a macbook pro.
+    Output should be ranked with highest event count first.
 
     `Tables: datasets.playbook_events`
     
