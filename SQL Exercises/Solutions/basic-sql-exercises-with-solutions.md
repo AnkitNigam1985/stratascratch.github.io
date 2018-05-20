@@ -4,7 +4,7 @@
 - Log-in to your Strata Scratch account.
 - All tables used in this exercise are taken from the datasets schema. Make sure you select this schema on the SQL editor settings.
 - Try to answer the following questions by writing the appropriate SQL query on the editor.
-- This is the teacher version of the SQL basic exercises. Each question is followed with the right solution and correct output.
+- This is the teacher version of the SQL basic exercises. Each question is followed with the correct solution and output.
 
 ## Questions
 1. How many of passengers embarked on the Titanic? 
