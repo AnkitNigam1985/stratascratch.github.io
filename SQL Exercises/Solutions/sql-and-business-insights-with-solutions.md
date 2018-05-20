@@ -28,19 +28,120 @@ Dataset: `billboard_top_100_year_end`
 Dataset: `sf_crime_incidents_2014_01`
 
 - What were the top crime categories in 2014? How many incidences per category?
+
+*Solution:*
+```sql
+   SELECT
+      category,
+      count(category) as count
+   FROM datasets.sf_crime_incidents_2014_01
+   WHERE date>='2014-01-01' and date<='2014-12-31'
+   GROUP BY category
+   ORDER BY count DESC
+```
+
 - What day of the week was there the most crime? Does crime incidence vary depending on the month? Depending on the time?
+
+*Solution:*
+```sql
+   SELECT
+      day_of_week,
+      count(category) as count
+   FROM datasets.sf_crime_incidents_2014_01
+   GROUP BY day_of_week
+   ORDER BY count DESC
+```
+
 - What districts had the most crime incidences?
+
+*Solution:*
+```sql
+   SELECT
+      pd_district,
+      count(category) as count
+   FROM datasets.sf_crime_incidents_2014_01
+   GROUP BY pd_district
+   ORDER BY count DESC
+```
+
 - Where is the most dangerous place in SF? What metrics would you use to convince me?
+
+*Solution:*
+```sql
+   SELECT
+      address,
+      pd_district,
+      count(category) as count
+   FROM datasets.sf_crime_incidents_2014_01
+   GROUP BY address, pd_district
+   ORDER BY count DESC
+```
 
 ### 3. Oscar Nominees
 
 Dataset: `oscar_nominees`
 
 - Who has won the most oscars?
+
+*Solution:*
+```sql
+   SELECT
+      nominee,
+      count(winner) as count
+   FROM datasets.oscar_nominees
+   WHERE winner ='true'
+   GROUP BY nominee
+   ORDER BY count DESC
+```
+
 - Who has been nominated the most times but has never won?
+
+*Solution:*
+```sql
+   SELECT
+      nominee,
+      count(winner) as count
+   FROM datasets.oscar_nominees
+   WHERE winner ='false'
+   GROUP BY nominee
+   ORDER BY count DESC
+```
 - Who has the highest win to nomination ratio?
+
+*Solution:*
+```sql
+   SELECT
+      nominee,
+      sum (case when winner = 'true' then 1 else 0 end)/count(nominee)::float as ratio
+   FROM datasets.oscar_nominees
+   GROUP BY nominee
+   ORDER BY ratio desc
+```
+
 - Which movies had the most nominated actors/actresses?
+
+*Solution:*
+```sql
+   SELECT
+      movie,
+      count(nominee)
+   FROM datasets.oscar_nominees
+   GROUP BY movie
+   ORDER BY count DESC
+```
+
 - Who is the best actor/actress of all time? What metrics would you use to convince me?
+
+*Solution:*
+```sql
+   SELECT
+      nominee,
+      count(winner) as count
+   FROM datasets.oscar_nominees
+   WHERE winner ='true'
+   GROUP BY nominee
+   ORDER BY count DESC
+```
 
 ### 4. Video Game Charts
 
