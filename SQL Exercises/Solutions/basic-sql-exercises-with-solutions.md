@@ -103,6 +103,7 @@
       ORDER BY year_rank ASC
    ```
    *Output:*
+   
    ![strata scratch](assets/1.png)
    
 8. What is Samantha’s and Lisa’s total sales revenue?
@@ -132,6 +133,7 @@
       ORDER BY avg_sat_score DESC
    ```
    *Output:*
+   
    ![strata scratch](assets/2.png)
    
 10. Count the number of user events by `event_name` from users on a macbook pro.
@@ -150,6 +152,7 @@
        ORDER BY event_count DESC
     ```
     *Output:*
+    
     ![strata scratch](assets/3.png)
     
 
