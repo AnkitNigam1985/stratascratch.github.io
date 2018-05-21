@@ -24,4 +24,5 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
+
 ### Python Guides and Exercises
