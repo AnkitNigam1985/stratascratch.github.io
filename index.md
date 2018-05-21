@@ -26,3 +26,6 @@ We also encourage you to pay it forward and contribute to our data analytics com
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
 
 ### Data Analytics Case Studies and Exercises
+
+### Python Guides and Exercises
+
