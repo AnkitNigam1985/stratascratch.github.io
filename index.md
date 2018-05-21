@@ -27,7 +27,7 @@ We also encourage you to pay it forward and contribute to our data analytics com
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
 
 ### Python Guides and Exercises
-#### Requires Jupyter Notebooks to open files
+`Requires Jupyter Notebooks to open files`
 - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
   - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
 - [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
