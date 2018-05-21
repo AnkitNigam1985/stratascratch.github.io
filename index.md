@@ -17,6 +17,7 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
 - [How to contribute to our data analytics community](https://github.com/stratascratch/stratascratch-community-contributions)
 
+### Data Analytics Case Studies and Exercises
 
 ### SQL Guides and Exercises
 
@@ -24,8 +25,6 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
-
-### Data Analytics Case Studies and Exercises
 
 ### Python Guides and Exercises
 
