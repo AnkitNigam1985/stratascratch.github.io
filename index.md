@@ -17,6 +17,7 @@ We also encourage you to pay it forward and contribute to our data analytics com
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
 
 ### Data Analytics Case Studies and Exercises
+- [Spotify](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%Analytics%Case%Studies/Spotify.md)
 
 ### SQL Guides and Exercises
 
