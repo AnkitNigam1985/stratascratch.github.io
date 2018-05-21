@@ -30,10 +30,9 @@ We also encourage you to pay it forward and contribute to our data analytics com
 #### Requires Jupyter Notebooks to open files
 - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
   - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
-- [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data Cleaning%20with%20Pandas%20Tutorial.ipynb)
+- [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
 - [More Numpy and Pandas Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercises.ipynb)
   - [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
 - [Titanic Data Cleanup Exercise](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise.ipynb)
-  - [dataset](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/titanic.csv)
-  - dataset also found at `datasets.titanic`
+  - [dataset](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/titanic.csv) *dataset also found at `datasets.titanic`
   - [Titanic Data Cleanup Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise%20Solutions.ipynb)
