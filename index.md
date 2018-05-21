@@ -28,4 +28,4 @@ We also encourage you to pay it forward and contribute to our data analytics com
 
 ### Python Guides and Exercises
 - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
-  - [Pandas Tutorial Solutions)(https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
+  - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
