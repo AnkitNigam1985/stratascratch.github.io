@@ -13,6 +13,7 @@ Our guides and analytical exercises are listed on this page but can also be acce
 - [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
 - [How to Share Your Datasets With Other Users](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users.md)
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
+  - [How to Install psycopg2 to Connect to Strata Scratch Using Python](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python%20.md)
 
 ### Data Analytics Case Studies and Exercises
 - [Spotify](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
