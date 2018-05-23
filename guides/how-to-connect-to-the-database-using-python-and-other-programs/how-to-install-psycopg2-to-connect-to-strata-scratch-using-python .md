@@ -7,7 +7,7 @@ you merely need to import `psycopg2`.
 
 2. In the notebook type the command below:
 
-```python
+```
 import sys
 !conda install --yes --prefix {sys.prefix} psycopg2
 ```
