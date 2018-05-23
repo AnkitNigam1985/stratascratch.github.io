@@ -6,6 +6,13 @@ Accessing and storing your data from numerous sources is vital whether you are w
 
 In this guide, we will be using the Jupyter notebook for running our Python codes. Before you begin accessing your Strata Scratch database, make sure you have installed the Jupyter notebook as well as the package for PostgreSQL, `psycopg2` (refer to this [guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python%20.md) for instructions on how to install `psycopg2` on Jupyter notebooks. There are many ways to install the Jupyter notebook, and one of the easiest ways is to download and install Anaconda. This is the most common Python distribution which already includes the necessary Python packages. Make sure you download the latest version compatible to your computer OS.
 
+## Download the Jupyter Notebook Template
+
+If you have Anaconda/Jupyter Notebooks and psycopg2 installed, you can get started immediately by downloading our
+[template](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/stratascratch_python_connect.ipynb).
+
+Otherwise, you can create a notebook using the instructions below.
+
 ## Creating a Python Notebook in Jupyter
 
 Throughout this tutorial, you are expected to have a background in SQL and Python programming. Otherwise, I would recommend you to review these languages before you proceed on the steps below.
