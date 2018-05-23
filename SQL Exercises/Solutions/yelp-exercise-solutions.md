@@ -16,6 +16,7 @@ What are the top 5 states with the most 5 star businesses?
   GROUP BY state
   ORDER BY count_of_5_stars DESC
 ```
+![strata scratch](assets/yelp1.png)
 
 ### Question 2 
 What are the top 5 cities with the most 5 star businesses? Limit visualization to 10.
@@ -28,6 +29,8 @@ What are the top 5 cities with the most 5 star businesses? Limit visualization t
    GROUP BY city
    ORDER BY count_of_5_stars DESC
 ```
+![strata scratch](assets/yelp2.png)
+
 
 ### Question 3 
 What are the top 5 businesses with the most reviews?
@@ -40,6 +43,8 @@ What are the top 5 businesses with the most reviews?
    ORDER BY count_of_reviews DESC
    LIMIT 50
 ```
+![strata scratch](assets/yelp3.png)
+
 
 ### Question 4 
 What are the top category businesses most people review for?
@@ -52,6 +57,8 @@ What are the top category businesses most people review for?
    ORDER BY total_reviews DESC
    LIMIT 5
 ```
+![strata scratch](assets/yelp4.png)
+
 
 ### Question 5 
 What are the most one star review business from yelp?
@@ -64,6 +71,8 @@ What are the most one star review business from yelp?
    GROUP BY name, stars, review_count
    LIMIT 10
 ```
+![strata scratch](assets/yelp5.png)
+
 
 ### Question 6 
 How many businesses are open?
@@ -74,6 +83,7 @@ How many businesses are open?
    FROM datasets.yelp_business
    WHERE is_open = 1
 ```
+*Output:* `146702`
 
 ### Question 7 
 What is the average stars of each states?
@@ -99,6 +109,8 @@ How many people joined yelp over the course of the year 2017?
    GROUP BY yelping_since
    ORDER BY yelping_since ASC
 ```
+![strata scratch](assets/yelp8.png)
+
 
 ### Question 9
 Who are the top 10 users that wrote the most reviews?
@@ -110,6 +122,8 @@ Who are the top 10 users that wrote the most reviews?
    ORDER BY review_count DESC 
    LIMIT 10
 ```
+![strata scratch](assets/yelp9.png)
+
 
 ## Description of datasets.yelp_checkin
 The  datasets.yelp_checkin table provides the amount of check-ins each business has and when that check-in took place. Check-ins are offered with rewards that businesses give to customers whenever they “check-in” to the business on Yelp. By using the check-in feature, customers are able to broadcast to their friends on Yelp that they're at your business.
