@@ -13,7 +13,7 @@
 
 The Spotify marketing team is starting an advertising campaign. Their goal is to maximize the number of daily streams across all regions in the world. The only dataset they have is their worldwide daily song rankings which is a list of songs ranked by the number of user streams and organized by regions. As the manager of the marketing team, how should the team focus their advertising resources and what should they do to maximize the number of daily streams?
 
-A few things to think about to get you started:
+#### A few things to think about to get you started:
 
 - What percentage of total streams come from the top 10 artists? 
 - What percentage of total streams come from the top 10 tracknames?
@@ -24,8 +24,7 @@ A few things to think about to get you started:
 - How do the number of streams in the top 10, top 50, top 100, top 200 differ for the US region? Find the average number of streams in the top 10, 50, 100, 200.
 - How many different artists are there in the top 100 vs top 101-200? Compare the number of artists in the top 100 vs the top 101-200.
 
-
-
-A few open ended questions to guide your thinking:
+#### A few open ended questions to guide your recommendations:
 
 - Which artists should the marketing team invest in? Why? Support your answer with your analytical research. 
+- What are your recommendations to maximize the number of streams? Would you focus on certain artists or a specific region or something else?
