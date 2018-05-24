@@ -125,10 +125,10 @@ How many times does each library have less than 10 total renewals in July 2014?
 
 *Solution:*
 ```sql
-  SELECT home_library_definition, total_renewals
-from datasets.library_usage
-WHERE total_renewals < 10
-And circulation_active_month = 'July'
-And circulation_active_year = '2014'
+  SELECT home_library_code
+  FROM datasets.library_usage
+  WHERE total_renewals < 10
+    and circulation_active_month = 'July'
+    and circulation_active_year = '2014'
 ```
 
