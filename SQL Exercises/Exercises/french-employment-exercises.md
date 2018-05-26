@@ -27,7 +27,6 @@ How about in a much smaller city(48 firms, Marzan)?
 What is the breakdown of small to large firms in the town with the most firms (Paris)? How about in Marzan?
 
 ### Question 8
-What is the gender gap between Female and Male Net Salary/ Hr of Executives by Total Firms in Town?
 What is the relationship between Total_Firms and Female Executive Salaries in Towns?
 What is the relationship between Total_Firms and Male Executive Net Mean Salaries in Towns?
 What is the relationship between Total_Firms and Male Executive Net Mean Salaries in Towns?
@@ -39,7 +38,6 @@ SNHMFC14 : mean net salary per hour for feminin executive
 SNHMHC14 : mean net salary per hour for masculin executive
 
 ### Question 9
-What is the gender gap between Executive Female and Male Net Salary/hour in Firms of 500 employees?
 What is the relationship between Big500_Firms and Female Executive Salaries in Towns?
 What is the relationship between Big500_Firms and Male Executive Salaries in Towns?
 
@@ -48,7 +46,6 @@ Note:
 E14TS500 : number of firms with more than 500 employees in the town
 
 ### Question 10
-What is the gender gap between men and women Net Salary/Hr from 18-50 years?
 What is the relationship between Total_Firms and Female (18-50) Net Mean Salaries in Towns?
 What is the relationship between Total_Firms and Male (18-50) Net Mean Salaries in Towns?
 
