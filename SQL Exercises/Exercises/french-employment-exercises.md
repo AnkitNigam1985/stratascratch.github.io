@@ -21,6 +21,7 @@ Which age range makes the most money in the largest city (Paris)?
 
 ### Question 6
 Which age range by gender makes the most money?
+How about in a much smaller city(48 firms, Marzan)?
 
 ### Question 7
 What is the breakdown of small to large firms in the town with the most firms (Paris)?
