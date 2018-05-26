@@ -24,7 +24,7 @@ Which age range by gender makes the most money?
 How about in a much smaller city(48 firms, Marzan)?
 
 ### Question 7
-What is the breakdown of small to large firms in the town with the most firms (Paris)?
+What is the breakdown of small to large firms in the town with the most firms (Paris)? How about in Marzan?
 
 ### Question 8
 What is the gender gap between Female and Male Net Salary/ Hr of Executives by Total Firms in Town?
