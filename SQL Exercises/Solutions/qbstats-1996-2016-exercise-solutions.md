@@ -15,6 +15,7 @@ Which quarterback has the highest game points?
   GROUP BY qb
   ORDER BY avg_points DESC
 ```
+![strata scratch](assets/qbstats-q1.png)
 
 ### Question 2
 Who were the top 10 highest rating quarterbacks?
@@ -28,6 +29,7 @@ Who were the top 10 highest rating quarterbacks?
   ORDER BY rate DESC
   LIMIT 10
 ```
+![strata scratch](assets/qbstats-q2.png)
 
 ### Question 3
 Who were the top 10 quarterbacks with the highest game points in 2016?
@@ -40,6 +42,7 @@ Who were the top 10 quarterbacks with the highest game points in 2016?
   ORDER BY game_points DESC
   LIMIT 10
 ```
+![strata scratch](assets/qbstats-q3.png)
 
 ### Question 4
 Where do the quarterbacks perform better in 2016, at home or away?
@@ -62,6 +65,7 @@ What is the average game points each year?
   GROUP BY year
   ORDER BY year DESC
 ```
+![strata scratch](assets/qbstats-q5.png)
 
 ### Question 6
 Who throws the longest in 2016?
@@ -122,3 +126,4 @@ Which quarterback is the most QB that tried to throw the ball in 2016?
   GROUP BY qb
   ORDER BY times DESC
 ```
+![strata scratch](assets/qbstats-q10.png)
