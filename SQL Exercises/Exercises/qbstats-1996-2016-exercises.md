@@ -12,7 +12,7 @@ Which quarterback has the highest game points?
 Who were the top 10 highest rating quarterbacks?
 
 ### Question 3
-Who were the top 10 quarterbacks with highest game points in 2016?
+Who were the top 10 quarterbacks with the highest game points in 2016?
 
 ### Question 4
 Where do the quarterbacks perform better in 2016, at home or away?
