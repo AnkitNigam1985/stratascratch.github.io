@@ -31,4 +31,4 @@ What is the average total checkouts of Chinatown library in January 2016?
 Which library has the most total renewal?
 
 ### Question 10
-How many times does each library have less than 10 total renewals in July 2014?
+How many library patrons have renewed books less than 10 times on July 2014
