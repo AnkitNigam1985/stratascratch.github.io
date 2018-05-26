@@ -8,7 +8,7 @@ rating for the quarterback for that game.
 ### Question 1
 Which quarterback has the highest game points?
 
-*Solution:*
+*Solution: *
 ```sql
   SELECT qb, avg(game_points) AS avg_points
   FROM datasets.qbstats_1996_2016
