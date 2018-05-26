@@ -62,6 +62,7 @@ Which age range makes the most money in the largest city (Paris)?
 Which age range by gender makes the most money?
 
 *Solution:*
+
 `For males:`
 ```sql
   SELECT libgeo, snhmh1814, SNHMH2614, SNHMH5014
@@ -77,6 +78,7 @@ Which age range by gender makes the most money?
 How about in a much smaller city(48 firms, Marzan)?
 
 *Solution:*
+
 `For males:`
 ```sql
   SELECT libgeo, snhmh1814, SNHMH2614, SNHMH5014
