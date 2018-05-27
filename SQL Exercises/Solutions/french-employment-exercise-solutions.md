@@ -1,4 +1,4 @@
-# French Employment Exercises
+# French Employment Exercise Solutions
 
 This exercise contains the information about the French employment. The table `datasets.french_employment_base_etablissement_par_tranche_effectif`
 provides information about the establishments present in a town while `datasets.french_employment_net_salary_per_town_categories` presents 
