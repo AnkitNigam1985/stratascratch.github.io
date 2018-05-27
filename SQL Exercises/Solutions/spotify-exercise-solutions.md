@@ -1,4 +1,4 @@
-# Spotify Exercises
+# Spotify Exercise Solutions
 
 This table provides information about the ranking of popular songs worldwide. The following questions are provided with the correct
 SQL query and graphs using the graphics function in Strata Scratch.
