@@ -1,4 +1,4 @@
-# QB Stats Exercises
+# QB Stats Exercise Solutions
 
 This dataset gives information on every NFL game and every passer over 5000 regular season games from 1996 to 2016. 
 The excel files supply us with over ten thousand quarterbacks’ names over 21 years and specify the success of each one. 
