@@ -32,7 +32,7 @@ Our guides and analytical exercises are listed on this page but can also be acce
   - [Spotify Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/spotify-exercises.md)
   - [Yelp Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/yelp-exercises.md)
 - [SQL Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises/Solutions)
-  - [Basic SQL Exercises (with Solution)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
+  - [Basic SQL Exercises (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
   - [SQL and Business Insights (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions.md)
   - [Forbes Global Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/forbes-global-exercise-solutions.md)
   - [French Employment Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/french-employment-exercise-solutions.md)
