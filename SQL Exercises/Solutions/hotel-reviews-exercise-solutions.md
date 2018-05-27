@@ -1,4 +1,4 @@
-# Hotel Reviews Exercises
+# Hotel Reviews Exercise Solutions
 
 This dataset contains 515,000 customer reviews and scores of 1493 luxury hotels across Europe.
 The geographical location of hotels is also provided for further analysis.
