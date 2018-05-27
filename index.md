@@ -24,6 +24,23 @@ Our guides and analytical exercises are listed on this page but can also be acce
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
+  - [Forbes Global Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/forbes-global-exercises.md)
+  - [French Employment Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/french-employment-exercises.md)
+  - [Hotel Reviews Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/hotel-reviews-exercises.md)
+  - [Library Usage Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/library-usage-exercises.md)
+  - [QB Stats Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises.md)
+  - [Spotify Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/spotify-exercises.md)
+  - [Yelp Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/yelp-exercises.md)
+- [SQL Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises/Solutions)
+  - [Basic SQL Exercises (with Solution)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
+  - [SQL and Business Insights (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions.md)
+  - [Forbes Global Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/forbes-global-exercise-solutions.md)
+  - [French Employment Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/french-employment-exercise-solutions.md)
+  - [Hotel Reviews Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/hotel-reviews-exercise-solutions.md)
+  - [Library Usage Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/library-usage-exercise-solutions.md)
+  - [QB Stats Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/qbstats-1996-2016-exercise-solutions.md)
+  - [Spotify Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/spotify-exercise-solutions.md)
+  - [Yelp Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/yelp-exercise-solutions.md)
 
 ### Python Guides and Exercises
 `Requires Jupyter Notebooks to open files`
