@@ -1,6 +1,6 @@
 # Spotify Exercises
 
-This table provides information about the ranking of popular songs worldwide. Try to answer the following questions with the appropriate
+The table used on this exercise provides information about the ranking of popular songs worldwide. Try to answer the following questions with the appropriate
 SQL query and create a graph using the graphics function in Strata Scratch.
 
 ### Question 1
