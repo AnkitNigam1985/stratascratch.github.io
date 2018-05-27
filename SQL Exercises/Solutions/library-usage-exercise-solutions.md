@@ -1,4 +1,4 @@
-# Library Usage Exercises
+# Library Usage Exercise Solutions
 
 The tables explain demographics of the different amount of checkouts from different types of people and libraries.
 The column `patron_type_definition` describes whether they are an adult, senior, junior, staff, etc. `Total_checkouts` shows the number of times this person checked out books in the SF libraries. `Total_renewals` show how many times they renewed. The `age-range` shows what age bracket the users belong. `Home_library_definition` shows where their home library in SF is. `circulation_active-month` shows the month they checked out the book from the SF library. `circulation year` shows the year that the book was checked out from the SF libraries. `notice_preference-definition` provides the option whether they want their notification in email, print, or phone call. `year-patron registered` contains the year they registered as a member of the SF libraries. Questions in the exercises involve the patron type, number of checkouts and renewal, age range, library name, circulation month and year, email address, patron resisted and supervisor district.
