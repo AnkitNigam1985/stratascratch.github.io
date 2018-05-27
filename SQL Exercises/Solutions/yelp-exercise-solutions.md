@@ -1,4 +1,4 @@
-# Yelp Exercises
+# Yelp Exercise Solutions
 This exercise includes a table of various data gathered on Yelp. The following questions are provided with the correct SQL query solution
 and graphs using the graphics function in Strata Scratch.
 
