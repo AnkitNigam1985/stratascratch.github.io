@@ -1,4 +1,4 @@
-# SQL and Business Insights
+# SQL and Business Insights *(with Solutions)*
 
 ## Instructions 
 - Log-in to your Strata Scratch account. 
