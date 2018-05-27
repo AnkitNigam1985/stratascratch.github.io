@@ -1,4 +1,4 @@
-# Basic SQL Exercises (*with Solution*)
+# Basic SQL Exercises (*with Solutions*)
 
 ## Instructions
 - Log-in to your Strata Scratch account.
