@@ -3,7 +3,7 @@
 This dataset contains 515,000 customer reviews and scores of 1493 luxury hotels across Europe.
 The geographical location of hotels is also provided for further analysis.
 
-The exercises below will use the `datasets.hotel_reviews` table.
+The exercises below uses the `datasets.hotel_reviews` table.
 
 ### Question 1
 Which hotel has the most reviews?
