@@ -3,10 +3,14 @@
 This dataset contains 515,000 customer reviews and scores of 1493 luxury hotels across Europe.
 The geographical location of hotels is also provided for further analysis.
 
+The exercises below will use the `datasets.hotel_reviews` table.
+
 ### Question 1
 Which hotel has the most reviews?
 
 *Solution:*
+
+In our query, we select the distinct names of hotels and solved the maximum of hotel reviews from the dataset. By sorting our data in descending order, we can determine the top hotel with the most reviews.
 ```sql
   SELECT DISTINCT hotel_name,
     max(total_number_of_reviews) AS max
@@ -16,12 +20,12 @@ Which hotel has the most reviews?
 ```
 *Answer:* `Hotel Da Vinci = 16670`
 
-![strata scratch](assets/hotel-reviews-q1.jpg)
-
 ### Question 2
 What is the average of total negative reviews' word counts?
 
 *Solution:*
+
+We can answer the question by simply getting the average total word counts of negative reviews from the dataset.
 ```sql
   SELECT avg(review_total_negative_word_counts)
   FROM datasets.hotel_reviews
@@ -32,6 +36,8 @@ What is the average of total negative reviews' word counts?
 What is the average of total positive reviews' word counts?
 
 *Solution:*
+
+We can answer the question by simply getting the average total word counts of positive reviews from the dataset.
 ```sql
   SELECT avg(review_total_positive_word_counts) 
   FROM datasets.hotel_reviews
@@ -42,30 +48,34 @@ What is the average of total positive reviews' word counts?
 Which hotels have the highest rating? Show the top 10.
 
 *Solution:*
+
+The problem can be solved by getting the hotel name and average score of each hotel from the dataset. Using the `GROUP BY` and `ORDER BY` statements, we can easily get the top 10 with the highest rating in descending order.
 ```sql
   SELECT hotel_name, average_score
   FROM datasets.hotel_reviews 
   GROUP BY hotel_name,average_score 
   ORDER BY average_score DESC 
 ```
-![strata scratch](assets/hotel-reviews-q4.jpg)
 
 ### Question 5
 Which hotels have the worst rating? Show the top 10.
 
 *Solution:*
+
+The problem can be solved by getting the hotel name and average score of each hotel from the dataset. Using the `GROUP BY` and `ORDER BY` statements, we can easily get the top 10 with the worst rating in descending order.
 ```sql
   SELECT hotel_name, average_score 
   FROM datasets.hotel_reviews 
   GROUP BY hotel_name,average_score
   ORDER BY average_score ASC
 ```
-![strata scratch](assets/hotel-reviews-q5.jpg)
 
 ### Question 6
-Which hotels have the most negative reviews in the summertime (June-Aug)? Show top 10.
+Which hotels have the most negative reviews in the summertime (June-Aug)? Show the top 10.
 
 *Solution:*
+
+To answer the question, we simply select the hotel name and count the negative reviews of each hotel. We filter out data through a condition statement that exclude `No Negative` reviews and reviews that are not within the dates '6/1/17' AND '8/31/17'. THe final output is then grouped and ranked in descending order so we can easily view the top 10 result.
 ```sql
   SELECT hotel_name, 
   COUNT(negative_review) AS negative 
@@ -75,12 +85,13 @@ Which hotels have the most negative reviews in the summertime (June-Aug)? Show t
   ORDER BY negative DESC
   LIMIT 15
 ```
-![strata scratch](assets/hotel-reviews-q6.jpg)
 
 ### Question 7
-Which hotels have the most positive reviews in the summertime (June-Aug)? Show top 10.
+Which hotels have the most positive reviews in the summertime (June-Aug)? Show the top 10.
 
 *Solution:*
+
+To answer the question, we simply select the hotel name and count the positive reviews of each hotel. We filter out data through a condition statement that exclude `No Positive` reviews and reviews that are not within the dates '6/1/17' AND '8/31/17'. THe final output is then grouped and ranked in descending order so we can easily view the top 10 result.
 ```sql
   SELECT hotel_name,
   COUNT(positive_review) AS positive 
@@ -90,12 +101,13 @@ Which hotels have the most positive reviews in the summertime (June-Aug)? Show t
   ORDER BY positive DESC
   LIMIT 15
 ```
-![strata scratch](assets/hotel-reviews-q7.jpg)
 
 ### Question 8
 Which countries have the most negative reviews?
 
 *Solution:*
+
+Here, we simply count the negative reviews from the dataset and add a condition to exclude a review with `No Negative.` We order and rank the results by reviewer_nationality and negative reviews, respectively.
 ```sql
   SELECT reviewer_nationality, count(negative_review) AS negative
   FROM datasets.hotel_reviews
@@ -103,12 +115,13 @@ Which countries have the most negative reviews?
   GROUP BY reviewer_nationality
   ORDER BY  negative desc
 ```
-![strata scratch](assets/hotel-reviews-q8.jpg)
 
 ### Question 9
 Which countries have the most positive reviews?
 
 *Solution:*
+
+To answer the question, we simply count the positive reviews from the dataset and add a condition to exclude a review with `No Positive.` We order and rank the results by `reviewer_nationality` and positive reviews, respectively.
 ```sql
   SELECT reviewer_nationality, count(positive_review) AS positive
   FROM datasets.hotel_reviews
@@ -116,17 +129,17 @@ Which countries have the most positive reviews?
   GROUP BY reviewer_nationality
   ORDER BY  positive desc
 ```
-![strata scratch](assets/hotel-reviews-q9.jpg)
 
 ### Question 10
 Which hotels got the most reviews that a particular reviewer has given?
 
 *Solution:*
+
+Here, we want to get first the maximum number of reviews a reviewer has given for a hotel through the `SELECT` and `MAX` statements. This is followed by grouping and ranking the hotels and maximum number of reviews, respectively.
 ```sql
-  SELECT hotel_name,MAX(total_number_of_reviews_reviewer_has_given) max
+  SELECT hotel_name, MAX(total_number_of_reviews_reviewer_has_given) max
   FROM datasets.hotel_reviews
   GROUP BY hotel_name
   ORDER BY max DESC
   LIMIT 5
 ```
-![strata scratch](assets/hotel-reviews-q10.jpg)
