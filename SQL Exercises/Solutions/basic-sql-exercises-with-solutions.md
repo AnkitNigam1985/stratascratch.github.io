@@ -23,7 +23,7 @@
    
 2. How many passengers were in first class (pclass =1), a woman, and survived (survived = 1)?
    
-   `Tables: datasets.titanic`
+   `Table: datasets.titanic`
    
    *Solution:*
    
@@ -42,7 +42,7 @@
    
 3. How many athletes participated in the 2014 combine?
    
-   `Tables: datasets.nfl_combine`
+   `Table: datasets.nfl_combine`
    
    *Solution:*
    
@@ -57,7 +57,7 @@
    
 4. What is the average weight of all the athletes?
    
-   `Tables: datasets.nfl_combine`
+   `Table: datasets.nfl_combine`
    
    *Solution:*
    
@@ -71,7 +71,7 @@
    
 5. How many athletes were drafted into NFL in 2015?
    
-   `Tables: datasets.nfl_combine`
+   `Table: datasets.nfl_combine`
    
    *Solution:*
    
@@ -87,7 +87,7 @@
    
 6. How many accounts performed a login in 2016?
    
-   `Tables: datasets.product_logins`
+   `Table: datasets.product_logins`
    
    *Solution:*
    
@@ -103,7 +103,7 @@
 7. What were the top 10 songs in 2010?
    Include the rank, group name, and song name from highest ranked song to lowest.
    
-   `Tables: datasets.billboardtop_100year_end`
+   `Table: datasets.billboardtop_100year_end`
    
    *Solution:*
    
@@ -125,7 +125,7 @@
    
 8. What is Samantha’s and Lisa’s total sales revenue?
 
-   `Tables: datasets.sales_performance`
+   `Table: datasets.sales_performance`
    
    *Solution:*
    
@@ -140,7 +140,7 @@
    
 9. What is the average SAT score by school? Rank by highest average SAT score
 
-   `Tables: datasets.sat_scores`
+   `Table: datasets.sat_scores`
    
    *Solution:*
    
@@ -160,7 +160,7 @@
 10. Count the number of user events by `event_name` from users on a macbook pro.
     Output should be ranked with highest event count first.
 
-    `Tables: datasets.playbook_events`
+    `Table: datasets.playbook_events`
     
     *Solution:*
     
