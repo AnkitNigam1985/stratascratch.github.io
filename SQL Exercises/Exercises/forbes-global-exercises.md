@@ -6,6 +6,8 @@ Our dataset consists of 2000 rows and 10 columns. The columns are rank, company,
 sales, profits, and assets. The purpose of this dataset is to help you figure out what kind of industries are currently the most
 profitable and popular, as well as the top countries that are currently having these companies.
 
+The table used for the following exercises can be found at datasets.forbes_global_2010_2014.
+
 ### Question 1
 Which country has the most companies from the dataset?
 
