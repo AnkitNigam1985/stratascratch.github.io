@@ -17,7 +17,7 @@ What are the top 5 businesses with the most reviews?
 What are the top category businesses most people review for?
 
 ### Question 5 
-What are the most one star review business from yelp?
+What are the most one star review businesses from yelp?
 
 ### Question 6 
 How many businesses are open?
@@ -38,7 +38,7 @@ Who are the top 10 users that wrote the most reviews?
 The  datasets.yelp_checkin table provides the amount of check-ins each business has and when that check-in took place. Check-ins are offered with rewards that businesses give to customers whenever they “check-in” to the business on Yelp. By using the check-in feature, customers are able to broadcast to their friends on Yelp that they're at your business.
 
 ### Question 10
-What are the top 5 business with the most check-ins?
+What are the top 5 businesses with the most check-ins?
 
 
 
