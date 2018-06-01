@@ -27,7 +27,7 @@ Who throws the longest in 2016?
 Who had the most touchdowns (TD) in 2016?
 
 ### Question 8
-Which quarterback played in the most games in 2016?
+Which quarterback played the most games in 2016?
 
 ### Question 9
 Which quarterback had the least amount of interceptions in 2016?
