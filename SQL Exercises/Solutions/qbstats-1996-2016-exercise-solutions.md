@@ -10,7 +10,7 @@ The exercises below uses the `datasets.qbstats_1996_2016` table.
 ### Question 1
 Which quarterback has the highest game points?
 
-*Solution: *
+*Solution:*
 
 In our query, we begin by selecting the qb column and solving the average of the game points. To know which quarterback has the highest game points, we group the qb results and sort the data in descending order.
 ```sql
