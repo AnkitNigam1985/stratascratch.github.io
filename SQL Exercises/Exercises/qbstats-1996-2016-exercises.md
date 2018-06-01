@@ -33,4 +33,4 @@ Which quarterback played the most games in 2016?
 Which quarterback had the least amount of interceptions in 2016?
 
 ### Question 10
-Which quarterback is the most QB that tried to throw the ball in 2016?
+Which quarterback has the most QB that tried to throw the ball in 2016?
