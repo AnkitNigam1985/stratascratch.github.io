@@ -5,6 +5,8 @@ The excel files supply us with over ten thousand quarterbacks’ names over 21 y
 Each year contains every single game from that season and gives statistics like completions, attempts, yards, and an overall 
 rating for the quarterback for that game.
 
+The exercises below uses the `datasets.qbstats_1996_2016` table.
+
 ### Question 1
 Which quarterback has the highest game points?
 
