@@ -1,16 +1,17 @@
 # Spotify Exercises
 
-The table used on this exercise provides information about the ranking of popular songs worldwide. Try to answer the following questions with the appropriate
-SQL query and create a graph using the graphics function in Strata Scratch.
+The table used on this exercise provides information about the ranking of popular songs worldwide. The following questions are provided with the correct SQL query and graphs using the graphics function in Strata Scratch.
+
+Use the `datasets.spotify_worldwide_daily_song_ranking` table to answer the questions below.
 
 ### Question 1
 Which songs have more than 3 million streams?
 
 ### Question 2
-Which songs had been frequently in the top 1 position over the years?
+Which songs had been frequently placed in the top 1 position over the years?
 
 ### Question 3
-Which artists have been on the Spotify the most?
+Which artists have been on Spotify the most?
 
 ### Question 4
 Which artists had the most top 10 songs over the years?
