@@ -6,6 +6,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 ## Table of Contents
 
 ### Blog
+- [Blog Main Page](https://github.com/stratascratch/stratascratch.github.io/blob/master/blog/index.md)
 
 ### Guides
 
