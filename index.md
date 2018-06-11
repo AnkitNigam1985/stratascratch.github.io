@@ -1,11 +1,13 @@
 [![strata scratch](assets/sslogo.jpg)](https://stratascratch.com)
-# Welcome to the Guides and Exercises Git Page
+# Welcome to the Blog, Guides, and Exercises Page
 
-Our guides and analytical exercises are listed on this page but can also be accessed and downloaded on our [GitHub](https://github.com/stratascratch). 
+Our articles, guides, and analytical exercises are listed on this page but can also be accessed and downloaded on our [GitHub](https://github.com/stratascratch). 
 
 ## Table of Contents
 
-### Strata Scratch Guides
+### Blog
+
+### Guides
 
 - [Getting Started With Strata Scratch](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/getting-started-with-stratascratch/getting-started-with-stratascratch.md)
 - [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
