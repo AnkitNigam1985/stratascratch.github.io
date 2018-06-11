@@ -65,7 +65,7 @@ You can also have the option to visualize data and turn them into meaningful gra
 
 ![strata scratch](assets/viz_csv.png)
 
-Now you have the CSV file saved in your folder, you should be able to open it using a compatible program installed on your computer (such as MS Excel) to view your dataset.
+Now you have the CSV file saved in your folder, you should be able to open it using a compatible program installed on your computer (such as MS Excel or Google Sheets) to view your dataset.
 
 
 
