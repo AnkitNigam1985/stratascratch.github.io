@@ -1,3 +1,0 @@
-[![strata scratch](../../assets/sslogo.jpg)](https://stratascratch.com)
-# Hello World
-Coming soon...
