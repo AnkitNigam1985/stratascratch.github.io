@@ -59,8 +59,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
  
 - Pandas Exercises for Practice
-  - [More Numpy and Pandas Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercises.ipynb)
-  - [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
+  - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1zdkLhgYZFamXKqi9k0ZXGYYkwjBDat79)
+  - [More Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/1XTszHzJzpnA8VlJIi-cFsNS5JBTuIam0)
   
 - How to Clean Data with Pandas 
   - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1K_u_iD_06FmNp2rDr8EpUQj5zqbnp6f_)
