@@ -3,7 +3,7 @@
 
 Our articles, guides, and analytical exercises are listed on this page but can also be accessed and downloaded on our [GitHub](https://github.com/stratascratch). 
 
-## Table of Contents
+## Helpful Resources
 
 ### Blog
 - [Blog Main Page](https://blog.stratascratch.com/)
@@ -18,12 +18,14 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
   - [How to Install psycopg2 to Connect to Strata Scratch Using Python](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
 
-### Business Analytics Case Studies For Any Tool (SQL, Python, R, Tableau)
+## Business Analytics Problem Sets
+### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
 
 ### SQL
 #### Getting Started
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
+
 #### Practice
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
