@@ -18,12 +18,13 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
   - [How to Install psycopg2 to Connect to Strata Scratch Using Python](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
 
-### Data Analytics Case Studies and Exercises
+### Business Analytics Case Studies With Any Tool (SQL, Python, R, Tableau)
 - [Spotify](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
 
-### SQL Guides and Exercises
-
+### SQL
+#### Getting Started
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
+#### Practice
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
@@ -45,8 +46,11 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Spotify Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/spotify-exercise-solutions.md)
   - [Yelp Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/yelp-exercise-solutions.md)
 
-### Python Guides and Exercises
+### Python 
 `Requires Jupyter Notebooks to open files`
+#### Getting Started
+
+#### Practice
 - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
   - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
 - [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
