@@ -20,8 +20,6 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 
 ## Business Analytics Problem Sets
-### For Any Tool (SQL, Python, R, Tableau, etc)
-- [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
 
 ### SQL
 #### Getting Started
@@ -63,8 +61,10 @@ Clicking on a link with open Google CoLab which runs Jupyter notebooks on your b
   - [dataset](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/titanic.csv)  
     *dataset also found at `datasets.titanic`
 
-
 #### Solutions
 - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
 - [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
 - [Titanic Data Cleanup Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise%20Solutions.ipynb)
+
+### For Any Tool (SQL, Python, R, Tableau, etc)
+- [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
