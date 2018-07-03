@@ -54,17 +54,20 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1VtywiAAI-ucfTzBa6YDca8k4gfGiEPnn)
 
 #### Practice
-- [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
-- [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
-- [More Numpy and Pandas Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercises.ipynb)
-- [Titanic Data Cleanup Exercise](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise.ipynb)
-  - [dataset](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/titanic.csv)  
-    *dataset also found at `datasets.titanic`
+- A Short Pandas Tutorial
+  - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb)
+  - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
+ 
+- Pandas Exercises for Practice
+  - [More Numpy and Pandas Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercises.ipynb)
+  - [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
+  
+- How to Clean Up Data with Pandas 
+  - [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
 
-#### Solutions
-- [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
-- [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
-- [Titanic Data Cleanup Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise%20Solutions.ipynb)
+- A Data Cleanup Exercise with the Titanic Dataset
+  - [Titanic Data Cleanup Exercise](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise.ipynb)
+  - [Titanic Data Cleanup Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise%20Solutions.ipynb)
 
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
