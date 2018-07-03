@@ -8,7 +8,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 ### Blog
 - [Blog Main Page](https://blog.stratascratch.com/)
 
-### Guides
+### How To Use Strata Scratch
 
 - [Getting Started With Strata Scratch](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/getting-started-with-stratascratch/getting-started-with-stratascratch.md)
 - [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
@@ -18,7 +18,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
   - [How to Install psycopg2 to Connect to Strata Scratch Using Python](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
 
-### Business Analytics Case Studies With Any Tool (SQL, Python, R, Tableau)
+### Business Analytics Case Studies For Any Tool (SQL, Python, R, Tableau)
 - [Spotify](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
 
 ### SQL
