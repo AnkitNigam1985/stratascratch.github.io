@@ -49,8 +49,10 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Yelp Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/yelp-exercise-solutions.md)
 
 ### Python 
-`Requires Jupyter Notebooks to open files`
+`Clicking on a link with open Google CoLab which runs Jupyter notebooks on your Google Drive without any software install`
+
 #### Getting Started
+- [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1VtywiAAI-ucfTzBa6YDca8k4gfGiEPnn)
 
 #### Practice
 - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb) 
