@@ -62,7 +62,7 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [More Numpy and Pandas Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercises.ipynb)
   - [More Numpy and Pandas Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/More%20Numpy%20and%20Pandas%20Exercise%20Solutions.ipynb)
   
-- How to Clean Up Data with Pandas 
+- How to Clean Data with Pandas 
   - [Data Cleaning With Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Data%20Cleaning%20with%20Pandas%20Tutorial.ipynb)
 
 - A Data Cleanup Exercise with the Titanic Dataset
