@@ -100,40 +100,10 @@ Here, we compute the average stars per state by using the `AVG` function. To eli
    GROUP BY state
 ```
 
-## Description of datasets.yelp_user
-The datasets.yelp_user table includes information about Yelp users such as their name, when they joined Yelp, how many reviews they have written and characteristics of the reviews.
-
-### Question 8
-How many people joined yelp over the course of the year 2017?
-
-*Solution:*
-
-Here, we can count the name of registered users from the table. Since we are interested only for the results within the year 2017, we add the conditional statement `WHERE yelping_since between '2017-01-01' and '2017-12-31'`. To view the results easily, we use `GROUP BY` and `ORDER BY` to sort the data in ascending order.
-```sql
-   SELECT count(name) as count_name, yelping_since
-   FROM datasets.yelp_user
-   WHERE yelping_since between '2017-01-01' and '2017-12-31'
-   GROUP BY yelping_since
-   ORDER BY yelping_since ASC
-```
-
-### Question 9
-Who are the top 10 users that wrote the most reviews?
-
-*Solution:*
-
-The top users who wrote the most reviews can be determined by selecting first the number of reviews per user. We can easily know the top results by ranking the users in descending order.
-```sql
-   SELECT review_count, name
-   FROM datasets.yelp_user
-   ORDER BY review_count DESC 
-   LIMIT 10
-```
-
 ## Description of datasets.yelp_checkin
 The  datasets.yelp_checkin table provides the amount of check-ins each business has and when that check-in took place. Check-ins are offered with rewards that businesses give to customers whenever they “check-in” to the business on Yelp. By using the check-in feature, customers are able to broadcast to their friends on Yelp that they're at your business.
 
-### Question 10
+### Question 8
 What are the top 5 businesses with the most check-ins?
 
 *Solution:*
