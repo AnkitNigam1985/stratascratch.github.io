@@ -66,8 +66,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1K_u_iD_06FmNp2rDr8EpUQj5zqbnp6f_)
 
 - A Data Cleanup Exercise with the Titanic Dataset
-  - [Titanic Data Cleanup Exercise](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise.ipynb)
-  - [Titanic Data Cleanup Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Titanic%20Data%20Cleanup%20Exercise%20Solutions.ipynb)
+  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/14pJ-YOEbhB924gkdi8bgt-zNNwBGecTc)
+  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1djNJ0vYaiwyeVO2eeM7kGm-Dzjzk9F1o)
 
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
