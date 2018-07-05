@@ -54,7 +54,7 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1VtywiAAI-ucfTzBa6YDca8k4gfGiEPnn)
 
 #### Practice
-- A short Numpy Tutorial, A Primer to Get Started With Python
+- A Short Numpy Tutorial, A Primer to Get Started With Python
   - [Numpy Tutorial](https://colab.research.google.com/drive/1tDz4OyVK3balbaD7So455dtvchbGFn-n)
   - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/1JEfw3Y4BzNBrFqqp9J8P-x_Ee4KNKgYM)
   
