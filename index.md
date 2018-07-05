@@ -55,8 +55,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 
 #### Practice
 - A Short Pandas Tutorial
-  - [Pandas Tutorial](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial.ipynb)
-  - [Pandas Tutorial Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/Python%20Primer/Pandas%20Tutorial%20Solutions.ipynb)
+  - [Pandas Tutorial](https://colab.research.google.com/drive/1zcan6lIYDrKXJHdkgV9MSX8RNzzX-rSX)
+  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1oTOLiPZVIRZi1usXWGeEVPxayeUKme-v)
  
 - Pandas Exercises for Practice
   - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1zdkLhgYZFamXKqi9k0ZXGYYkwjBDat79)
