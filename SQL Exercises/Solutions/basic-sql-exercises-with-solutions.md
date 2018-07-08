@@ -13,7 +13,7 @@
    
    *Solution:*
    
-   To know the number of passengers, we need to count the distinct names on the datasets. titanic table. The following query will give
+   To know the number of passengers, we need to count the distinct names on the `datasets.titanic` table. The following query will give
    us an answer of 891 passengers.
    ```sql
       SELECT count(distinct name)
