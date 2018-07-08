@@ -51,27 +51,27 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 Clicking on a link will open Google CoLab which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive or using Jupyter if you have it installed locally.
 
 #### Getting Started
-- [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1VtywiAAI-ucfTzBa6YDca8k4gfGiEPnn)
+- [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
 
 #### Practice
 - A Short Numpy Tutorial, A Primer to Get Started With Python
-  - [Numpy Tutorial](https://colab.research.google.com/drive/1tDz4OyVK3balbaD7So455dtvchbGFn-n)
-  - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/1JEfw3Y4BzNBrFqqp9J8P-x_Ee4KNKgYM)
+  - [Numpy Tutorial](https://colab.research.google.com/drive/1NQDtO3Y8kApxS5SwMPE2hvdUl3T_of4V)
+  - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/16rphW-v8ugVo79TkbFtwaiblrl9_-uiC)
   
 - A Short Pandas Tutorial For Data Analysis
-  - [Pandas Tutorial](https://colab.research.google.com/drive/1zcan6lIYDrKXJHdkgV9MSX8RNzzX-rSX)
-  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1oTOLiPZVIRZi1usXWGeEVPxayeUKme-v)
+  - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX)
+  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz)
  
 - Pandas Exercises for Practice
-  - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1zdkLhgYZFamXKqi9k0ZXGYYkwjBDat79)
-  - [More Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/1XTszHzJzpnA8VlJIi-cFsNS5JBTuIam0)
+  - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
+  - [More Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
   
 - How to Clean Data with Pandas 
-  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1K_u_iD_06FmNp2rDr8EpUQj5zqbnp6f_)
+  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1TlPeG9clc2UOE-pXteTRfy8CkfVbQn-p)
 
 - A Data Cleanup Exercise with the Titanic Dataset
-  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/14pJ-YOEbhB924gkdi8bgt-zNNwBGecTc)
-  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1djNJ0vYaiwyeVO2eeM7kGm-Dzjzk9F1o)
+  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
+  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
 
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
