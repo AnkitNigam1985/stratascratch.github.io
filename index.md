@@ -72,6 +72,26 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - A Data Cleanup Exercise with the Titanic Dataset
   - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
   - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
+  
+- Functions, Lambda Functions, Loops, and List Comprehensions
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
+
+- Datetime
+  - [Datetime Tutorial](https://colab.research.google.com/drive/1bpeKd3ktTc7UQ575c1JKnV2HdxCMFxFQ)
+  - [Datetime Solutions](https://colab.research.google.com/drive/1RCK8kWln4fSYeHvY6rGbozB938iqYmVQ)
+
+- Joining/Merging Dataframes (Blending data)
+  - [Joining/Merging Dataframes (Blending data) Tutorial](https://colab.research.google.com/drive/1Jedvkfma4swWG1YsWrEiFpzBmwTUcOx8)
+  - [Joining/Merging Dataframes (Blending data) Solutions](https://colab.research.google.com/drive/1nGMOePO05w3xLe9ufzI0rsVJcWhpvYvu)
+  
+- Creating Visualizations
+  - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
+  - [Creating Visualizations Solutions](https://colab.research.google.com/drive/1ncNwIuY_0BSXB7500XF2JC9yJMA_Qi27)
+  
+- Interactive notebooks
+  - [Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
+  - [Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
 
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
