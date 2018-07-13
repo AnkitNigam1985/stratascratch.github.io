@@ -96,3 +96,9 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
   - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
+
+- [Airbnb Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Airbnb.md)
+  - [Airbnb Case Study Solutions](https://colab.research.google.com/drive/1BMSK4IvGQWfNLXkcLPLaGVsLnywQ0SOG): Written in python and SQL
+
+- [Yelp Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Yelp.md)
+  - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
