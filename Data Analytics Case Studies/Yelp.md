@@ -2,7 +2,7 @@
 
 # Strata Scratch
 
-## Airbnb Case Study
+## Yelp Case Study
 
 #### Accessing The Data Resources
 - Reviews dataset can be found under `datasets.yelp_reviews`
