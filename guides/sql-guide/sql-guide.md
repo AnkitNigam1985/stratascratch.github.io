@@ -52,6 +52,10 @@
 - [RIGHT JOIN](#right-join)
 - [FULL OUTER JOIN](#full-outer-join)
 - [UNION](#union)
+- [SQL JOIN Comparison Operators](#join-comparison)
+- [SQL JOIN on multiple keys](#join-multiple-keys)
+- [SQL SELF JOIN](#self-join)
+
 
 
 This SQL guide is meant to help you get started with SQL. It's helpful for absolute beginners but better for beginners that need a reference when coding. This guide is adapted from Mode Analytics Intro to SQL which is a great introduction to SQL, however, this guide with the accompanying datasets provide a more hands-on experience that allows you to code live with tools used in industry, All tables found in the Mode Analytics guide are loaded in our databases but we added dozens more to get you better acquainted with SQL and analytics. 
@@ -843,12 +847,12 @@ Note that UNION only appends distinct values. More specifically, when you use UN
 
 ```sql
 SELECT *
-   FROM tutorial.crunchbase_investments_part1
+   FROM datasets.crunchbase_investments_part1
 
  UNION ALL
 
 SELECT *
-   FROM tutorial.crunchbase_investments_part2
+   FROM datasets.crunchbase_investments_part2
 ```
 Output:
 
@@ -862,3 +866,112 @@ While the column names don’t necessarily have to be the same, you will find th
 
 Since you are writing two separate SELECT statements, you can treat them differently before appending. For example, you can filter them differently using different WHERE clauses.
 
+### SQL JOIN Comparison Operators
+
+We want to find companies which were acquired by acquiriers from same city and within 3 years of their founding.
+
+To satisfy these two conditions we need to know the founding date, acquisition date, company city and acquirier city.
+
+We can find all of these except the founding date in `datasets.crunchbase_acquisitions`. To get the founding date we need `datasets.crunchbase_companies` and its `founded_at` column.
+
+Our ON section consists of 3 conditions:
+- 1. join key equality condition on permalink.
+- 2. cities must be equal for both company and its acquirier
+- 3. check to see if the founding date is at most 3 years apart from the acquisition date
+
+The third condition shows how we can use any form of condition in our joins.
+- We check `datasets.crunchbase_companies.founded_at` against `datasets.crunchbase_acquisitions.acquired_at` and neither of them are primary keys.
+
+```sql
+SELECT 
+    companies.*
+FROM
+        datasets.crunchbase_acquisitions acquisitions 
+    INNER JOIN
+        datasets.crunchbase_companies companies
+    ON 
+        -- Join Key comparison - We want to match companies with their acquiriers
+        acquisitions.company_permalink = companies.permalink AND
+        -- Arbitrary equal comparison - Company acquirer must be from same city condition
+        companies.city = acquisitions.acquirer_city AND
+        -- Arbitrary less equal comparison - Company must be acquired at most 3 years from founding
+        companies.founded_at <= acquisitions.acquired_at - 3
+```
+
+Note that the query we just discussed and the following query are different because the first query filters during join, while the second one filters and joins afterwards.
+
+```sql
+SELECT 
+    companies.*
+FROM
+        datasets.crunchbase_acquisitions acquisitions 
+    INNER JOIN
+        datasets.crunchbase_companies companies
+    ON 
+        -- Join Key comparison - We want to match companies with their acquiriers
+        acquisitions.company_permalink = companies.permalink AND
+        -- Arbitrary equal comparison - Company acquirer must be from same city condition
+        companies.city = acquisitions.acquirer_city
+WHERE
+    companies.founded_at <= acquisitions.acquired_at - 3
+```
+
+### SQL JOIN on multiple keys
+
+Sometimes your datasets will have multiple columns as their primary key and to perfom an accurate join you must join on equality for all these keys.
+
+Another benefit of joins is that sometimes they can be sped up if you use multiple keys. The reason for this is the indexing done by the database in the background.
+
+```sql
+SELECT 
+    *
+FROM datasets.crunchbase_companies companies 
+    INNER JOIN 
+        datasets.crunchbase_acquisitions acq
+    ON 
+    companies.permalink = acq.company_permalink AND
+    companies.name      = acq.company_name
+```
+
+### SQL SELF JOIN
+
+In addition to joining two different tables you can join a table to itself.
+
+Joining a table to itself follows the same syntax and logic like other joins. The primary difference is that now you have the same table but under two different aliases. 
+
+Notice that we use the same table but under different aliases (`companies1` and `companies2`)
+
+```sql
+        datasets.crunchbase_companies companies1 
+    FULL JOIN 
+        datasets.crunchbase_companies companies2
+```
+
+Joining a table to itself allows doing things regular group by can't do like our example here demonstrates. 
+
+We want to find all companies which share a common category_code.
+If we stopped here a groupby would do the job perfectly but we also want to only include
+companies whose total funding is somewhat similar (that is the difference in total funding is less than 100000$) 
+
+So we join the `datasets.crunchbase_companies` table against itself and make a few tests:
+- The first test is to ensure that we do not include the same company in output. This is necessary because when we do a FULL JOIN each company is checked against each other company, including itself from the other table.
+- Our second check is to ensure that they have a common category_code
+- The third check is the funding difference check. ABS is the absolute function in SQL.
+
+```sql
+SELECT 
+    companies1.category_code AS category_code,
+    companies1.permalink AS company1_permalink,
+    companies2.permalink AS company2_permalink,
+    companies1.funding_total_usd AS company1_total_funding,
+    companies2.funding_total_usd AS company2_total_funding,
+    ABS(companies1.funding_total_usd  - companies2.funding_total_usd) AS funding_difference
+FROM datasets.crunchbase_companies companies1 
+    FULL JOIN 
+        datasets.crunchbase_companies companies2
+    ON 
+        companies1.permalink <> companies2.permalink AND
+        companies1.category_code = companies2.category_code AND
+        ABS(companies1.funding_total_usd - companies2.funding_total_usd) <= 100000
+ORDER BY funding_difference ASC
+```
