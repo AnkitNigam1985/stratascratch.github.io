@@ -25,6 +25,9 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 #### Getting Started
 - [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
 
+- [Advanced SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/advanced-sql-guide.md)
+
+
 #### Practice
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
