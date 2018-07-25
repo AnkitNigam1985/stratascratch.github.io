@@ -76,8 +76,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
 
 -  Combining Data for Analysis (Joining/Merging Dataframes)
-  - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
-  - [Combining Data for Analysis (Joining/Merging Dataframes) Solutions](https://colab.research.google.com/drive/1wQhHCgIhzS2hFMzwh9YH9ylYQUpCoD45)
+    - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
+    - [Combining Data for Analysis (Joining/Merging Dataframes) Solutions](https://colab.research.google.com/drive/1wQhHCgIhzS2hFMzwh9YH9ylYQUpCoD45)
 
 
 #### Practice
