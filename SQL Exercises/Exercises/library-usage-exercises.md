@@ -1,4 +1,4 @@
-# Library Usage Exercise
+# Library Usage Exercises
 
 This exercise uses the `datasets.library_usage` table and includes the demographics of the different amount of checkouts from different types of people and libraries.
 
