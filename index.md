@@ -60,6 +60,26 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 #### Getting Started
 - [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
 
+### Cleaning Data in Python
+- How to Clean Data with Pandas 
+  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy)
+
+- A Data Cleanup Exercise with the Titanic Dataset
+  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
+  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
+
+- Exploring your data
+    -[Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
+  
+- Functions, Lambda Functions, Loops, and List Comprehensions
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
+
+-  Combining Data for Analysis (Joining/Merging Dataframes)
+  - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
+  - [Combining Data for Analysis (Joining/Merging Dataframes) Solutions](https://colab.research.google.com/drive/1wQhHCgIhzS2hFMzwh9YH9ylYQUpCoD45)
+
+
 #### Practice
 - A Short Numpy Tutorial, A Primer to Get Started With Python
   - [Numpy Tutorial](https://colab.research.google.com/drive/1NQDtO3Y8kApxS5SwMPE2hvdUl3T_of4V)
@@ -72,25 +92,10 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - Pandas Exercises for Practice
   - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
   - [More Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
-  
-- How to Clean Data with Pandas 
-  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1TlPeG9clc2UOE-pXteTRfy8CkfVbQn-p)
-
-- A Data Cleanup Exercise with the Titanic Dataset
-  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
-  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
-  
-- Functions, Lambda Functions, Loops, and List Comprehensions
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
 
 - Datetime
   - [Datetime Tutorial](https://colab.research.google.com/drive/1bpeKd3ktTc7UQ575c1JKnV2HdxCMFxFQ)
   - [Datetime Solutions](https://colab.research.google.com/drive/1RCK8kWln4fSYeHvY6rGbozB938iqYmVQ)
-
-- Joining/Merging Dataframes (Blending data)
-  - [Joining/Merging Dataframes (Blending data) Tutorial](https://colab.research.google.com/drive/1Jedvkfma4swWG1YsWrEiFpzBmwTUcOx8)
-  - [Joining/Merging Dataframes (Blending data) Solutions](https://colab.research.google.com/drive/1nGMOePO05w3xLe9ufzI0rsVJcWhpvYvu)
   
 - Creating Visualizations
   - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
@@ -99,6 +104,19 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - Interactive notebooks
   - [Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
   - [Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
+
+- From Excel to Python
+  - [From Excel to Python Guide](https://colab.research.google.com/drive/1anK-jixT3mFLNpJm-lPJu4sm0g7TmkD2)
+
+- Statistics
+  - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
+  - [Statistics Solutions](https://colab.research.google.com/drive/1fcxGh3JG3VjqtNo_lRKXjOqrjPdoQ2aJ)
+
+- Machine Learning
+  - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)
+
+- Web Scraping
+  - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
 
 ### For Any Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
@@ -109,3 +127,9 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 
 - [Yelp Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Yelp.md)
   - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
+
+- [Medical Appointments Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Medical%20Appointments.md)
+    - [Medical Appointments Case Study Solutions](https://colab.research.google.com/drive/1iTKUv7KEqwyicudr_yKNWV1GgsPQKfx6): Written in python
+
+- [Apple Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Apple.md)
+    - [Apple Case Study Solutions](https://colab.research.google.com/drive/16JqMA7EidM4AjfoXjYQ1K1A_eN0YwlTE): Written in python
