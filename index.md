@@ -69,7 +69,7 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
 
 - Exploring your data
-    -[Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
+    - [Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
   
 - Functions, Lambda Functions, Loops, and List Comprehensions
   - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
@@ -105,8 +105,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
   - [Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
 
-- From Excel to Python
-  - [From Excel to Python Guide](https://colab.research.google.com/drive/1anK-jixT3mFLNpJm-lPJu4sm0g7TmkD2)
+- From Excel to Pandas
+  - [From Excel to Pandas Guide](https://colab.research.google.com/drive/105vXFkumbDaFhbmhfolPMZbqBBsA_wqL)
 
 - Statistics
   - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
