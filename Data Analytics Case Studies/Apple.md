@@ -2,7 +2,7 @@
 
 # Strata Scratch
 
-## Yelp Case Study
+## Apple Case Study
 
 #### Accessing The Data Resources
 - Reviews dataset can be found under `datasets.aapl_historical_price`
