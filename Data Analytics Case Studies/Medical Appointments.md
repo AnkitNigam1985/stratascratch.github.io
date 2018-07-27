@@ -2,7 +2,7 @@
 
 # Strata Scratch
 
-## Yelp Case Study
+## Medical Appointments Case Study
 
 #### Accessing The Data Resources
 - Medical appointments dataset can be found under `datasets.medical_appointments`
