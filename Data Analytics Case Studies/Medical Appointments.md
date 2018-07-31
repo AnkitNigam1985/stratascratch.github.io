@@ -4,6 +4,8 @@
 
 ## Medical Appointments Case Study
 
+Case study for practicising your skills in statistical thinking in python. We analyze a dataset which is a list of patients which suffer from one or more illnesses and draw a series of valid conclussions from the data by utilizing hypothesis tests and contigency tables.
+
 #### Accessing The Data Resources
 - Medical appointments dataset can be found under `datasets.medical_appointments`
 - Access the data at www.stratascratch.com
@@ -12,7 +14,7 @@
 
 
 ### Dataset Description
-This dataset contains a list of patients suffering from one or more of hypertension, diabetes, alcoholism and handcap, along with patient information (gender, age, neighbourhood) and information about appointment and scheduling times. There is also a no_show column which tells us if the patient visited the doctor.
+This dataset contains a list of patients suffering from one or more of hypertension, diabetes, alcoholism and handcap, all of them binary variables, along with patient information (gender, age, neighbourhood) and information about appointment and scheduling times. There is also a no_show column which tells us if the patient visited the doctor.
 
 ### Business Case
 
