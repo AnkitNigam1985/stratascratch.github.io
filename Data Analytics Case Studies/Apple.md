@@ -13,4 +13,14 @@
 
 ### Business Case
 
-Predict the opening price direction (price rises, price remains constant, price falls) given previous opening prices.
+Unlike other business cases you won't have to answer a list of precisely guided questions but will be faced with an open problem which in the solution is solved in one way but you can solve it some other way.
+
+The problem is to predict the opening price direction (price rises, price remains constant, price falls) given previous opening prices for some fixed length number of days to look in the past.
+
+In the solution we use random forests and try 14, 30 and 90 days in the back in two variations:
+- Using raw numbers as features
+- Using the direction of change as features
+
+Our solution reaches around 55% accuracy which is low but gives you the base to explore various approaches which will likely yield better results. We limited our study only to use previous opening prices but you can incorporate other informations into your model.
+
+You can try to use k-NN, to do feature selection, to use closing and low prices, to aggregate the data and make a classifier which works week by week instead of day by day, to use some aggregate data as features (like mean opening price) and so on.
