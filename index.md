@@ -128,8 +128,8 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - [Yelp Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Yelp.md)
   - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
 
-- [Medical Appointments Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Medical%20Appointments.md)
+- [Statistics: Medical Appointments Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Medical%20Appointments.md)
     - [Medical Appointments Case Study Solutions](https://colab.research.google.com/drive/1iTKUv7KEqwyicudr_yKNWV1GgsPQKfx6): Written in python
 
-- [Apple Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Apple.md)
+- [Machine Learning: Apple Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Apple.md)
     - [Apple Case Study Solutions](https://colab.research.google.com/drive/16JqMA7EidM4AjfoXjYQ1K1A_eN0YwlTE): Written in python
