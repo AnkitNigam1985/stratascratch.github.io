@@ -101,6 +101,10 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
   - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
   - [Creating Visualizations Solutions](https://colab.research.google.com/drive/1ncNwIuY_0BSXB7500XF2JC9yJMA_Qi27)
   
+- Problem Set: Online Retail
+  - [Online Retail](https://colab.research.google.com/drive/1zMBEmyxGNjlCCbxsA9Ae_uvS0FS0F_IT)
+  - [Online Retail Solutions](https://colab.research.google.com/drive/1ESPTy0JQ5B5dhTzaPYU8k4UkLIegnE8p)
+  
 - Interactive notebooks
   - [Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
   - [Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
