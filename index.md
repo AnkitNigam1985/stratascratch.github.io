@@ -119,6 +119,10 @@ Clicking on a link will open Google CoLab which runs Jupyter notebooks on your b
 - Machine Learning
   - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)
 
+- Problem Set: Medical Appointments
+  - [Medical Appointments](https://drive.google.com/file/d/1WKMDyIWCDtGcAoPqP1BdyH8_5UsLJC8z)
+  - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
+
 - Web Scraping
   - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
 
