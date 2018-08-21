@@ -43,10 +43,10 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Spotify Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/spotify-exercises.md)
   - [Yelp Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/yelp-exercises.md)
 - [SQL Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises/Solutions)
-  - [Basic SQL Exercises (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
-  - [Basic SQL Exercises 2 (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions.md)
-  - [Advanced SQL Exercises (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions.md)
-  - [SQL and Business Insights (with Solutions)](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions.md)
+  - [Basic SQL Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
+  - [Basic SQL Exercises 2 Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions.md)
+  - [Advanced SQL Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions.md)
+  - [SQL and Business Insights Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions.md)
   - [Forbes Global Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/forbes-global-exercise-solutions.md)
   - [French Employment Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/french-employment-exercise-solutions.md)
   - [Hotel Reviews Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/hotel-reviews-exercise-solutions.md)
@@ -63,21 +63,21 @@ Clicking on a link will open [Google CoLab](https://colab.research.google.com/) 
    - This guide will help you set up and run Jupyter Notebooks with Google CoLab, execute python code, and explore datasets in Strata Scratch. If you are new to using python with Strata Scratch, this is the first guide to read.
 
 #### Python Beginner Guides - Getting Started
- - A Short Numpy Tutorial to Get Started With Python
-  - [Numpy Tutorial](https://colab.research.google.com/drive/1NQDtO3Y8kApxS5SwMPE2hvdUl3T_of4V)
-  - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/16rphW-v8ugVo79TkbFtwaiblrl9_-uiC)
+- A Short Numpy Tutorial to Get Started With Python
+    - [Numpy Tutorial](https://colab.research.google.com/drive/1NQDtO3Y8kApxS5SwMPE2hvdUl3T_of4V)
+    - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/16rphW-v8ugVo79TkbFtwaiblrl9_-uiC)
   
 - A Short Pandas Tutorial For Data Analysis
-  - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX)
-  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz)  
+    - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX)
+    - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz)  
 
 #### Python Intermediate Guides - Data Cleaning, Manipulating, and Exploring Techniques
 - How to Clean Data with Pandas 
-  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy)
+    - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy)
   
 - Functions, Lambda Functions, Loops, and List Comprehensions to Manipulate Data
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
+    - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
+    - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
 
 - Combining Datasets for Analysis (Joining/Merging Dataframes)
     - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
@@ -88,57 +88,57 @@ Clicking on a link will open [Google CoLab](https://colab.research.google.com/) 
     - [Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
     
 #### Python Advanced Guides - Utilizing Python Libraries and Advanced Mathematical Techniques
- - From Excel to Pandas, How Excel Functions Map to Python Functions
-  - [From Excel to Pandas Guide](https://colab.research.google.com/drive/105vXFkumbDaFhbmhfolPMZbqBBsA_wqL)
+- From Excel to Pandas, How Excel Functions Map to Python Functions
+    - [From Excel to Pandas Guide](https://colab.research.google.com/drive/105vXFkumbDaFhbmhfolPMZbqBBsA_wqL)
   
 - Dealing with Dates and Times In Python, A datetime Library Primer
-  - [Datetime Tutorial](https://colab.research.google.com/drive/1bpeKd3ktTc7UQ575c1JKnV2HdxCMFxFQ)
-  - [Datetime Solutions](https://colab.research.google.com/drive/1RCK8kWln4fSYeHvY6rGbozB938iqYmVQ)
+    - [Datetime Tutorial](https://colab.research.google.com/drive/1bpeKd3ktTc7UQ575c1JKnV2HdxCMFxFQ)
+    - [Datetime Solutions](https://colab.research.google.com/drive/1RCK8kWln4fSYeHvY6rGbozB938iqYmVQ)
   
 - Creating Visualizations In Python
-  - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
-  - [Creating Visualizations Solutions](https://colab.research.google.com/drive/1ncNwIuY_0BSXB7500XF2JC9yJMA_Qi27)
+    - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
+    - [Creating Visualizations Solutions](https://colab.research.google.com/drive/1ncNwIuY_0BSXB7500XF2JC9yJMA_Qi27)
   
  - Building Interactive Notebooks For Stakeholder Management
-  - [Building Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
-  - [Building Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
+    - [Building Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
+    - [Building Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
   
 - Statistics With Python
-  - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
-  - [Statistics Solutions](https://colab.research.google.com/drive/1fcxGh3JG3VjqtNo_lRKXjOqrjPdoQ2aJ)
+    - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
+    - [Statistics Solutions](https://colab.research.google.com/drive/1fcxGh3JG3VjqtNo_lRKXjOqrjPdoQ2aJ)
 
 - Machine Learning With Python
-  - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)  
+    - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)  
   
 - Web Scraping With Python
-  - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
+    - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
   
 #### Practice Problem Sets
 - A Data Cleanup Exercise with the Titanic Dataset
-  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
-  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
+    - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
+    - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
   
 - Numpy and Pandas Exercises
-  - [Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
-  - [Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
+    - [Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
+    - [Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
 
 - Problem Set: Online Retail
-  - [Online Retail](https://colab.research.google.com/drive/1zMBEmyxGNjlCCbxsA9Ae_uvS0FS0F_IT)
-  - [Online Retail Solutions](https://colab.research.google.com/drive/1ESPTy0JQ5B5dhTzaPYU8k4UkLIegnE8p)
+    - [Online Retail](https://colab.research.google.com/drive/1zMBEmyxGNjlCCbxsA9Ae_uvS0FS0F_IT)
+    - [Online Retail Solutions](https://colab.research.google.com/drive/1ESPTy0JQ5B5dhTzaPYU8k4UkLIegnE8p)
   
 - Problem Set: Medical Appointments
-  - [Medical Appointments](https://colab.research.google.com/drive/1WKMDyIWCDtGcAoPqP1BdyH8_5UsLJC8z)
-  - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
+    - [Medical Appointments](https://colab.research.google.com/drive/1WKMDyIWCDtGcAoPqP1BdyH8_5UsLJC8z)
+    - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
 
 ### Business Case Studies For Any Analytical Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
-  - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
+    - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
 
 - [Airbnb Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Airbnb.md)
-  - [Airbnb Case Study Solutions](https://colab.research.google.com/drive/1BMSK4IvGQWfNLXkcLPLaGVsLnywQ0SOG): Written in python and SQL
+    - [Airbnb Case Study Solutions](https://colab.research.google.com/drive/1BMSK4IvGQWfNLXkcLPLaGVsLnywQ0SOG): Written in python and SQL
 
 - [Yelp Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Yelp.md)
-  - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
+    - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
 
 - [Statistics: Medical Appointments Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Medical%20Appointments.md)
     - [Medical Appointments Case Study Solutions](https://colab.research.google.com/drive/1iTKUv7KEqwyicudr_yKNWV1GgsPQKfx6): Written in python
