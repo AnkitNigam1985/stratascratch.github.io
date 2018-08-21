@@ -5,8 +5,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 ## Helpful Resources
 
-### Blog
-- [Blog Main Page](https://blog.stratascratch.com/)
+### Blog - Keep up-to-date with the latest analytic techniques
+- [Blog Main Page](https://stratascratch.com/blog)
 
 ### How To Use Strata Scratch
 
@@ -16,7 +16,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
 - [How to Share Your Datasets With Other Users](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users.md)
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
-  - [How to Install psycopg2 to Connect to Strata Scratch Using Python](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
+  - [How to Install psycopg2 to Connect to Strata Scratch Using Jupyter Notebooks](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
+      - fg
 
 
 ## Business Analytics Problem Sets
