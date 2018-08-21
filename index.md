@@ -3,13 +3,13 @@
 
 Our articles, guides, and analytical exercises are listed on this page but can also be accessed and downloaded on our [GitHub](https://github.com/stratascratch). 
 
-## Helpful Resources
+## Helpful Resources To Get You Started
 
 ### Blog 
 #### Keep up-to-date with the latest analytic techniques
 - [Blog Main Page](https://stratascratch.com/blog)
 
-### How To Use Strata Scratch
+### How To Use Strata Scratch Introductory Material
 
 - [Getting Started With Strata Scratch](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/getting-started-with-stratascratch/getting-started-with-stratascratch.md)
 - [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
@@ -22,16 +22,14 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 
 
-## Business Analytics Problem Sets
+## Business Analytics Guides and Problem Sets
 
 ### SQL
-#### Getting Started
-- [SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
-
+#### SQL Guides To Get You Started
+- [Basic and Intermediate SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
 - [Advanced SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/advanced-sql-guide.md)
 
-
-#### Practice
+#### SQL Practice Problem Sets
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
   - [Basic SQL Exercises 2](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises-2.md)
@@ -58,10 +56,11 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Yelp Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/yelp-exercise-solutions.md)
 
 ### Python 
-Clicking on a link will open Google CoLab which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive or using Jupyter if you have it installed locally.
+Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
 
-#### Getting Started
-- [Exploring Strata Scratch Datasets in Python](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
+#### Jupyter Notebook Guide To Get You Started 
+- [Guide to Using Python with Strata Scratch](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
+   - This guide will help you set up and run Jupyter Notebooks with Google CoLab, execute python code, and explore datasets in Strata Scratch. If you are new to using python with Strata Scratch, this is the first guide to read.
 
 ### Cleaning Data in Python
 - How to Clean Data with Pandas 
