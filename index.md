@@ -62,73 +62,75 @@ Clicking on a link will open [Google CoLab](https://colab.research.google.com/) 
 - [Guide to Using Python with Strata Scratch](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
    - This guide will help you set up and run Jupyter Notebooks with Google CoLab, execute python code, and explore datasets in Strata Scratch. If you are new to using python with Strata Scratch, this is the first guide to read.
 
-### Cleaning Data in Python
-- How to Clean Data with Pandas 
-  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy)
-
-- A Data Cleanup Exercise with the Titanic Dataset
-  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
-  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
-
-- Exploring your data
-    - [Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
-  
-- Functions, Lambda Functions, Loops, and List Comprehensions
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
-  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
-
--  Combining Data for Analysis (Joining/Merging Dataframes)
-    - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
-    - [Combining Data for Analysis (Joining/Merging Dataframes) Solutions](https://colab.research.google.com/drive/1wQhHCgIhzS2hFMzwh9YH9ylYQUpCoD45)
-
-
-#### Practice
-- A Short Numpy Tutorial, A Primer to Get Started With Python
+#### Python Beginner Guides - Getting Started
+ - A Short Numpy Tutorial to Get Started With Python
   - [Numpy Tutorial](https://colab.research.google.com/drive/1NQDtO3Y8kApxS5SwMPE2hvdUl3T_of4V)
   - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/16rphW-v8ugVo79TkbFtwaiblrl9_-uiC)
   
 - A Short Pandas Tutorial For Data Analysis
   - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX)
-  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz)
- 
-- Pandas Exercises for Practice
-  - [More Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
-  - [More Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
+  - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz)  
 
-- Datetime
+#### Python Intermediate Guides - Data Cleaning, Manipulating, and Exploring Techniques
+- How to Clean Data with Pandas 
+  - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy)
+  
+- Functions, Lambda Functions, Loops, and List Comprehensions to Manipulate Data
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
+  - [Functions, Lambda Functions, Loops, and List Comprehensions Solutions](https://colab.research.google.com/drive/1ESfjBY6VZxvLr1BrTJz88fXS4TEOLdsH)
+
+- Combining Datasets for Analysis (Joining/Merging Dataframes)
+    - [Combining Data for Analysis (Joining/Merging Dataframes) Tutorial](https://colab.research.google.com/drive/19qeRuPoq3lw6-jPjouWaKYl_Fa6g_pBB)
+    - [Combining Data for Analysis (Joining/Merging Dataframes) Solutions](https://colab.research.google.com/drive/1wQhHCgIhzS2hFMzwh9YH9ylYQUpCoD45)
+
+- Techniques to Explore Your Data
+    - Data exploration techniques like descriptive statistics and visualization commands
+    - [Exploring Your Data](https://colab.research.google.com/drive/16N8DGj_qrg-clvAakHTiiNNP6l8P8eUO)
+    
+#### Python Advanced Guides - Utilizing Python Libraries and Advanced Mathematical Techniques
+ - From Excel to Pandas, How Excel Functions Map to Python Functions
+  - [From Excel to Pandas Guide](https://colab.research.google.com/drive/105vXFkumbDaFhbmhfolPMZbqBBsA_wqL)
+  
+- Dealing with Dates and Times In Python, A datetime Library Primer
   - [Datetime Tutorial](https://colab.research.google.com/drive/1bpeKd3ktTc7UQ575c1JKnV2HdxCMFxFQ)
   - [Datetime Solutions](https://colab.research.google.com/drive/1RCK8kWln4fSYeHvY6rGbozB938iqYmVQ)
   
-- Creating Visualizations
+- Creating Visualizations In Python
   - [Creating Visualizations Tutorial](https://colab.research.google.com/drive/1SOOsVpbNp0f2anD6pOx1oVbgaa-Mp81T)
   - [Creating Visualizations Solutions](https://colab.research.google.com/drive/1ncNwIuY_0BSXB7500XF2JC9yJMA_Qi27)
   
+ - Building Interactive Notebooks For Stakeholder Management
+  - [Building Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
+  - [Building Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
+  
+- Statistics With Python
+  - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
+  - [Statistics Solutions](https://colab.research.google.com/drive/1fcxGh3JG3VjqtNo_lRKXjOqrjPdoQ2aJ)
+
+- Machine Learning With Python
+  - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)  
+  
+- Web Scraping With Python
+  - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
+  
+#### Practice Problem Sets
+- A Data Cleanup Exercise with the Titanic Dataset
+  - [Titanic Data Cleanup Exercise](https://colab.research.google.com/drive/1IXqngDNx5GgDxa3D9YzGOWWWHIJZcygR)
+  - [Titanic Data Cleanup Solutions](https://colab.research.google.com/drive/1ZtLbBSxh0NeOsTeDS9YlHEka4Qtv3Ukp)
+  
+- Numpy and Pandas Exercises
+  - [Numpy and Pandas Exercises](https://colab.research.google.com/drive/1XJi1CIQG9oJJhGWjrKHh7Xgf13JCxkdx)
+  - [Numpy and Pandas Exercises Solutions](https://colab.research.google.com/drive/174qr2ObkPNt3hPXb_H_pyHOu3ywjdXvq)
+
 - Problem Set: Online Retail
   - [Online Retail](https://colab.research.google.com/drive/1zMBEmyxGNjlCCbxsA9Ae_uvS0FS0F_IT)
   - [Online Retail Solutions](https://colab.research.google.com/drive/1ESPTy0JQ5B5dhTzaPYU8k4UkLIegnE8p)
   
-- Interactive notebooks
-  - [Interactive Notebooks Tutorial](https://colab.research.google.com/drive/14uWejf0v1DII-CfcY48bl06i2zlSx-hl)
-  - [Interactive Notebooks Solutions](https://colab.research.google.com/drive/1iCujafEtjqdhx5ECSj_3HepyExpBS6hH)
-
-- From Excel to Pandas
-  - [From Excel to Pandas Guide](https://colab.research.google.com/drive/105vXFkumbDaFhbmhfolPMZbqBBsA_wqL)
-
-- Statistics
-  - [Statistics Tutorial](https://colab.research.google.com/drive/1Z0OdP__UxMGFu4jnpNT2ytJYbdqDEy8a)
-  - [Statistics Solutions](https://colab.research.google.com/drive/1fcxGh3JG3VjqtNo_lRKXjOqrjPdoQ2aJ)
-
-- Machine Learning
-  - [Machine Learning Guide](https://colab.research.google.com/drive/1C2oiJPylbu5SRS0snUU7YBpRRxAQ-ixF)
-
 - Problem Set: Medical Appointments
   - [Medical Appointments](https://colab.research.google.com/drive/1WKMDyIWCDtGcAoPqP1BdyH8_5UsLJC8z)
   - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
 
-- Web Scraping
-  - [Web Scraping Guide](https://colab.research.google.com/drive/15AEaOsAKWgikKY7BEOWxUlKsjjBjRD6R)
-
-### For Any Tool (SQL, Python, R, Tableau, etc)
+### Business Case Studies For Any Analytical Tool (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
   - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
 
