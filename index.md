@@ -5,7 +5,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 ## Helpful Resources
 
-### Blog - Keep up-to-date with the latest analytic techniques
+### Blog 
+#### Keep up-to-date with the latest analytic techniques
 - [Blog Main Page](https://stratascratch.com/blog)
 
 ### How To Use Strata Scratch
@@ -16,8 +17,9 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
 - [How to Share Your Datasets With Other Users](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users.md)
 - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
+    - Python materials on Strata Scratch now uses [Google CoLab](https://colab.research.google.com/) to run Jupyter notebooks so there's no software installation needed. Head over to our Python section to get started or learn more with our [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
   - [How to Install psycopg2 to Connect to Strata Scratch Using Jupyter Notebooks](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
-      - fg
+
 
 
 ## Business Analytics Problem Sets
