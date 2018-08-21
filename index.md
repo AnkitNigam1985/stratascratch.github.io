@@ -59,8 +59,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
 
 #### Jupyter Notebook Guide To Get You Started 
+This guide will help you set up and run Jupyter Notebooks with Google CoLab, execute python code, and explore datasets in Strata Scratch. If you are new to using python with Strata Scratch, this is the first guide to read.
 - [Guide to Using Python with Strata Scratch](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g)
-   - This guide will help you set up and run Jupyter Notebooks with Google CoLab, execute python code, and explore datasets in Strata Scratch. If you are new to using python with Strata Scratch, this is the first guide to read.
 
 #### Python Beginner Guides - Getting Started
 - A Short Numpy Tutorial to Get Started With Python
