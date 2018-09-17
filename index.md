@@ -32,28 +32,28 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 #### SQL Practice Problem Sets
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises)
-  - [Basic SQL Exercises 2](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises-2.md)
-  - [Advanced SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/advanced-sql-exercises.md)
-  - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
-  - [Forbes Global Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/forbes-global-exercises.md)
-  - [French Employment Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/french-employment-exercises.md)
-  - [Hotel Reviews Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/hotel-reviews-exercises.md)
-  - [Library Usage Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/library-usage-exercises.md)
-  - [QB Stats Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises.md)
-  - [Spotify Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/spotify-exercises.md)
-  - [Yelp Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/yelp-exercises.md)
+  - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/basic-sql-exercises-2)
+  - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/advanced-sql-exercises)
+  - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/sql-and-business-insights)
+  - [Forbes Global Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/forbes-global-exercises)
+  - [French Employment Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/french-employment-exercises)
+  - [Hotel Reviews Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/hotel-reviews-exercises)
+  - [Library Usage Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/library-usage-exercises)
+  - [QB Stats Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises)
+  - [Spotify Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/spotify-exercises)
+  - [Yelp Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/yelp-exercises)
 - [SQL Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises/Solutions)
-  - [Basic SQL Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions.md)
-  - [Basic SQL Exercises 2 Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions.md)
-  - [Advanced SQL Exercises Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions.md)
-  - [SQL and Business Insights Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions.md)
-  - [Forbes Global Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/forbes-global-exercise-solutions.md)
-  - [French Employment Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/french-employment-exercise-solutions.md)
-  - [Hotel Reviews Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/hotel-reviews-exercise-solutions.md)
-  - [Library Usage Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/library-usage-exercise-solutions.md)
-  - [QB Stats Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/qbstats-1996-2016-exercise-solutions.md)
-  - [Spotify Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/spotify-exercise-solutions.md)
-  - [Yelp Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Solutions/yelp-exercise-solutions.md)
+  - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
+  - [Basic SQL Exercises 2 Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions)
+  - [Advanced SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions)
+  - [SQL and Business Insights Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions)
+  - [Forbes Global Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/forbes-global-exercise-solutions)
+  - [French Employment Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/french-employment-exercise-solutions)
+  - [Hotel Reviews Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/hotel-reviews-exercise-solutions)
+  - [Library Usage Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/library-usage-exercise-solutions)
+  - [QB Stats Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/qbstats-1996-2016-exercise-solutions)
+  - [Spotify Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/spotify-exercise-solutions)
+  - [Yelp Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/yelp-exercise-solutions)
 
 ### Python 
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
@@ -131,17 +131,17 @@ This guide will help you set up and run Jupyter Notebooks with Google CoLab, exe
     - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
 
 ### Business Case Studies For Any Analytical Tool (SQL, Python, R, Tableau, etc)
-- [Spotify Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Spotify.md)
+- [Spotify Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Spotify)
     - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
 
-- [Airbnb Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Airbnb.md)
+- [Airbnb Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Airbnb)
     - [Airbnb Case Study Solutions](https://colab.research.google.com/drive/1BMSK4IvGQWfNLXkcLPLaGVsLnywQ0SOG): Written in python and SQL
 
-- [Yelp Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Yelp.md)
+- [Yelp Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Yelp)
     - [Yelp Case Study Solutions](https://colab.research.google.com/drive/1GbDFj15cFtG-P6xjj-AK-K119CWIC4Q2): Written in python and SQL
 
-- [Statistics: Medical Appointments Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Medical%20Appointments.md)
+- [Statistics: Medical Appointments Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Medical%20Appointments)
     - [Medical Appointments Case Study Solutions](https://colab.research.google.com/drive/1iTKUv7KEqwyicudr_yKNWV1GgsPQKfx6): Written in python
 
-- [Machine Learning: Apple Case Study](https://github.com/stratascratch/stratascratch.github.io/tree/master/Data%20Analytics%20Case%20Studies/Apple.md)
+- [Machine Learning: Apple Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Apple)
     - [Apple Case Study Solutions](https://colab.research.google.com/drive/16JqMA7EidM4AjfoXjYQ1K1A_eN0YwlTE): Written in python
