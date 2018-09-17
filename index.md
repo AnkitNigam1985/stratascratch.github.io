@@ -11,14 +11,14 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 ### How To Use Strata Scratch Introductory Material
 
-- [Getting Started With Strata Scratch](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/getting-started-with-stratascratch/getting-started-with-stratascratch.md)
-- [How to Import a CSV File](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-import-csv-file/how-to-import-csv-file.md)
-- [How to Copy Data From One Table to Another](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-copy-data-from-one-table-to-another/how-to-copy-data-from-one-table-to-another.md)
-- [How to Create Visualizations](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-create-visualizations/how-to-create-visualizations.md)
-- [How to Share Your Datasets With Other Users](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users.md)
-- [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
+- [Getting Started With Strata Scratch](https://education.stratascratch.com/guides/getting-started-with-stratascratch/getting-started-with-stratascratch)
+- [How to Import a CSV File](https://education.stratascratch.com/guides/how-to-import-csv-file/how-to-import-csv-file)
+- [How to Copy Data From One Table to Another](https://education.stratascratch.com/guides/how-to-copy-data-from-one-table-to-another/how-to-copy-data-from-one-table-to-another)
+- [How to Create Visualizations](https://education.stratascratch.com/guides/how-to-create-visualizations/how-to-create-visualizations)
+- [How to Share Your Datasets With Other Users](https://education.stratascratch.com/guides/how-to-share-your-datasets-with-other-users/how-to-share-your-datasets-with-other-users)
+- [How to Connect to the Database Using Python and Other Programs](https://education.stratascratch.com/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs)
     - *Update:* Python materials on Strata Scratch now uses [Google CoLab](https://colab.research.google.com/) to run Jupyter notebooks so there's no software installation needed. Head over to our Python section to get started or learn more with our [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g).
-  - [How to Install the psycopg2 Library to Connect to Strata Scratch Using Jupyter Notebooks](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python.md)
+  - [How to Install the psycopg2 Library to Connect to Strata Scratch Using Jupyter Notebooks](https://education.stratascratch.com/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python)
 
 
 
@@ -26,12 +26,12 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 ### SQL
 #### SQL Guides To Get You Started
-- [Basic and Intermediate SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/sql-guide.md)
-- [Advanced SQL Guide](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/sql-guide/advanced-sql-guide.md)
+- [Basic and Intermediate SQL Guide](https://education.stratascratch.com/guides/sql-guide/sql-guide)
+- [Advanced SQL Guide](https://education.stratascratch.com/guides/sql-guide/advanced-sql-guide)
 
 #### SQL Practice Problem Sets
 - [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
-  - [Basic SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises.md)
+  - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises)
   - [Basic SQL Exercises 2](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/basic-sql-exercises-2.md)
   - [Advanced SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/advanced-sql-exercises.md)
   - [SQL and Business Insights](https://github.com/stratascratch/stratascratch.github.io/blob/master/SQL%20Exercises/Exercises/sql-and-business-insights.md)
