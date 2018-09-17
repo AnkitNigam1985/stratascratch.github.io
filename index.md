@@ -130,7 +130,8 @@ This guide will help you set up and run Jupyter Notebooks with Google CoLab, exe
     - [Medical Appointments](https://colab.research.google.com/drive/1WKMDyIWCDtGcAoPqP1BdyH8_5UsLJC8z)
     - [Medical Appointments Solutions](https://colab.research.google.com/drive/1nCfSbhGL7wYIiaKOjwtE7FTPs9T9LHjp)
 
-### Business Case Studies For Any Analytical Tool (SQL, Python, R, Tableau, etc)
+### Case studies for any analytical tool 
+#### (SQL, Python, R, Tableau, etc)
 - [Spotify Case Study](https://education.stratascratch.com/Data%20Analytics%20Case%20Studies/Spotify)
     - [Spotify Case Study Solutions](https://colab.research.google.com/drive/1XG-TZbwU2oIZfZOIuX82cAqneK7-1ZSZ): Written in python and SQL
 
