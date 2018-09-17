@@ -30,7 +30,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [Advanced SQL Guide](https://education.stratascratch.com/guides/sql-guide/advanced-sql-guide)
 
 #### SQL Practice Problem Sets
-- [SQL Exercises](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises)
+- SQL Exercises
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises)
   - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/basic-sql-exercises-2)
   - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/advanced-sql-exercises)
