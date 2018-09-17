@@ -42,7 +42,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [QB Stats Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises)
   - [Spotify Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/spotify-exercises)
   - [Yelp Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/yelp-exercises)
-- [SQL Exercise Solutions](https://github.com/stratascratch/stratascratch.github.io/tree/master/SQL%20Exercises/Solutions)
+- SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
   - [Basic SQL Exercises 2 Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions)
   - [Advanced SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions)
