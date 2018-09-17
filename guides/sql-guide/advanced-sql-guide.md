@@ -38,7 +38,7 @@
 - [SUM, COUNT, and AVG](#sum-count-avg)
 - [ROW_NUMBER()](#row-number)
 - [RANK() and DENSE_RANK()](#rank-and-dense-rank)
-- [NTILE()] (#ntile)
+- [NTILE()](#ntile)
 - [LAG and LEAD](#lag-lead)
 - [Defining a window alias](#window-alias)
 
