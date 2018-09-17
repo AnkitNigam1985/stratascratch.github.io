@@ -32,11 +32,11 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 #### SQL Practice Problem Sets
 - SQL Exercises
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises)
-  - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/basic-sql-exercises-2)
-  - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/advanced-sql-exercises)
-  - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/sql-and-business-insights)
-  - [Forbes Global Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/forbes-global-exercises)
-  - [French Employment Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises/SQL%20Exercises/Exercises/french-employment-exercises)
+  - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises-2)
+  - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/advanced-sql-exercises)
+  - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/sql-and-business-insights)
+  - [Forbes Global Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/forbes-global-exercises)
+  - [French Employment Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/french-employment-exercises)
   - [Hotel Reviews Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/hotel-reviews-exercises)
   - [Library Usage Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/library-usage-exercises)
   - [QB Stats Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises)
