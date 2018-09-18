@@ -8,7 +8,7 @@
 - Reviews dataset can be found under `datasets.yelp_reviews`
 - Access the data at www.stratascratch.com
 - You can use SQL on Strata Scratch to answer the questions or connect to the datasets and answer the questions using other tools like python
-  - [How to Connect to the Database Using Python and Other Programs](https://github.com/stratascratch/stratascratch.github.io/blob/master/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-connect-to-the-database-using-python-and-other-programs.md)
+- You can now run Jupyter notebooks on Google CoLab so there’s no software installation needed. Use this [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g) as a template to start the analytics case.
 
 
 ### Business Case
