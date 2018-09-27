@@ -21,7 +21,6 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [How to Install the psycopg2 Library to Connect to Strata Scratch Using Jupyter Notebooks](https://education.stratascratch.com/guides/how-to-connect-to-the-database-using-python-and-other-programs/how-to-install-psycopg2-to-connect-to-strata-scratch-using-python)
 
 
-
 ## Business Analytics Guides and Problem Sets
 
 ### SQL
@@ -44,7 +43,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Yelp Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/yelp-exercises)
   - [AirBnB Search Details Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/airbnb-search-details-exercises)
   - [Olympics Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/olympics-exercises)
-  
+  - [Winemag Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/winemag-exercises)
+    
 
 - SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
@@ -60,7 +60,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Yelp Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/yelp-exercise-solutions)
   - [AirBnB Search Details Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/airbnb-search-details-exercises-solutions)
   - [Olympics Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/olympics-exercises-solutions)
-
+  - [Winemag Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/winemag-exercises-solutions)
 
 ### Python 
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
