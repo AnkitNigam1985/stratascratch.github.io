@@ -43,6 +43,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Spotify Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/spotify-exercises)
   - [Yelp Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/yelp-exercises)
   - [AirBnB Search Details Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/airbnb-search-details-exercises)
+  - [Olympics Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/olympics-exercises)
   
 
 - SQL Exercise Solutions
@@ -58,6 +59,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Spotify Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/spotify-exercise-solutions)
   - [Yelp Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/yelp-exercise-solutions)
   - [AirBnB Search Details Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/airbnb-search-details-exercises-solutions)
+  - [Olympics Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/olympics-exercises-solutions)
 
 
 ### Python 
