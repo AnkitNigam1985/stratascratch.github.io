@@ -46,7 +46,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Winemag Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/winemag-exercises)
   - [SF Restaurant Health Violations Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/sf-restaurant-health-violations-exercises)
   - [SF Public Salaries Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/sf-public-salaries-exercises)
-  
+  - [Los Angeles Restaurant Health Inspections Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/los-angeles-restaurant-health-inspections-exercises)
+
 
 - SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
@@ -65,7 +66,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [Winemag Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/winemag-exercises-solutions)
   - [SF Restaurant Health Violations Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sf-restaurant-health-violations-exercises-solutions)
   - [SF Public Salaries Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sf-public-salaries-exercises-solutions)
-  
+  - [Los Angeles Restaurant Health Inspections Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/los-angeles-restaurant-health-inspections-exercises-solutions)
+    
 
 ### Python 
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
