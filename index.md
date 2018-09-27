@@ -44,7 +44,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [AirBnB Search Details Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/airbnb-search-details-exercises)
   - [Olympics Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/olympics-exercises)
   - [Winemag Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/winemag-exercises)
-    
+  - [SF Restaurant Health Violations Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/sf-restaurant-health-violations-exercises)
+
 
 - SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
@@ -61,6 +62,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [AirBnB Search Details Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/airbnb-search-details-exercises-solutions)
   - [Olympics Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/olympics-exercises-solutions)
   - [Winemag Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/winemag-exercises-solutions)
+  - [SF Restaurant Health Violations Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sf-restaurant-health-violations-exercises-solutions)
+
 
 ### Python 
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
