@@ -42,6 +42,9 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [QB Stats Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/qbstats-1996-2016-exercises)
   - [Spotify Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/spotify-exercises)
   - [Yelp Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/yelp-exercises)
+  - [AirBnB Search Details Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/airbnb-search-details-exercises)
+  
+
 - SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions)
   - [Basic SQL Exercises 2 Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions)
@@ -54,6 +57,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
   - [QB Stats Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/qbstats-1996-2016-exercise-solutions)
   - [Spotify Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/spotify-exercise-solutions)
   - [Yelp Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/yelp-exercise-solutions)
+  - [AirBnB Search Details Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/airbnb-search-details-exercises-solutions)
+
 
 ### Python 
 Clicking on a link will open [Google CoLab](https://colab.research.google.com/) which runs Jupyter notebooks on your browser without any software installation. You can download the file as an ipynb and open it using CoLab on your Google Drive, using Jupyter Notebooks, or Anaconda if you have it installed locally.
