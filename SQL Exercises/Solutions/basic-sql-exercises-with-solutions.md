@@ -16,12 +16,12 @@
    To know the number of passengers, we need to count the distinct names on the `datasets.titanic` table. The following query will give
    us an answer of 891 passengers.
    ```sql
-      SELECT count(distinct name)
+      SELECT count(name)
       FROM datasets.titanic
    ```  
    *Output:* `891`
    
-2. How many passengers were in first class (pclass =1), a woman, and survived (survived = 1)?
+2. How many passengers were in first class (pclass = 1), were women and have survived the sinking (survived=1)?
    
    `Table: datasets.titanic`
    
@@ -31,7 +31,7 @@
    and add other parameters, such as `pclass`, `sex` and `survived`. 
    ```sql
       SELECT
-        count(distinct passengerid)
+        count(passengerid)
       FROM datasets.titanic
       WHERE
         pclass = 1
@@ -79,9 +79,9 @@
    ```sql
       SELECT
         count(distinct name)
-      FROM datasets.combine
+      FROM datasets.nfl_combine
       WHERE year = 2015
-      AND (pickround NOTNULL or pickround <> '0')
+      AND (pickround NOTNULL OR pickround <> '0')
    ```
    *Output:* `321`
    
@@ -103,7 +103,7 @@
 7. What were the top 10 songs in 2010?
    Include the rank, group name, and song name from highest ranked song to lowest.
    
-   `Table: datasets.billboardtop_100year_end`
+   `Table: datasets.billboard_top_100_year_end`
    
    *Solution:*
    
@@ -111,8 +111,8 @@
    ```sql
       SELECT
         year_rank as rank, 
-        "group" as group_name,
-        song_name as song_name
+        group_name,
+        song_name
       FROM datasets.billboard_top_100_year_end
       WHERE year = 2010
       AND year_rank BETWEEN 1 and 10
@@ -138,7 +138,7 @@
    ```
    *Output:* `112650`
    
-9. What is the average SAT score by school? Rank by highest average SAT score
+9. What is the average SAT score by school? Rank by highest average SAT score.
 
    `Table: datasets.sat_scores`
    

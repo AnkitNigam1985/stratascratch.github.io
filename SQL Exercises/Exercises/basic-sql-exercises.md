@@ -10,7 +10,7 @@
    
    `Table: datasets.titanic`
    
-2. How many passengers were in first class (pclass =1), a woman, and survived (survived = 1)?
+2. How many passengers were in first class (pclass = 1), were women and have survived the sinking (survived=1)?
    
    `Tables: datasets.titanic`
    
@@ -33,13 +33,13 @@
 7. What were the top 10 songs in 2010?
    Include the rank, group name, and song name from highest ranked song to lowest.
    
-   `Tables: datasets.billboardtop_100year_end`
+   `Tables: datasets.billboard_top_100_year_end`
    
 8. What is Samantha’s and Lisa’s total sales revenue?
 
    `Tables: datasets.sales_performance`
    
-9. What is the average SAT score by school? Rank by highest average SAT score
+9. What is the average SAT score by school? Rank by highest average SAT score.
 
    `Tables: datasets.sat_scores`
    
