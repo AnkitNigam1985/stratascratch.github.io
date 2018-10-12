@@ -20,70 +20,39 @@
     WHERE RIGHT(school, 2) <> 'HS'
     ```
 
-2. The US flights data has columns whose types are TEXT but values are numbers. Convert all the columns to appropriate types. (Hint: Not all casting will go easy, you might have to use CASE statements. Empty strings will be a problem)
+2. What is the old to young ratio per olympic game? Young are people whose age <= 30, while old are those whose age >= 45.
 
-    `Tables: us_flights`
+    `Tables: olympics_athletes_events`
 
     *Solution*:
 
     ```sql
-    SELECT 
-        flight_date,
-        unique_carrier,
-        flight_num,
-        origin,
-        dest,
-        
-        CASE 
-            WHEN arr_delay <> '' THEN 
-                CAST(arr_delay AS NUMERIC)
-            ELSE NULL
-        END AS arr_delay,
-        
-        cancelled :: INTEGER,
-        distance,
-        
-        CASE 
-            WHEN carrier_delay <> '' THEN 
-                CAST(carrier_delay AS NUMERIC)
-            ELSE NULL
-        END AS carier_delay,
-        
-        
-        CASE 
-            WHEN weather_delay <> '' THEN 
-                CAST(weather_delay AS NUMERIC)
-            ELSE NULL
-        END AS weather_delay,
-        
-        CASE 
-            WHEN late_aircraft_delay <> '' THEN 
-                CAST(late_aircraft_delay AS NUMERIC)
-            ELSE NULL
-        END AS late_aircraft_delay,
-        
-        CASE 
-            WHEN nas_delay <> '' THEN 
-                CAST(nas_delay AS NUMERIC)
-            ELSE NULL
-        END AS nas_delay,
-        
-        CASE 
-            WHEN security_delay <> '' THEN 
-                CAST(security_delay AS NUMERIC)
-            ELSE NULL
-        END AS security_delay,
-        
-        CASE 
-            WHEN actual_elapsed_time <> '' THEN 
-                CAST(actual_elapsed_time AS NUMERIC)
-            ELSE NULL
-        END AS actual_elapsed_time
-        
-    FROM datasets.us_flights
+    SELECT
+        games,
+    
+        total_old :: NUMERIC / total_young AS old_to_young_ratio
+    FROM
+        (SELECT 
+            games, 
+            
+            SUM(CASE
+                WHEN age <= 25
+                THEN 1
+                ELSE 0
+                END
+            ) AS total_young,
+            
+            SUM(CASE
+                WHEN age >= 45
+                THEN 1
+                ELSE 0
+                END
+            ) AS total_old
+        FROM datasets.olympics_athletes_events
+        GROUP BY games) subquery
     ```
 
-3. What are the average opening and closing price for AAPL stock for 5 week days? What are they for 30 days in a month? (Hint: You can use EXTRACT('dow' FROM date) to get the weekday) 
+3. Which day of the week would it be best to trade in AAPL stock? What about the best day in a month? Find the average opening and closing prices. (Hint: You can use EXTRACT(‘dow’ FROM date)  to get the day of week)
 
     `Tables: aapl_historical_stock_price`
 
@@ -248,7 +217,7 @@
     ORDER BY birthday ASC) sub
     ```
 
-9. Find the most expensive product on Amazon for each product category. Use the price column (Hint: Use subquery joins)
+9. Find the most expensive products on Amazon for each product category. Use the price column (Hint: Use subquery joins)
 
     `Tables: innerwear_amazon_com`
 
@@ -256,14 +225,13 @@
 
     ```sql
     SELECT 
-        product_category,
-        '$' || MAX(SUBSTR(price, 2) :: NUMERIC) AS max_price
-    FROM datasets.innerwear_amazon_com
-    GROUP BY product_category
+         product_category,
+         MAX(SUBSTR(price, 2) :: NUMERIC) AS max_price
+     FROM datasets.innerwear_amazon_com
+     GROUP BY product_category
     ```
 
     We have to clean the price by removing the $ and casting to NUMERIC so MAX will work.
-    After cleaning we make it dirty again so we can check for equality with the parent table.
 
     Now we use this query as an inner query for the more complex one.
 
@@ -271,15 +239,15 @@
     SELECT
         iwa.*
     FROM
-        datasets.innerwear_amazon_com iwa
-        INNER JOIN
-        (SELECT 
-            product_category,
-            '$' || MAX(SUBSTR(price, 2) :: NUMERIC) AS max_price
-        FROM datasets.innerwear_amazon_com
-        GROUP BY product_category) mp
-        ON iwa.product_category = mp.product_category AND
-        iwa.price = mp.max_price
+     datasets.innerwear_amazon_com iwa
+    INNER JOIN
+     (SELECT 
+         product_category,
+         MAX(SUBSTR(price, 2) :: NUMERIC) AS max_price
+     FROM datasets.innerwear_amazon_com
+     GROUP BY product_category) mp
+    ON iwa.product_category = mp.product_category AND 
+        SUBSTR(iwa.price, 2) :: NUMERIC = mp.max_price
     ```
 
 10. Find the products which are exclusive to Amazon compared to Top Shop and Macy's. Two products are considered equal if they have the same brand name and same price.
@@ -295,18 +263,20 @@
     ```sql
     SELECT 
         *
-    FROM datasets.innerwear_amazon_com
+    FROM 
+        datasets.innerwear_amazon_com
     WHERE 
         (brand_name, price) NOT IN 
-        (SELECT DISTINCT
-            brand_name,
-            price
-        FROM 
-        (
-        SELECT * FROM datasets.innerwear_macys_com
-            UNION ALL
-        SELECT * FROM datasets.innerwear_topshop_com
-        ) mha)
+            (SELECT DISTINCT
+                brand_name,
+                price
+            FROM 
+                (
+                    SELECT * FROM datasets.innerwear_macys_com
+                        UNION ALL
+                    SELECT * FROM datasets.innerwear_topshop_com
+                ) mha
+            )
     ```
 
 11. Find all users which are located in Italy but do not speak Italian. You must also filter away all non control group entries and the device they used must be a Nexus 5.
@@ -367,7 +337,7 @@
     WHERE study_percentile = 80
     ```
 
-13. Find Yelp reviews which are about food (Search for keywords like food or pizza or sandwich) and find the address of the reviews business.
+13. Find Yelp reviews about food. Search for keywords like food, pizza, sandwich or burger. Find the business address and the state.
 
     `Tables: yelp_reviews, yelp_business`
 
@@ -405,17 +375,24 @@
     SELECT 
         date
     FROM datasets.aapl_historical_stock_price
-    WHERE open = (SELECT MAX(open) 
-    FROM datasets.aapl_historical_stock_price)
+    WHERE open = 
+        (SELECT 
+            MAX(open) 
+        FROM 
+            datasets.aapl_historical_stock_price)
     ```
 
-15. What is the average number of days between booking and check-in dates per host in Airbnb. 
+15. What is the average number of days between booking and check-in dates for AirBnB hosts?
 
     `Tables: airbnb_contacts`
 
     *Solution*:
 
-    We add the having clause to remove some rows which have inconsistent data.
+    To find the number of days we take the difference between `ds_checkin` and `ts_booking_at`. Because `ts_booking_at` is of type TIMESTAMP we cast it to a date so get a substraction of two dates. The average over all such days is taken per host to get the results we need.
+    
+    Because of errors in the table where the check-in date comes before the booking date we need to use a HAVING clause to deal with them.
+    
+    For better presentability we also order by the average we just calculated.
 
     ```sql
     SELECT

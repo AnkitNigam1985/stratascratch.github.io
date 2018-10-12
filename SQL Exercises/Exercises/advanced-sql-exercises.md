@@ -11,11 +11,11 @@
 
     `Tables: sat_scores`
 
-2. The US flights data has columns whose types are TEXT but values are numbers. Convert all the columns to appropriate types. (Hint: Not all casting will go easy, you might have to use CASE statements. Empty strings will be a problem)
+2. What is the old to young ratio per olympic game? Young are people whose age <= 30, while old are those whose age >= 45.
 
-    `Tables: us_flights`
+    `Tables: olympics_athletes_events`
 
-3. What are the average opening and closing price for AAPL stock for 5 week days? What are they for 30 days in a month? (Hint: You can use EXTRACT('dow' FROM date) to get the weekday) 
+3. Which day of the week would it be best to trade in AAPL stock? What about the best day in a month? Find the average opening and closing prices. (Hint: You can use EXTRACT(‘dow’ FROM date)  to get the day of week)
 
     `Tables: aapl_historical_stock_price`
 
@@ -39,7 +39,7 @@
 
     `Tables: nominee_filmography, nominee_information`
 
-9. Find the most expensive product on Amazon for each product category. Use the price column (Hint: Use subquery joins)
+9. Find the most expensive products on Amazon for each product category. Use the price column (Hint: Use subquery joins)
 
     `Tables: innerwear_amazon_com`
 
@@ -55,7 +55,7 @@
 
     `Tables: sat_scores`
 
-13. Find Yelp reviews which are about food (Search for keywords like food or pizza or sandwich) and find the address of the reviews business.
+13. Find Yelp reviews about food. Search for keywords like food, pizza, sandwich or burger. Find the business address and the state.
 
     `Tables: yelp_reviews, yelp_business`
 
@@ -63,6 +63,6 @@
 
     `Tables: aapl_historical_stock_price`
 
-15. What is the average number of days between booking and check-in dates per host in Airbnb. 
+15. What is the average number of days between booking and check-in dates for AirBnB hosts?
 
     `Tables: airbnb_contacts`
