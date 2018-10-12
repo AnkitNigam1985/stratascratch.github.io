@@ -33,7 +33,6 @@
 
     ```sql
     SELECT DISTINCT
-        unique_carrier,
         origin,
         dest,
         distance
@@ -52,7 +51,7 @@
     SELECT
         *
     FROM datasets.us_flights
-    WHERE arr_delay = '0.0'
+    WHERE arr_delay = 0.0 OR arr_delay IS NULL
     ```
 
 4. What is the average distance an airplane travels from each origin airport.
@@ -198,7 +197,7 @@
     *Solution*: 
     - The trick is to know what filter to put in what place. 
     - We filter first by language in WHERE so we get only Chinese speaking users.
-    - The HAVING filter is where we discard all companies which have less than 10 users.
+    - The HAVING filter is where we keep only companies which have more than 10 users.
 
     Keep in mind that all filters which are based on aggregations (like COUNT(*) here) must go in the HAVING clause. 
 
@@ -225,7 +224,7 @@
     WHERE nominee = 'Abigail Breslin'
     ```
 
-15. Show me the Oscar winners between 2001 and 2009
+15. Show me the Oscar winners between 2001 and 2009.
 
     `Table: datasets.oscar_nominees`
 
@@ -236,7 +235,7 @@
         *
     FROM datasets.oscar_nominees
     WHERE 
-        winner = 'true' AND 
+        winner = true AND 
         year BETWEEN 2001 AND 2009  
     ```
 

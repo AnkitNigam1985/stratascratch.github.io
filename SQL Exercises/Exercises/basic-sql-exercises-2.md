@@ -66,6 +66,6 @@
 
     `Table: datasets.oscar_nominees`
 
-15. Show me the Oscar winners between 2001 and 2009
+15. Show me the Oscar winners between 2001 and 2009.
 
     `Table: datasets.oscar_nominees`
