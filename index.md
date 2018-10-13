@@ -30,7 +30,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 #### SQL Practice Problem Sets
 - SQL Exercises
-  - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises) (Freemium access)
+  - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises) __**(Freemium access)**__
   - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises-2)
   - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/advanced-sql-exercises)
   - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/sql-and-business-insights)
@@ -50,7 +50,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 
 - SQL Exercise Solutions
-  - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions) (Freemium access)
+  - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions) __**(Freemium access)**__
   - [Basic SQL Exercises 2 Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions)
   - [Advanced SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions)
   - [SQL and Business Insights Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions)
@@ -82,8 +82,8 @@ This guide will help you set up and run Jupyter Notebooks with Google CoLab, exe
     - [Numpy Tutorial Solutions](https://colab.research.google.com/drive/16rphW-v8ugVo79TkbFtwaiblrl9_-uiC)
   
 - A Short Pandas Tutorial For Data Analysis
-    - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX) (Freemium access)
-    - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz) (Freemium access)
+    - [Pandas Tutorial](https://colab.research.google.com/drive/1a4sbKG7jOJGn4oeonQPA8XjJm7OYgcdX) __**(Freemium access)**__
+    - [Pandas Tutorial Solutions](https://colab.research.google.com/drive/1xlZW9s2QpH2yClFXwLLNqm3sn_rU-yjz) __**(Freemium access)**__
 
 #### Python Intermediate Guides - Data Cleaning, Manipulating, and Exploring Techniques
 - How to Clean Data with Pandas 
