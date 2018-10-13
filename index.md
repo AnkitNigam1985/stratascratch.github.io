@@ -87,7 +87,7 @@ This guide will help you set up and run Jupyter Notebooks with Google CoLab, exe
 
 #### Python Intermediate Guides - Data Cleaning, Manipulating, and Exploring Techniques
 - How to Clean Data with Pandas 
-    - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy) (Freemium access)
+    - [Data Cleaning With Pandas Tutorial](https://colab.research.google.com/drive/1DkmrA861GOdqBdgf4j7Fs4H1CWy6Aasy) __**(Freemium access)**__
   
 - Functions, Lambda Functions, Loops, and List Comprehensions to Manipulate Data
     - [Functions, Lambda Functions, Loops, and List Comprehensions Tutorial](https://colab.research.google.com/drive/1cW5bu556n1XeP6uZrR0kuFl6Mv1Tt3k7)
