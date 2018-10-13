@@ -28,7 +28,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - [Basic and Intermediate SQL Guide](https://education.stratascratch.com/guides/sql-guide/sql-guide)
 - [Advanced SQL Guide](https://education.stratascratch.com/guides/sql-guide/advanced-sql-guide)
 
-#### SQL Practice Problem Sets
+#### SQL Practice Problem Sets ![(Freemium access)](https://placehold.it/15/f03c15/000000?text=+) `#00A699`
 - SQL Exercises
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises) (Freemium access)
   - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises-2)
