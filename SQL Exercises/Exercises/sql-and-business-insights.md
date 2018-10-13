@@ -37,7 +37,7 @@ Dataset: `sf_crime_incidents_2014_01`
 Dataset: `oscar_nominees`
 
 - Who has won the most oscars?
-- Who has been nominated the most times but has never won?
+- Count the number of nominations which didn't end with a award. Who was the least lucky?
 - Who has the highest win to nomination ratio?
 - Which movies had the most nominated actors/actresses?
 - Who is the best actor/actress of all time? What metrics would you use to convince me?
@@ -48,7 +48,7 @@ Dataset: `global_weekly_charts_2013_2014`
 
 - Which games have been in the top 100 for the longest? How many weeks were they in the top 100?
 - Which games, by platform, has been in the top 10 for the longest?
-- What genres are the most popular?
+- What genres yielded highest sales?
 - Which are the best publishers? What metrics would you use to analyze?
 
 ### 5. NFL Combine

@@ -25,10 +25,10 @@ Dataset: `billboard_top_100_year_end`
 To find out if a song is a top song or not we check the year_rank for that song. If it is equal to 1 then it was a top song. We also need to check if a song belongs to our time period of interest. We do that with the second filter. `DATE_PART('year', CURRENT_DATE)` will give us the current year (2018 as of writing). 
 
 ```sql
-    SELECT song_name
-    FROM datasets.billboard_top_100_year_end
-    WHERE year_rank = 1 
-    AND DATE_PART('year', CURRENT_DATE) - year <= 30
+SELECT song_name
+FROM datasets.billboard_top_100_year_end
+WHERE year_rank = 1 
+AND DATE_PART('year', CURRENT_DATE) - year <= 30
 ```
 
 - Which artists have had the most top 10 songs over the years? What were the songs?
@@ -39,13 +39,13 @@ The solution to the second question is in the inner query where we get all songs
 10 sometime. To answer the first question we need to count the number of songs which we do using `GROUPBY artist` and `count(*) AS top10_songs_count.` The results are also sorted in a descending order so we can quickly say that Elvis Presley, Mariah Carey and Elton John are the 3 most popular authors. 
 
 ```sql
-    SELECT artist, count(*) AS top10_songs_count
-    FROM
-        (SELECT artist, song_name
-        FROM datasets.billboard_top_100_year_end
-        WHERE year_rank <= 10) temporary
-    GROUP BY artist
-    ORDER BY top10_songs_count DESC
+SELECT artist, count(*) AS top10_songs_count
+FROM
+    (SELECT artist, song_name
+    FROM datasets.billboard_top_100_year_end
+    WHERE year_rank <= 10) temporary
+GROUP BY artist
+ORDER BY top10_songs_count DESC
 ```
 
 - Which artists have been on the billboard top 100 the most in the past 10 years?
@@ -55,11 +55,11 @@ The solution to the second question is in the inner query where we get all songs
 We filter away all songs older than 10 years (` WHERE date_part('year', CURRENT_DATE) - year <= 10`) and then group by artist after which we count the number of occurences and sort descending so the highest counts are presented first.
 
 ```sql
-    SELECT artist, COUNT(*) as count_10yrs
-    FROM datasets.billboard_top_100_year_end
-    WHERE date_part('year', CURRENT_DATE) - year <= 10
-    GROUP BY artist
-    ORDER BY count_10yrs DESC
+SELECT artist, COUNT(*) as count_10yrs
+FROM datasets.billboard_top_100_year_end
+WHERE date_part('year', CURRENT_DATE) - year <= 10
+GROUP BY artist
+ORDER BY count_10yrs DESC
 ```
 
 - Who is the best artist in the past 50 years? What metrics would you use to answer this question?
@@ -72,8 +72,8 @@ To answer this question we first need to devise a metric. A suggestion is to cal
 SELECT 
     artist, 
     AVG(year_rank) AS average_rank, 
-    COUNT(year) AS years_present,
-    (100 - AVG(year_rank)) * COUNT(year) AS score
+    COUNT(DISTINCT year) AS years_present,
+    (100 - AVG(year_rank)) * COUNT(DISTINCT year) AS score
 FROM datasets.billboard_top_100_year_end
 WHERE date_part('year', CURRENT_DATE) - year <= 50
 GROUP BY artist
@@ -91,25 +91,25 @@ Dataset: `sf_crime_incidents_2014_01`
 
 In our solution, we want to determine first the number of categories which can be attained through the `SELECT` statement. To get the results within the year 2014, we added the conditional statement `WHERE date>='2014-01-01' and date<='2014-12-31'`. Knowing the top crime categories can be easily viewed by grouping and sorting the results in descending order.
 ```sql
-   SELECT
-      category,
-      count(category) as count
-   FROM datasets.sf_crime_incidents_2014_01
-   WHERE date>='2014-01-01' and date<='2014-12-31'
-   GROUP BY category
-   ORDER BY count DESC
+SELECT
+    category,
+    count(category) as count
+FROM datasets.sf_crime_incidents_2014_01
+WHERE date>='2014-01-01' and date<='2014-12-31'
+GROUP BY category
+ORDER BY count DESC
 ```
 
 - What day of the week was there the most crime? Does crime incidence vary depending on the month? Depending on the time?
 
 *Solution:*
 ```sql
-   SELECT
-      day_of_week,
-      count(category) as count
-   FROM datasets.sf_crime_incidents_2014_01
-   GROUP BY day_of_week
-   ORDER BY count DESC
+SELECT
+    day_of_week,
+    count(category) as count
+FROM datasets.sf_crime_incidents_2014_01
+GROUP BY day_of_week
+ORDER BY count DESC
 ```
 
 Based on the result, the day of the week with the highest crime is Friday.
@@ -118,12 +118,12 @@ Based on the result, the day of the week with the highest crime is Friday.
 
 *Solution:*
 ```sql
-   SELECT
-      pd_district,
-      count(category) as count
-   FROM datasets.sf_crime_incidents_2014_01
-   GROUP BY pd_district
-   ORDER BY count DESC
+SELECT
+    pd_district,
+    count(category) as count
+FROM datasets.sf_crime_incidents_2014_01
+GROUP BY pd_district
+ORDER BY count DESC
 ```
 
 Based on the result, the Southern District has the most crime incidences.
@@ -132,13 +132,13 @@ Based on the result, the Southern District has the most crime incidences.
 
 *Solution:*
 ```sql
-   SELECT
-      address,
-      pd_district,
-      count(category) as count
-   FROM datasets.sf_crime_incidents_2014_01
-   GROUP BY address, pd_district
-   ORDER BY count DESC
+SELECT
+    address,
+    pd_district,
+    count(category) as count
+FROM datasets.sf_crime_incidents_2014_01
+GROUP BY address, pd_district
+ORDER BY count DESC
 ```
 
 Based on the result, the most dangerous place in SF is at 800 Block of BRYANT ST.
@@ -151,28 +151,28 @@ Dataset: `oscar_nominees`
 
 *Solution:*
 ```sql
-   SELECT
-      nominee,
-      count(winner) as count
-   FROM datasets.oscar_nominees
-   WHERE winner ='true'
-   GROUP BY nominee
-   ORDER BY count DESC
+SELECT
+    nominee,
+    count(winner) as count
+FROM datasets.oscar_nominees
+WHERE winner = true
+GROUP BY nominee
+ORDER BY count DESC
 ```
 
 Based on the result, the answers are Meryl Streep, Katharine Hepburn, Walter Brennan, Jack Nicholson and Ingrid Bergman.
 
-- Who has been nominated the most times but has never won?
+- Count the number of nominations which didn't end with a award. Who was the least lucky?
 
 *Solution:*
 ```sql
-   SELECT
-      nominee,
-      count(winner) as count
-   FROM datasets.oscar_nominees
-   WHERE winner ='false'
-   GROUP BY nominee
-   ORDER BY count DESC
+SELECT
+    nominee,
+    count(winner) as count
+FROM datasets.oscar_nominees
+WHERE winner = false
+GROUP BY nominee
+ORDER BY count DESC
 ```
 
 The answer is Meryl Streep.
@@ -181,12 +181,18 @@ The answer is Meryl Streep.
 
 *Solution:*
 ```sql
-   SELECT
-      nominee,
-      sum (case when winner = 'true' then 1 else 0 end)/count(nominee)::float as ratio
-   FROM datasets.oscar_nominees
-   GROUP BY nominee
-   ORDER BY ratio desc
+SELECT
+    nominee,
+    
+    SUM (CASE 
+        WHEN winner = true 
+        THEN 1.0 
+        ELSE 0.0
+        END) / COUNT(*) :: NUMERIC AS ratio
+FROM 
+    datasets.oscar_nominees
+GROUP BY nominee
+ORDER BY ratio DESC
 ```
 
 The answers are the following: Judy Holliday, Burl Ives, Daniel Day Lewis, Brenda Fricker, Donald Crisp, Ginger Rogers, Marion Cotillard, Mo'Nique, Louise Fletcher
@@ -195,12 +201,12 @@ The answers are the following: Judy Holliday, Burl Ives, Daniel Day Lewis, Brend
 
 *Solution:*
 ```sql
-   SELECT
-      movie,
-      count(nominee)
-   FROM datasets.oscar_nominees
-   GROUP BY movie
-   ORDER BY count DESC
+SELECT
+    movie,
+    count(nominee)
+FROM datasets.oscar_nominees
+GROUP BY movie
+ORDER BY count DESC
 ```
 
 The answers are the following: The Godfather Part II, Network, On the Waterfront, Mrs. Miniver, All about Eve, Peyton Place, From Here to Eternity, Bonnie and Clyde
@@ -209,13 +215,13 @@ The answers are the following: The Godfather Part II, Network, On the Waterfront
 
 *Solution:*
 ```sql
-   SELECT
-      nominee,
-      count(winner) as count
-   FROM datasets.oscar_nominees
-   WHERE winner ='true'
-   GROUP BY nominee
-   ORDER BY count DESC
+SELECT
+    nominee,
+    count(winner) as count
+FROM datasets.oscar_nominees
+WHERE winner = true
+GROUP BY nominee
+ORDER BY count DESC
 ```
 
 The answers are the following: Meryl Streep, Katharine Hepburn, Walter Brennan, Jack Nicholson, Ingrid Bergman
@@ -232,11 +238,13 @@ The answers are FIFA Soccer 13 with 432 weeks, LEGO The Lord of the Rings with 3
 339 weeks.
 
 ```sql
-    SELECT game, COUNT(*) AS week_count
-    FROM datasets.global_weekly_charts_2013_2014
-    WHERE week <= 100
-    GROUP BY game
-    ORDER BY week_count DESC
+SELECT 
+    game, 
+    COUNT(*) AS week_count
+FROM datasets.global_weekly_charts_2013_2014
+WHERE week <= 100
+GROUP BY game
+ORDER BY week_count DESC
 ```
 
 - Which games, by platform, has been in the top 10 for the longest?
@@ -249,14 +257,14 @@ The answers are:
 * Painkiller: Hell & Damnation on X360
 
 ```sql
-    SELECT game, platform, COUNT(*) as count_top10
-    FROM datasets.global_weekly_charts_2013_2014
-    WHERE week <= 10
-    GROUP BY game, platform
-    ORDER BY count_top10 DESC
+SELECT game, platform, COUNT(*) as count_top10
+FROM datasets.global_weekly_charts_2013_2014
+WHERE week <= 10
+GROUP BY game, platform
+ORDER BY count_top10 DESC
 ```
 
-- What genres are the most popular?
+- What genres yielded highest sales?
 
 *solution*
 
@@ -332,20 +340,23 @@ FROM datasets.airbnb_searches
 *solution*
 
 We will only need `datasets.airbnb_searches`. We perform groupby over number of nights and sum up the searches for every night to obtain our statistics. The results are:
-- null 60926
-- 2 58201
-- 3 57177
-- 4 39392
-- 1 33786
-- 5 17621
+
+|number of nights|number of searches|
+|----------------|------------------|
+|null|60926|
+|2|58201|
+|3|57177|
+|4|39392|
+|1|33786|
+|5|17621|
 
 Notice that the majority of searches do not specify the number of nights.
 
 ```sql
-    SELECT n_nights, SUM(n_searches) AS total_searches
-    FROM datasets.airbnb_searches
-    GROUP BY n_nights
-    ORDER BY total_searches DESC
+SELECT n_nights, SUM(n_searches) AS total_searches
+FROM datasets.airbnb_searches
+GROUP BY n_nights
+ORDER BY total_searches DESC
 ```
 
 - What day of the week are most people checking in? What day of the week are most people checking out?
@@ -455,37 +466,41 @@ This is what the final query essentaly ends up to be.
 Based on our data and the following query and it's results.
 
 ```sql
-    SELECT n_messages, COUNT(*) 
-    FROM datasets.airbnb_contacts
-    WHERE ts_accepted_at IS NULL
-    GROUP BY n_messages
-    ORDER BY COUNT(*) DESC
+SELECT n_messages, COUNT(*) 
+FROM datasets.airbnb_contacts
+WHERE ts_accepted_at IS NULL
+GROUP BY n_messages
+ORDER BY COUNT(*) DESC
 ```
 
-n_messages | count
-2 | 1419
-3 | 1033
-4 | 677
-5 | 333
-1 | 332
-6 | 157
-7 | 77
-8 | 48
-9 | 31
+|n_messages | count|
+|-----------|------|
+|2 | 1419|
+|3 | 1033|
+|4 | 677|
+|5 | 333|
+|1 | 332|
+|6 | 157|
+|7 | 77|
+|8 | 48|
+|9 | 31|
 
 We see that majority of non acceptances (around 98%) are linked to a small number of messages, which is less than 10.
 This is likely the result of people asking some important questions via the first message, getting an unsatisfactory answer in the second message and then not accepting. So the solution would be to encourage hosts to write that crucial information in the description so visitors don't bother writing to a host they do not plan to visit. 
 
 ```sql
 SELECT
-    (SELECT SUM(cnt) 
-        FROM (SELECT COUNT(*) AS cnt
+    (SELECT 
+        SUM(cnt) 
+     FROM 
+        (SELECT COUNT(*) AS cnt
             FROM datasets.airbnb_contacts
             WHERE ts_accepted_at IS NULL AND n_messages <= 10
             GROUP BY n_messages
             ORDER BY count(*) DESC) temp
     ) :: FLOAT
     /
-    (SELECT COUNT(*) FROM datasets.airbnb_contacts WHERE ts_accepted_at IS NULL)
+    (SELECT COUNT(*) FROM datasets.airbnb_contacts WHERE ts_accepted_at IS NULL) 
+AS acceptance_rate
 ```
 is the query that gave us that number 98%
