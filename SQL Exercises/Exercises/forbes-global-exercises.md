@@ -15,10 +15,10 @@ Which country has the most companies from the dataset?
 Which is the most popular sector from the list?
 
 ### Question 3
-What industries do most companies are in?
+Which industries boast the highest number of companies?
 
 ### Question 4
-What is the average profit of the major banking industry?
+What is the average profit for the major banks industry?
 
 ### Question 5
 Which industry has the highest market value in Asia?
@@ -30,10 +30,10 @@ What is the total market value of the financial sector?
 How many American companies are on the list?
 
 ### Question 8
-What are the top 3 sectors in the United States?
+What are the top 3 sectors in the United States by the average rank?
 
 ### Question 9
 What are the total assets of the energy sector?
 
 ### Question 10
-Which continent has the most companies?
+Which continent has the highest number of companies?
