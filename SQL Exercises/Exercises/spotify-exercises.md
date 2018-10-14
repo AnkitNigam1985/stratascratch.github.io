@@ -23,13 +23,13 @@ Which songs have less than 2000 streams?
 What are the top 10 songs listened to?
 
 ### Question 7
-What is the average amount of streams of songs?
+What is the average number of streams over all songs?
 
 ### Question 8
 How many streams are in the top 100?  
 
 ### Question 9
-What are the highest streams of songs? 
+What is the highest number of streams in the dataset?
 
 ### Question 10
 Which songs are placed in the positions 8-10?
