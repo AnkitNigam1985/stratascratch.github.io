@@ -1,4 +1,4 @@
-# SQL Exercise 1 
+# AirBnB Search Details Exercise Solutions
 
 In this exercise we will use the dataset `datasets.airbnb_search_details`. 
 
@@ -55,7 +55,7 @@ FROM datasets.airbnb_search_details
 WHERE accommodates = 1 AND beds = 1
 ```
 
-2. Find the first 50 apartments in New York City which are in the Harlem neighborhood.
+2. Find 50 searches for apartments in New York City which are in the Harlem neighborhood.
 
 Columns: `city` and `neighborhood`
 
@@ -65,7 +65,7 @@ Hint: New York City is present as NYC in this dataset.
 SELECT *
 FROM datasets.airbnb_search_details
 WHERE city = 'NYC' AND neighbourhood = 'Harlem'
-LIMIT 20
+LIMIT 50
 ```
 
 3. Find all searches where the number of bedrooms is equal to the number of bathrooms.
@@ -83,7 +83,7 @@ WHERE bedrooms = bathrooms
 Columns: `city` and `neighbourhood`
 
 ```sql
-SELECT neighbourhood
+SELECT DISTINCT neighbourhood
 FROM datasets.airbnb_search_details
 WHERE city = 'LA'
 ```
@@ -132,7 +132,7 @@ WHERE
 ORDER BY review_scores_rating DESC    
 ```
 
-4. Find the average number of bathrooms and bedrooms per city per property type.
+4. Find the average number of bathrooms and bedrooms for each city and property type pair.
 
 Columns: `city`, `property_type`, `bathrooms`, `bedrooms`
 
@@ -145,7 +145,7 @@ FROM datasets.airbnb_search_details
 GROUP BY city, property_type
 ```
 
-5. Find the total number of houses which have TVs in the Westlake neighborhood.
+5. Find the total number of searches for Westlake neighborhood which require TV among the amenities.
 
 Columns: `neighbourhood`, `property_type`, `amenities`
 
@@ -176,7 +176,9 @@ GROUP BY city
 ORDER BY crowdness_ratio ASC
 ```
 
-7. Find the cheapest property in every city based on the `log_price` column.
+7. Find the price of the cheapest property for every city.
+
+Columns: `city` and `log_price`
 
 ```sql
 SELECT 
@@ -207,6 +209,7 @@ SELECT
 FROM datasets.airbnb_search_details
 GROUP BY neighbourhood
 HAVING MIN(beds) > 3
+ORDER BY avg_beds DESC
 ```
 
 10. To better understand the effects of the number of reviews on the price you decide to bin the reviews into the following groups: NO, FEW, SOME, MANY, A LOT.
@@ -280,7 +283,7 @@ WHERE description ILIKE '%parking%' AND cleaning_fee = 'FALSE'
 
 1. Complete the statistical analysis started in question 10 of the Intermediate exercises. Find the min, avg and max log price per review qualification.
 
-Hint: Use a subquery. Remember: subqueries must be named.
+Hint: Use a subquery to keep your query code manageable. Remember that subqueries must be named.
 
 Columns: `number_of_reviews`, `log_price`
 
@@ -327,8 +330,8 @@ ON
 ```
 
 3. Convert the following two columns to their true types using type casts and if necessary string processing:
-- `cleaning_fee` from TEXT to BOOL
-- `host_response_rate` from TEXT to NUMERIC. Missing values should be NULL.
+    - `cleaning_fee` from TEXT to BOOL
+    - `host_response_rate` from TEXT to NUMERIC. Missing values should be NULL.
 
 Find the average host_response_rate per zip code after type casting. This will tell you which municipality has the most talkative people.
 
@@ -339,15 +342,16 @@ SELECT
     zipcode,
     AVG(tmp.clean_host_response_rate) AS avg_host_response_rate
 FROM
-(SELECT
-    zipcode,
-    cleaning_fee :: BOOL AS clean_cleaning_fee,
-    (CASE 
-        WHEN host_response_rate = '' THEN NULL
-        ELSE SUBSTR(host_response_rate, 0, POSITION ('%' IN host_response_rate))    
-    END) :: NUMERIC AS clean_host_response_rate
-FROM 
-    datasets.airbnb_search_details) tmp
+    (SELECT
+        zipcode,
+        cleaning_fee :: BOOL AS clean_cleaning_fee,
+        (CASE 
+            WHEN host_response_rate = '' 
+            THEN NULL
+            ELSE SUBSTR(host_response_rate, 0, POSITION ('%' IN host_response_rate))    
+        END) :: NUMERIC AS clean_host_response_rate
+    FROM 
+        datasets.airbnb_search_details) tmp
 GROUP BY zipcode
 HAVING AVG(tmp.clean_host_response_rate) IS NOT NULL
 ORDER BY avg_host_response_rate
@@ -441,9 +445,9 @@ SELECT
              OVER (ORDER BY year), 
              1) AS prev_total_people_registered,
     
-    100 * ((total_people_registered / 
+    ROUND(100 * ((total_people_registered / 
             COALESCE(LAG (total_people_registered, 1) OVER (ORDER BY year), 1)) 
-            - 1.0) AS percent_growth
+            - 1.0), 2) || '%' AS estimated_growth
 FROM
     (SELECT
         year_fixed AS year,
@@ -488,31 +492,3 @@ FROM
     GROUP BY city, room_type) tmp) tmp2
 GROUP BY tmp2.city
 ```
-
-8. CHALLENGE: Find properties which are close in price and location and choose the one with more amenities. Close in location means that the euclidean distance between their corresponding longitude, latitude pairs is small (e.g. 0.0005) and close in price means that the absolute difference in log price is small (e.g. 0.0001)
-
-Hint: Use a self join.
-
-```sql
-SELECT
-    air1.id AS id1,
-    air2.id AS id2,
-    
-    LENGTH(air1.amenities) AS score1,
-    LENGTH(air2.amenities) AS score2,
-    
-    (CASE 
-        WHEN LENGTH(air1.amenities) > LENGTH(air2.amenities)
-        THEN air1.id 
-        ELSE air2.id 
-     END) AS better_id
-FROM 
-    datasets.airbnb_search_details air1
-CROSS JOIN
-    datasets.airbnb_search_details air2
-WHERE
-    (air1.latitude  - air2.latitude)  * (air1.latitude  - air2.latitude) +
-    (air1.longitude - air2.longitude) * (air1.longitude - air2.longitude) <= 0.0005 AND
-    ABS(air1.log_price - air2.log_price) < 0.0001
-```
- 

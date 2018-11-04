@@ -1,4 +1,4 @@
-# SQL Exercise 1 
+# AirBnB Search Details Exercise
 
 In this exercise we will use the dataset `datasets.airbnb_search_details`. 
 
@@ -50,7 +50,7 @@ To make life easier, always do a select for all the columns needed in the questi
 Columns: Use the `beds` and `accomodates` columns.
 
 
-2. Find the first 50 apartments in New York City which are in the Harlem neighborhood.
+2. Find 50 searches for apartments in New York City which are in the Harlem neighborhood.
 
 Columns: `city` and `neighborhood`
 
@@ -88,12 +88,11 @@ Columns: `city`, `cancellation_policy` and `review_scores_rating`
 Hint: San Francisco is stored as SF in this dataset.
 
 
-4. Find the average number of bathrooms and bedrooms per city per property type.
+4. Find the average number of bathrooms and bedrooms for each city and property type pair.
 
 Columns: `city`, `property_type`, `bathrooms`, `bedrooms`
 
-
-5. Find the total number of houses which have TVs in the Westlake neighborhood.
+5. Find the total number of searches for Westlake neighborhood which require TV among the amenities.
 
 Columns: `neighbourhood`, `property_type`, `amenities`
 
@@ -102,7 +101,9 @@ Columns: `neighbourhood`, `property_type`, `amenities`
 Columns: `city`, `accomodates` and `beds`
 
 
-7. Find the cheapest property in every city based on the `log_price` column.
+7. Find the price of the cheapest property for every city.
+
+Columns: `city` and `log_price`
 
 
 8. Find all neighbourhoods present in this dataset.
@@ -147,7 +148,7 @@ Columns: `neighbourhood`, `description`, `cleaning_fee`
 
 1. Complete the statistical analysis started in question 10 of the Intermediate exercises. Find the min, avg and max log price per review qualification.
 
-Hint: Use a subquery. Remember: subqueries must be named.
+Hint: Use a subquery to keep your query code manageable. Remember that subqueries must be named.
 
 Columns: `number_of_reviews`, `log_price`
 
@@ -180,8 +181,3 @@ Hint: Use the cleaned column for year from question 4. Use the LAG function to f
 7. Make a pivot table which shows the number of searches per city and room type. Rows are different cities while columns are different room types:
 
 Hint: Find the room types using SELECT DISTINCT before making the pivot table.
-
-
-8. CHALLENGE: Find properties which are close in price and location and choose the one with more amenities. Close in location means that the euclidean distance between their corresponding longitude, latitude pairs is small (e.g. 0.0005) and close in price means that the absolute difference in log price is small (e.g. 0.0001)
-
-Hint: Use a self join.
