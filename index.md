@@ -25,7 +25,8 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 
 ### SQL
 #### SQL Guides To Get You Started
-- [Basic and Intermediate SQL Guide](https://education.stratascratch.com/guides/sql-guide/sql-guide)
+- [Basic SQL Guide](https://education.stratascratch.com/guides/sql-guide/basic-sql-guide)
+- [Intermediate SQL Guide](https://education.stratascratch.com/guides/sql-guide/intermediate-sql-guide)
 - [Advanced SQL Guide](https://education.stratascratch.com/guides/sql-guide/advanced-sql-guide)
 
 #### SQL Practice Problem Sets

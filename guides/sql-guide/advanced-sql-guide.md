@@ -2,6 +2,13 @@
 
 ## Contents 
 
+[Writing Subqueries in SQL](#sql-subqueries)
+- [Subquery basics](#subquery-basics)
+- [Using subqueries to aggregate in multiple stages](#subquery-basics)
+- [Subqueries in conditional logic](#subquery-logic)
+- [Joining subqueries](#joining-subqueries)
+- [Subqueries and UNIONs](#subqueries-unions)
+
 [SQL Data Types](#sql-data-types)
 - [Data types](#data-types)
 - [Changing a column's data type](#changing-data-type)
@@ -24,13 +31,6 @@
 - [Turning strings into dates](#turn-str-to-date)
 - [Turning dates into more useful dates](#turning-dates)
 - [COALESCE](#coalesce)
-
-[Writing Subqueries in SQL](#sql-subqueries)
-- [Subquery basics](#subquery-basics)
-- [Using subqueries to aggregate in multiple stages](#subquery-basics)
-- [Subqueries in conditional logic](#subquery-logic)
-- [Joining subqueries](#joining-subqueries)
-- [Subqueries and UNIONs](#subqueries-unions)
  
 [SQL Window Functions](#sql-window-functions)
 - [Intro to window functions](#intro-to-window)
@@ -45,8 +45,151 @@
 [Pivoting Data in SQL](#pivoting-data)
 - [Pivoting Rows To Columns](#pivoting-rows)
 
+[Creating Temporary Tables](#temporary-tables)
+
+[Creating Permanent Tables](#permanent-tables)
 
 This SQL guide is meant to help you grasp the advanced SQL concepts. This guide is adapted from Mode Analytics Advanced SQL which is a great tutorial for advanced SQL, however, this guide with the accompanying datasets provide a more hands-on experience that allows you to code live with tools used in industry, All tables found in the Mode Analytics guide are loaded in our databases but we added dozens more to get you better acquainted with SQL and analytics. 
+
+# Writing Subqueries in SQL
+
+Subqeries are also known as inner queries or nested queries.
+
+Each query returns a SQL table as a result.
+This means you can combine queries.
+
+## Subquery basics
+
+First let's see an example and then a discussion of it follows.
+
+We will use `college_football_players` and `college_football_teams` datasets.
+
+In this example we want to find players whose college conference is 'American Athletic'
+
+```sql
+SELECT
+    *
+FROM
+    datasets.college_football_players
+WHERE 
+    school_name IN 
+    (SELECT DISTINCT
+        school_name
+    FROM datasets.college_football_teams
+    WHERE conference = 'American Athletic')
+```
+
+This master query is made up from the outer part and the inner part.
+
+Let's start with the inner part.
+
+```sql
+    (SELECT DISTINCT
+        school_name
+    FROM datasets.college_football_teams
+    WHERE conference = 'American Athletic')
+```
+
+First you notice that we wrapped the query in brackets. We must do this when we write subqueries.
+
+This query returns a list of schools whose conference is 'American Athletics'
+
+Execute it in Strata Scratch to see that it returns Memphis, Houston, Louisville, UCF and few other cities.
+
+Pro tip: You can select blocks of code and execute them. This is super useful when writing sub queries.
+
+![Inner Query](assets/inner_query_1.png)
+
+The results of this query are then passed up so the outer query applies its filter using the IN operation to check if the school name is one of Memphis, Houston, etc.
+
+## Using subqueries to aggregate in multiple stages
+
+Sometimes you might need to perform an aggregation over a set of columns and then perform another aggregation over a subset of these columns. 
+
+Here is an example that makes this concept less abstract.
+
+In the inner query we find the player count for each position and state.
+
+In the outer query we find the average player count over all positions for each state.
+
+```sql
+SELECT
+    state,
+    AVG(player_count) AS avg_player_count
+FROM
+    (SELECT
+        position,
+        state,
+        COUNT(*) AS player_count
+    FROM
+        datasets.college_football_players
+    GROUP BY position, state) sub_query
+GROUP BY state
+```
+
+Try running the inner subquery first and then the whole query.
+
+When writing complex queries like this one we always first write the inner one and then around it slowly build the outer one.
+
+Also notice that we have to write an alias `sub_query` for our subquery here. In the previous example we did not have to write one. Generally you always need to write table aliases unless your subquery is part of some condition as it was in the example above.
+
+
+## Subqueries in conditional logic
+
+This was the topic of our introductory example but we don't have to restrict ourselves to IN operations.
+
+For example to find the player which has the largest weight we can use the following query.
+
+```sql
+SELECT *
+FROM datasets.college_football_players
+WHERE 
+    weight = (SELECT MAX(weight)
+              FROM datasets.college_football_players)
+```
+
+## Joining subqueries
+
+You can do filtering in joins but you can also filter and then join.
+
+To filter first and then join can be really good for performance because more rows you have in tables getting joined it will be slower to finish the joining procedure.
+
+In this example we perform an implicit join between `datasets.college_football_players` and `datasets.college_football_teams` after the teams dataset was filtered.
+
+```sql
+SELECT
+    players.*,
+    filtered_teams.roster_url
+FROM 
+    datasets.college_football_players players,
+        (SELECT 
+            school_name, 
+            roster_url
+         FROM 
+            datasets.college_football_teams
+         WHERE 
+           conference IN ('Big Ten')
+        ) filtered_teams
+WHERE
+    players.school_name = filtered_teams.school_name
+```
+
+## Subqueries and UNIONs
+
+You can combine the results of two subqueries using UNION.
+
+For example to make a single dataset from pieces you can use UNIONs.
+
+```sql
+SELECT *
+  FROM datasets.crunchbase_investments_part1
+
+ UNION ALL
+
+ SELECT *
+   FROM datasets.crunchbase_investments_part2
+```
+
 
 # SQL Data Types
 
@@ -398,145 +541,6 @@ Examples:
 - COALESCE(NULL, NULL, NULL, NULL, NULL) = NULL
 
 The dataset used in this example (san francisco crimes) was also cleaned from nulls so no SQL example is provided.
-
-# Writing Subqueries in SQL
-
-Subqeries are also known as inner queries or nested queries.
-
-Each query returns a SQL table as a result.
-This means you can combine queries.
-
-## Subquery basics
-
-First let's see an example and then a discussion of it follows.
-
-We will use `college_football_players` and `college_football_teams` datasets.
-
-In this example we want to find players whose college conference is 'American Athletic'
-
-```sql
-SELECT
-    *
-FROM
-    datasets.college_football_players
-WHERE 
-    school_name IN 
-    (SELECT DISTINCT
-        school_name
-    FROM datasets.college_football_teams
-    WHERE conference = 'American Athletic')
-```
-
-This master query is made up from the outer part and the inner part.
-
-Let's start with the inner part.
-
-```sql
-    (SELECT DISTINCT
-        school_name
-    FROM datasets.college_football_teams
-    WHERE conference = 'American Athletic')
-```
-
-First you notice that we wrapped the query in brackets. We must do this when we write subqueries.
-
-This query returns a list of schools whose conference is 'American Athletics'
-
-Execute it in Strata Scratch to see that it returns Memphis, Houston, Louisville, UCF and few other cities.
-
-Pro tip: You can select blocks of code and execute them. This is super useful when writing sub queries.
-
-![Inner Query](assets/inner_query_1.png)
-
-The results of this query are then passed up so the outer query applies its filter using the IN operation to check if the school name is one of Memphis, Houston, etc.
-
-## Using subqueries to aggregate in multiple stages
-
-Sometimes you might need to perform an aggregation over a set of columns and then perform another aggregation over a subset of these columns. 
-
-Here is an example that makes this concept less abstract.
-
-In the inner query we find the player count for each position and state.
-
-In the outer query we find the average player count over all positions for each state.
-
-```sql
-SELECT
-    state,
-    AVG(player_count) AS avg_player_count
-FROM
-    (SELECT
-        position,
-        state,
-        COUNT(*) AS player_count
-    FROM
-        datasets.college_football_players
-    GROUP BY position, state) sub_query
-GROUP BY state
-```
-
-Try running the inner subquery first and then the whole query.
-
-When writing complex queries like this one we always first write the inner one and then around it slowly build the outer one.
-
-Also notice that we have to write an alias `sub_query` for our subquery here. In the previous example we did not have to write one. Generally you always need to write table aliases unless your subquery is part of some condition as it was in the example above.
-
-
-## Subqueries in conditional logic
-
-This was the topic of our introductory example but we don't have to restrict ourselves to IN operations.
-
-For example to find the player which has the largest weight we can use the following query.
-
-```sql
-SELECT *
-FROM datasets.college_football_players
-WHERE 
-    weight = (SELECT MAX(weight)
-              FROM datasets.college_football_players)
-```
-
-## Joining subqueries
-
-You can do filtering in joins but you can also filter and then join.
-
-To filter first and then join can be really good for performance because more rows you have in tables getting joined it will be slower to finish the joining procedure.
-
-In this example we perform an implicit join between `datasets.college_football_players` and `datasets.college_football_teams` after the teams dataset was filtered.
-
-```sql
-SELECT
-    players.*,
-    filtered_teams.roster_url
-FROM 
-    datasets.college_football_players players,
-        (SELECT 
-            school_name, 
-            roster_url
-         FROM 
-            datasets.college_football_teams
-         WHERE 
-           conference IN ('Big Ten')
-        ) filtered_teams
-WHERE
-    players.school_name = filtered_teams.school_name
-```
-
-## Subqueries and UNIONs
-
-You can combine the results of two subqueries using UNION.
-
-For example to make a single dataset from pieces you can use UNIONs.
-
-```sql
-SELECT *
-  FROM datasets.crunchbase_investments_part1
-
- UNION ALL
-
- SELECT *
-   FROM datasets.crunchbase_investments_part2
-```
 
 # SQL Window Functions
 
