@@ -33,7 +33,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - SQL Exercises
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises) __**(Freemium access)**__
   - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises-2)
-  - [Intermediate SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/intermediate-sql-exercises.md)
+  - [Intermediate SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/intermediate-sql-exercises)
   - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/advanced-sql-exercises)
   - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/sql-and-business-insights)
   - [Forbes Global Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/forbes-global-exercises)
