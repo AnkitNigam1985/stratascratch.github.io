@@ -33,6 +33,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - SQL Exercises
   - [Basic SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises) __**(Freemium access)**__
   - [Basic SQL Exercises 2](https://education.stratascratch.com/SQL%20Exercises/Exercises/basic-sql-exercises-2)
+  - [Intermediate SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/intermediate-sql-exercises.md)
   - [Advanced SQL Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/advanced-sql-exercises)
   - [SQL and Business Insights](https://education.stratascratch.com/SQL%20Exercises/Exercises/sql-and-business-insights)
   - [Forbes Global Exercises](https://education.stratascratch.com/SQL%20Exercises/Exercises/forbes-global-exercises)
@@ -53,6 +54,7 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 - SQL Exercise Solutions
   - [Basic SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-with-solutions) __**(Freemium access)**__
   - [Basic SQL Exercises 2 Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/basic-sql-exercises-2-with-solutions)
+  - [Intermediate SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/intermediate-sql-exercises-solutions)
   - [Advanced SQL Exercises Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/advanced-sql-exercises-with-solutions)
   - [SQL and Business Insights Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/sql-and-business-insights-with-solutions)
   - [Forbes Global Exercise Solutions](https://education.stratascratch.com/SQL%20Exercises/Solutions/forbes-global-exercise-solutions)
