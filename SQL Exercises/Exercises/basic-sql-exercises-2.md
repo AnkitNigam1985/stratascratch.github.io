@@ -5,67 +5,106 @@
 - All tables used in this exercise are taken from the datasets schema. Make sure you select this schema on the SQL editor settings.
 - Try to answer the following questions by writing the appropriate SQL query on the editor.
 
-## Questions
+# Questions
 
-1. How many different origin airports exist? What are their IATA codes? 
+## 1. List all companies working in finacials sector which are headquarted in Europe or Asia.	
 
-    `Table: datasets.us_flights`
+Schema:	`datasets`
 
-2. Give me a list of 5 origin, destination airport pairs which are furthest apart from each other (Hint: Use the distance column)
+Table:	`forbes_global_2010_2014`	
 
-    `Table: datasets.us_flights`
-
-3. Select all US flights which had no delay. (Hint: Use the arr_delay column)
-
-    `Table: datasets.us_flights`
-
-4. What is the average distance an airplane travels from each origin airport.
-
-    `Table: datasets.us_flights`
-
-5. How many flights did American Airlines (AA) cancel? (Hint: cancelled column has 1 for canceled flights)
-
-    `Table: datasets.us_flights`
-
-6. Which companies are present in the financial sector in Eurasia.
-
-    `Table: datasets.forbes_global_2010_2014`
-
-7. What is the profit to sales ratio (profit / sales) for Royal Dutch Shell?
-
-    `Table: datasets.forbes_global_2010_2014`
-
-8. What are the 3 most profitable companies in the entire world? (Hint: order by profit)
-
-    `Table: datasets.forbes_global_2010_2014`
-
-9. Find the biggest market value for each sector.
-
-    `Table: datasets.forbes_global_2010_2014`
-
-10. Which industry has the lowest sales while still making an average profit higher than 0. (Hint: Use a HAVING clause)
-
-    `Table: datasets.forbes_global_2010_2014`
+Hints:
+- Use the continent and sector columns
+- Utilize both OR with AND
 
 
-11. Show me the breakdown of languages spoken? (Hint: use count)
+## 2. Find the most profitable company from the financials sector in the entire world. What continent is it from?	
 
-    `Table: datasets.playbook_users`
+Schema:	`datasets`
 
+Table:	`forbes_global_2010_2014`
 
-12. Find a list of users who speak English, French, German or Spanish (Hint: Use IN)
-
-    `Table: datasets.playbook_users`
-
-13. What are the companies that have at least 10 Chinese speaking users?
-
-    `Table: datasets.playbook_users`
+Hint:	
+- Use order by and limit
 
 
-14. In how many movies did Abigail Breslin star?
+## 3. For each sector find the maximum market value and order the sectors by it. Which sector is it best to invest in?	
 
-    `Table: datasets.oscar_nominees`
+Schema:	`datasets`
 
-15. Show me the Oscar winners between 2001 and 2009.
+Table:	`forbes_global_2010_2014`
 
-    `Table: datasets.oscar_nominees`
+Hints:
+- Group by sector
+- Order by max of marketvalue in descending order.
+
+
+## 4. How are companies distributed among countries considering only the best sector from previous question?	
+
+Schema:	`datasets`
+
+Tables:	`forbes_global_2010_2014`
+
+Hints:
+- You are studying knowledge from the best sector right now.
+
+
+## 5. Which industry shows profit on average while having the lowest sales of all industries?	
+
+Schema:	`datasets`
+
+Table: `forbes_global_2010_2014`	
+
+Hints:
+- Use having to filter away all industries whose average profit is 0 or lower.
+- Order by the minimum of sales in descending order to obtain the wanted industry.
+
+
+## 6. How many users speak English, German, French or Spanish?	
+
+Schema:	`datasets`
+Table:	`playbook_users`
+
+Hints:
+- Use the IN statement along with a list of languages enclosed in brackets.
+
+
+## 7. Find the id of companies which have more than 10 users which are not speaking English, German, French or Spanish.
+
+Schema:	`datasets`
+
+Table:	`playbook_users`	
+
+Hints:
+- Invert the logic now. Use not in.
+- Make a groupby over company ids and using having filter away all companies with less than 10 users
+
+
+## 8. Is English more popular compared to French? What about other languages? Order all languages by the number of users speaking them.
+
+Schema:	`datasets`
+
+Table:	`playbook_users`
+
+Hints:
+- Group by language
+
+
+## 9. Find the company with a highest number of users which has a difference of more than 365 days between first and last activation dates.	
+
+Schema:	`datasets`
+
+Table:	`playbook_users`
+
+Hints:
+- Use min and max functions over the activated_at column to filter away in having column
+- max activated_at - min activated_at gives the number of days between these two dates
+
+
+## 10. What is the language breakdown for the company from previous question?	
+
+Schema:	`datasets`
+Table:	`playbook_users`
+
+Hints:
+- The company in question has id 1 in case you were unable to answer the previous question.

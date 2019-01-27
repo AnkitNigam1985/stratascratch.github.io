@@ -6,236 +6,216 @@
 - Try to answer the following questions by writing the appropriate SQL query on the editor.
 - This is the teacher version of the SQL basic exercises. Each question is followed with the correct solution and output.
 
-## Questions
+# Questions
 
-1. How many different origin airports exist? What are their IATA codes? 
+## 1. List all companies working in finacials sector which are headquarted in Europe or Asia.	
 
-    `Table: datasets.us_flights`
+Schema:	`datasets`
 
-    *Solution*
-    ```sql
-    SELECT DISTINCT origin 
-    FROM datasets.us_flights
-    ```
+Table:	`forbes_global_2010_2014`	
 
-    ```sql
-    SELECT COUNT(DISTINCT origin)
-    FROM datasets.us_flights
-    ```
+Hints:
+- Use the continent and sector columns
+- Utilize both OR with AND
 
-    *Output:* `312`
+```sql
+SELECT
+    company
+FROM datasets.forbes_global_2010_2014
+WHERE 
+    (continent = 'Asia' OR continent = 'Europe') AND
+    (sector = 'Financials')
+```
 
-2. Give me a list of 5 origin, destination airport pairs which are furthest apart from each other (Hint: Use the distance column)
+## 2. Find the most profitable company from the financials sector in the entire world. What continent is it from?	
 
-    `Table: datasets.us_flights`
+Schema:	`datasets`
 
-    *Solution*
+Table:	`forbes_global_2010_2014`
 
-    ```sql
-    SELECT DISTINCT
-        origin,
-        dest,
-        distance
-    FROM datasets.us_flights
-    ORDER BY distance DESC
-    LIMIT 5
-    ```
+Hint:	
+- Use order by and limit
 
-3. Select all US flights which had no delay. (Hint: Use the arr_delay column)
+```sql
+SELECT
+    company,
+    continent
+FROM datasets.forbes_global_2010_2014
+WHERE 
+    sector = 'Financials'
+ORDER BY 
+    profits DESC
+LIMIT 1
+```
 
-    `Table: datasets.us_flights`
+## 3. For each sector find the maximum market value and order the sectors by it. Which sector is it best to invest in?	
 
-    *Solution*:
+Schema:	`datasets`
 
-    ```sql
-    SELECT
-        *
-    FROM datasets.us_flights
-    WHERE arr_delay = 0.0 OR arr_delay IS NULL
-    ```
+Table:	`forbes_global_2010_2014`
 
-4. What is the average distance an airplane travels from each origin airport.
+Hints:
+- Group by sector
+- Order by max of marketvalue in descending order.
 
-    `Table: datasets.us_flights`
+```sql
+SELECT
+    sector,
+    max(marketvalue) AS max_marketvalue
+FROM datasets.forbes_global_2010_2014
+GROUP BY 
+    sector
+ORDER BY 
+    max_marketvalue DESC
+```
 
-    *Solution*:
+## 4. How are companies distributed among countries considering only the best sector from previous question?	
 
-    ```sql
-    SELECT
-        origin,
-        AVG(distance) AS avg_distance
-    FROM datasets.us_flights
-    GROUP BY origin
-    ```
+Schema:	`datasets`
 
-5. How many flights did American Airlines (AA) cancel? (Hint: cancelled column has 1 for canceled flights)
+Tables:	`forbes_global_2010_2014`
 
-    `Table: datasets.us_flights`
+Hints:
+- You are studying knowledge from the best sector right now.
 
-    *Solution*:
+```sql
+SELECT
+    country,
+    count(*) AS n_companies
+FROM datasets.forbes_global_2010_2014
+WHERE
+    sector = 'Information Technology'
+GROUP BY 
+    country
+ORDER BY
+    n_companies DESC
+```
 
-    ```sql
-        SELECT
-            count(*)
-        FROM datasets.us_flights
-        WHERE cancelled = 1 AND unique_carrier = 'AA'
-    ```
+## 5. Which industry shows profit on average while having the lowest sales of all industries?	
 
-6. Which companies are present in the financial sector in Eurasia.
+Schema:	`datasets`
 
-    `Table: datasets.forbes_global_2010_2014`
+Table: `forbes_global_2010_2014`	
 
-    *Solution*: Eurasia is same as Europe or Asia
+Hints:
+- Use having to filter away all industries whose average profit is 0 or lower.
+- Order by the minimum of sales in descending order to obtain the wanted industry.
 
-    ```sql
-    SELECT
-        company
-    FROM datasets.forbes_global_2010_2014
-    WHERE 
-        (continent = 'Asia' OR continent = 'Europe') AND
-        (sector = 'Financials')
-    ```
+```sql
+SELECT
+    industry
+FROM
+    datasets.forbes_global_2010_2014
+GROUP BY 
+    industry
+HAVING 
+    avg(profits) > 0
+ORDER BY 
+    min(sales) ASC
+LIMIT 1
+```
 
-7. What is the profit to sales ratio (profit / sales) for Royal Dutch Shell?
+## 6. How many users speak English, German, French or Spanish?	
 
-    `Table: datasets.forbes_global_2010_2014`
+Schema:	`datasets`
+Table:	`playbook_users`
 
-    *Solution*: We can write queries which return only one row.
+Hints:
+- Use the IN statement along with a list of languages enclosed in brackets.
 
-    ```sql
-        SELECT
-            company,
-            profits / sales AS profit_to_sales_ratio
-        FROM datasets.forbes_global_2010_2014
-        WHERE 
-            company = 'Royal Dutch Shell'
-    ```
+```sql
+SELECT
+    count(*) AS n_wanted_speakers
+FROM datasets.playbook_users
+WHERE
+    language IN ('english', 'german', 'french', 'spanish')
+```
 
-8. What are the 3 most profitable companies in the entire world? (Hint: order by profit)
 
-    `Table: datasets.forbes_global_2010_2014`
+## 7. Find the id of companies which have more than 10 users which are not speaking English, German, French or Spanish.
 
-    *Solution*: When we order by DESC we go from maximal profit to minimal profit
+Schema:	`datasets`
 
-    ```sql
-    SELECT
-        *
-    FROM datasets.forbes_global_2010_2014
-    ORDER BY profits DESC
-    LIMIT 3
-    ```
+Table:	`playbook_users`	
 
-9. Find the biggest market value for each sector.
+Hints:
+- Invert the logic now. Use not in.
+- Make a groupby over company ids and using having filter away all companies with less than 10 users
 
-    `Table: datasets.forbes_global_2010_2014`
+```sql
+SELECT
+    company_id
+FROM datasets.playbook_users
+WHERE
+    language NOT IN ('english', 'german', 'french', 'spanish')
+GROUP BY
+    company_id
+HAVING (count(*)) > 10
+```
 
-    *Solution*: 
+## 8. Is English more popular compared to French? What about other languages? Order all languages by the number of users speaking them.
 
-    ```sql
-    SELECT
-        sector,
-        MAX(marketvalue)
-    FROM datasets.forbes_global_2010_2014
-    GROUP BY sector
-    ```
+Schema:	`datasets`
 
-10. Which industry has the lowest sales while still making an average profit higher than 0. (Hint: Use a HAVING clause)
+Table:	`playbook_users`
 
-    `Table: datasets.forbes_global_2010_2014`
+Hints:
+- Group by language
 
-    *Solution*: 
+```sql
+SELECT
+    language,
+    count(*) AS n_speakers
+FROM datasets.playbook_users
+GROUP BY 
+    language
+ORDER BY 
+    n_speakers DESC
+```
 
-    ```sql
-    SELECT
-        industry,
-        -- These two columns are here for explanation purposes so you can see the numbers
-        -- They are not required for the output.
-        MIN(sales) AS min_sales,
-        AVG(profits) AS avg_profit
-    FROM
-        datasets.forbes_global_2010_2014
-    GROUP BY industry
-    -- These two lines matter most for this query
-    HAVING AVG(profits) > 0
-    ORDER BY MIN(sales) ASC
-    ```
+## 9. Find the company with a highest number of users which has a difference of more than 365 days between first and last activation dates.	
 
-11. Show me the breakdown of languages spoken? (Hint: use count)
+Schema:	`datasets`
 
-    `Table: datasets.playbook_users`
+Table:	`playbook_users`
 
-    *Solution*:
+Hints:
+- Use min and max functions over the activated_at column to filter away in having column
+- max activated_at - min activated_at gives the number of days between these two dates
 
-    ```sql
-    SELECT
-        language,
-        COUNT(*)
-    FROM
-        datasets.playbook_users
-    GROUP BY language
-    ORDER BY count DESC
-    ```
+```sql
+SELECT
+    company_id,
 
-12. Find a list of users who speak English, French, German or Spanish (Hint: Use IN)
+    count(user_id) AS n_users
+FROM
+    datasets.playbook_users
+GROUP BY
+    company_id
+HAVING
+    max(activated_at) - min(activated_at) >= 365
+ORDER BY 
+    n_users DESC
+LIMIT 1
+```
 
-    `Table: datasets.playbook_users`
+## 10. What is the language breakdown for the company from previous question?	
 
-    *Solution*: Using IN we can remove a lot of ORs
+Schema:	`datasets`
+Table:	`playbook_users`
 
-    ```sql
-    SELECT
-        *
-    FROM
-        datasets.playbook_users
-    WHERE language IN ('english', 'german', 'french', 'spanish')
-    ```
+Hints:
+- The company in question has id 1 in case you were unable to answer the previous question.
 
-13. What are the companies that have at least 10 Chinese speaking users?
-
-    `Table: datasets.playbook_users`
-
-    *Solution*: 
-    - The trick is to know what filter to put in what place. 
-    - We filter first by language in WHERE so we get only Chinese speaking users.
-    - The HAVING filter is where we keep only companies which have more than 10 users.
-
-    Keep in mind that all filters which are based on aggregations (like COUNT(*) here) must go in the HAVING clause. 
-
-    ```sql
-    SELECT
-        company_id
-    FROM
-        datasets.playbook_users
-    WHERE language='chinese'
-    GROUP BY company_id
-    HAVING COUNT(*) >= 10
-    ```
-
-14. In how many movies did Abigail Breslin star?
-
-    `Table: datasets.oscar_nominees`
-
-    *Solution*: 1
-
-    ```sql
-    SELECT
-        count(*)
-    FROM datasets.oscar_nominees
-    WHERE nominee = 'Abigail Breslin'
-    ```
-
-15. Show me the Oscar winners between 2001 and 2009.
-
-    `Table: datasets.oscar_nominees`
-
-    *Solution*:
-
-    ```sql
-    SELECT
-        *
-    FROM datasets.oscar_nominees
-    WHERE 
-        winner = true AND 
-        year BETWEEN 2001 AND 2009  
-    ```
-
+```sql
+SELECT
+    language,
+    
+    count(*) AS n_speakers
+FROM
+    datasets.playbook_users
+WHERE 
+    company_id = 1
+GROUP BY
+    language
+```
