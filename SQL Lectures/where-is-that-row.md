@@ -27,17 +27,12 @@ The final operator is `<>` which is not equal. It might seem weird and it is, bu
 
 ### Numbers and text
 
-Number constants are typed with number characters, for example 1, 5, 111, 12157751 are all valid numeric constants in SQL.
+There are a few rules to remember when dealing with numbers and text:
 
-Text constants are written in **single** quotes, for example 'male', 'C85', '13'.
-
-'13' and 13 are not equal, one is text and other is number.
-
-I have bolded the word single because using double quotes will give you an error like the following: `column "male" does not exist LINE 7: sex = "male" ^`
-
-In SQL columns like `sex`, `name`, `age` can be written as either sex, name, age or as "sex", "name", "age", that is double quoting a text means that you want a column with such name. Because a column `male` does not exist using "male" will give you an error.
-
-When speaking of text it is also important to notice that 'BIG' is different from 'big', that is `=` and `<>` are dependent on case.
+1. Number constants are typed with number characters, for example 1, 5, 111, 12157751 are all valid numeric constants in SQL.
+2. Text constants are written in **single** quotes, for example 'male', 'C85', '13'. It's important to note that you cannot use double quotes. 
+3. '13' and 13 are not equal, one is text and other is number.
+4. It is also important to notice that 'BIG' is different from 'big'. Uppercase letters are treated differently than lowercase letters. 
 
 ### Examples
 
