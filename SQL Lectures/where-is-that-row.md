@@ -48,19 +48,10 @@ WHERE
 
 What do you think is the result of this and why?
 
-Here is another example where we compare textual column with a value using `<>`.
-
-```sql
-SELECT
-    *
-FROM datasets.titanic
-WHERE
-    embarked <> 'S'
-```
 
 ## Propositional logic
 
-You might have studied propositional logic during middle or high school or this term might sound totally alien to you. It doesn't matter because we will teach you the 3 keywords which give every `WHERE` statement the power it needs to shine bright. We will start with `AND`, go over `ON` continue with `NOT` and finalize on the ways to combine them to get the juicy part of the data apple.
+We will teach you the 3 keywords which give every `WHERE` statement the power it needs to shine bright. We will start with `AND`, go over `ON`, continue with `NOT`, and finalize on the ways to combine them.
 
 ### Me and you, 1st class passengers
 
@@ -76,7 +67,7 @@ WHERE
     sex      = 'male'
 ```
 
-We can have as many conditions `AND`ed together as we want (`AND`ed is not an English word but you will hear it a lot in the data analytics community, so please bear with us) 
+We can have as many conditions and string together as many `AND` as we want.
 
 The behavior of `AND` is described with the following table:
 
@@ -121,7 +112,7 @@ Thus the only way an entity is not considered fit to be part of the output table
 
 ### IN - A supercharged OR
 
-In the real world it is very unlikely that you will use `OR` often but it's close associate `IN` is used a lot. The meaning of `IN` is essentially the same as the meaning of a few conditions linked with `OR` except that it is easier to write queries with IN.
+The meaning of `IN` is essentially the same as the meaning of a few conditions linked with `OR` except that it is easier to write queries with IN.
 
 An example is worthy of a thousand definitions so here is one:
 
@@ -133,7 +124,16 @@ WHERE
     pclass IN (1, 3)
 ```
 
-This query and the query with OR are absolutely identical in the results they will produce.
+The query above and the query below are absolutely identical in the results they will produce.
+
+```sql
+SELECT
+    *
+FROM datasets.titanic
+WHERE
+    pclass = 1 OR
+    pclass = 3
+```
 
 Here is another example where using `OR` will end in a lot of typing but `IN` handles the issue well. 
 
@@ -153,7 +153,7 @@ The alternative is to do: `age = 10 OR age = 20 OR age = 30 OR age = 40` etc.
 
 This operation is similar to `IN` with the main exception that `IN` takes a discrete set of values to check against while `BETWEEN` takes a continous range. Perhaps an example will clarify this best:
 
-"Who are the passengers who have paid a fare between 10$ and 20$?"
+"Who are the passengers who have paid a fare between $10 and $20?"
 
 ```sql
 SELECT
@@ -177,17 +177,16 @@ There are two ways to think about this condition:
 - `NOT age = 20` (`age <> 20`)
 - `age = 1 OR age = 2 OR age = 3 ... OR age = 23 OR age = 25 ... OR age = 100` (notice we skiped 24)
 
-It is obvious which one is easier to work with. In this simple examples it might not seem that important but as you write more complex queries a clever use of `NOT` might make your `WHERE` blocks much shorter while still giving correct results.
+It is obvious which one is easier to work with. In this simple example it might not seem that important but as you write more complex queries a clever use of `NOT` might make your `WHERE` blocks much shorter while still giving correct results.
 
 Logical negation is the way to link `AND` with `OR` with the following formula holding true: `x OR y = ((NOT x) AND  (NOT y))`
 
-If you stop to ponder for a second you can see that our two ways of thinking about this condition are linked by this formula called De Morgan's law.
 
 ## Textual data filtering with LIKE and ILIKE
 
-All questions we were able to ask ourselves had to be based on numbers or on simple equality tests for text. This limitation stops right now when we learn about `LIKE` and it's closely related cousin `ILIKE`.
+All questions we were able to ask ourselves had to be based on numbers or on simple equality tests. This limitation stops right now when we learn about `LIKE` and it's closely related cousin `ILIKE`.
 
-The beauty of, or horror, of text is that unlike numbers it comes in rather nonuniform structure. Take for example the number 1. When you write as a number it is always 1 but when written as a text it can be 'ONE', 'one', 'ace', 'AcE' or many other possibilities. Take also names, is it Jhon, Jhon or Jon?
+The beauty of, or horror, of text is that unlike numbers it comes in rather nonuniform structure. Take for example the number 1. When you write as a number it is always 1 but when written as text it can be 'ONE', 'one', 'ace', 'AcE' or many other possibilities. Take also names, is it John or Jon?
 
 To combat these issues `LIKE` and `ILIKE` were developed. `ILIKE` is the case insensitive brother of `LIKE` so everything we know about `LIKE` applies to `ILIKE` too.
 
@@ -207,7 +206,9 @@ The power of like comes with the characters '_' and '%'.
 
 The '%' wild card is used much more so we will focus on it. Here is an illustrative example: "Find all people named John".
 
-We first need to reformulate this question as: "Find all people whose `name` column contains the word 'John'". Next we need to define our matching pattern which will be '%John%'. This means whatever before John and whatever after John we only care that Jhon must exist there somewhere. When combining all of this we get the following query:
+We first need to reformulate this question as: "Find all people whose `name` column contains the word 'John'". The probably with just writing the query as `name = 'John'` is that we might miss results where there is text before or after John. For example, your data might have results like `John Doe` or `D. John`. So how do we comb through the data and find any instance where a value has the word John? 
+
+We can use the wildcards -- `'%John%'`. This means whatever text comes before John and whatever text comes after John we only care that the word John exists in there somewhere. When combining all of this we get the following query:
 
 ```sql
 SELECT
@@ -235,7 +236,7 @@ Hint: The second name is wrapped in brackets like 'Nasser, Mrs. Nicholas (Adele 
 
 ## NULL and IS NULL
 
-Data collection is not a flawless process and very often certain information is missing be that for privacy reasons, laws, faulty procedures or broken sensor equipment. Missing information is represented by a special NULL value which applies to both numbers and text.
+Data collection is not a flawless process and very often certain information is missing be that for privacy reasons, laws, faulty procedures, or failures in capturing the full data. Missing information is represented by a special NULL value which applies to both numbers and text.
 
 In our titanic dataset we have missing data in almost all columns, most notably in `cabin` and `age` columns. 
 
