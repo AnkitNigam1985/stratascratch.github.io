@@ -6,7 +6,7 @@ In our previous lecture we introduced the basic parts of a query giving filterin
 
 ## Conditions and Operators
 
-Everything of the form `column_name operator value` or `column_name operator other_column_name` is called a condition. Here are some conditions:
+Everything of the form `column_name <operator> <value>` or `column_name <operator> other_column_name` is called a condition. Here are some conditions:
 - `survived = 1`
 - `pclass   = 1`
 - `sex      = 'male'`
