@@ -24,10 +24,22 @@ Our articles, guides, and analytical exercises are listed on this page but can a
 ## Business Analytics Guides and Problem Sets
 
 ### SQL
-#### SQL Guides To Get You Started
+#### SQL Guides To Use For Reference
 - [Basic SQL Guide](https://education.stratascratch.com/guides/sql-guide/basic-sql-guide)
 - [Intermediate SQL Guide](https://education.stratascratch.com/guides/sql-guide/intermediate-sql-guide)
 - [Advanced SQL Guide](https://education.stratascratch.com/guides/sql-guide/advanced-sql-guide)
+
+#### SQL Lectures By Level
+- Basic SQL Lectures
+    - [Basics of a SQL Query](https://education.stratascratch.com/SQL%20Lectures/basics-of-a-query)
+    - [Filtering and Conditions](https://education.stratascratch.com/SQL%20Lectures/where-is-that-row)
+    - [The HAVING Condition](https://education.stratascratch.com/SQL%20Lectures/having)
+    - [SELECT Aggregations](https://education.stratascratch.com/SQL%20Lectures/aggregations)
+- Intermediate SQL Lectures
+    - Coming soon!
+- Advance SQL Lectures
+    - Coming soon!
+
 
 #### SQL Practice Problem Sets
 - SQL Exercises
