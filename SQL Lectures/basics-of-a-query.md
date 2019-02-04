@@ -1,4 +1,4 @@
-# SQL Lecture 1 - Basics of a query
+# Basics of a SQL query
 
 ## Data
 
