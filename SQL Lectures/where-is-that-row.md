@@ -1,4 +1,4 @@
-# SQL Lecture 2 - Filtering Fantasy
+# Filtering Fantasy
 
 ## More ways to focus on what matters
 
