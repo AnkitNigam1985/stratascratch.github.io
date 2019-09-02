@@ -3,7 +3,7 @@
 # Spotify Case Study
 
 #### Accessing The Data Resources
-- Dataset can be found under `datasets.spotify_daily_rankings_2017_us` for U.S. ranking
+- Dataset can be found under `spotify_daily_rankings_2017_us` for U.S. ranking
 - Access the data at www.stratascratch.com
 - You can use SQL on Strata Scratch to answer the questions or connect to the datasets and answer the questions using other tools like python
 - You can now run Jupyter notebooks on Google CoLab so there’s no software installation needed. Use this [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g) as a template to start the analytics case.
