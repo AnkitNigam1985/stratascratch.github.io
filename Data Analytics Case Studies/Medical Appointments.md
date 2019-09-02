@@ -7,7 +7,7 @@
 Case study for practicising your skills in statistical thinking in python. We analyze a dataset which is a list of patients which suffer from one or more illnesses and draw a series of valid conclussions from the data by utilizing hypothesis tests and contigency tables.
 
 #### Accessing The Data Resources
-- Medical appointments dataset can be found under `datasets.medical_appointments`
+- Medical appointments dataset can be found under `medical_appointments`
 - Access the data at www.stratascratch.com
 - You can use SQL on Strata Scratch to answer the questions or connect to the datasets and answer the questions using other tools like python
 - You can now run Jupyter notebooks on Google CoLab so there’s no software installation needed. Use this [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g) as a template to start the analytics case.
