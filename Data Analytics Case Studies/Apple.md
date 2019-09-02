@@ -5,7 +5,7 @@
 ## Apple Case Study
 
 #### Accessing The Data Resources
-- Apple historical stock price dataset can be found under `datasets.aapl_historical_price`
+- Apple historical stock price dataset can be found under `aapl_historical_price`
 - Access the data at www.stratascratch.com
 - You can connect to the datasets and answer the questions using python.
 - You can now run Jupyter notebooks on Google CoLab so there’s no software installation needed. Use this [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g) as a template to start the analytics case.
