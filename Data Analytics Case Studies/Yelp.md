@@ -5,7 +5,7 @@
 ## Yelp Case Study
 
 #### Accessing The Data Resources
-- Reviews dataset can be found under `datasets.yelp_reviews`
+- Reviews dataset can be found under `yelp_reviews`
 - Access the data at www.stratascratch.com
 - You can use SQL on Strata Scratch to answer the questions or connect to the datasets and answer the questions using other tools like python
 - You can now run Jupyter notebooks on Google CoLab so there’s no software installation needed. Use this [introductory notebook](https://colab.research.google.com/drive/1tHxAbgbxM60VUIrVQW508EwB1b3wFk5g) as a template to start the analytics case.
